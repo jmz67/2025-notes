@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -169,7 +168,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "be129bc71f8ed5cf",
+  "active": "cb1e191864876a76",
   "lastOpenFiles": [
     "学习/Go/pictures/Pasted image 20250212001121.png",
     "学习/Go/pictures/Pasted image 20250212001014.png",
