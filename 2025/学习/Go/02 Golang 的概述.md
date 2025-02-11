@@ -50,3 +50,5 @@ GOROOT：指定 SDK 的安装路径 F:\DevEnv\go\go
 Path：添加 SDK 的 /bin 目录 %GOROOT%\bin
 GOPATH：工作目录，将来我们的 go 项目的工作路径 C:\Users\admin\Desktop\GoProject
 
+注意：配置环境变量之后，需要重新打开 cmd 才会生效
+
