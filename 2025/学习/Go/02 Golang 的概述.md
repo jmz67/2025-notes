@@ -46,6 +46,8 @@ msi 是需要安装来使用的，zip 解压就可以使用。我们选择使用
 
 **需要在 Go 开发中配置哪些环境变量呢？**
 
+我们先打开高级系统设置，打开环境bi'a
+
 GOROOT：指定 SDK 的安装路径 F:\DevEnv\go\go
 Path：添加 SDK 的 /bin 目录 %GOROOT%\bin
 GOPATH：工作目录，将来我们的 go 项目的工作路径 C:\Users\admin\Desktop\GoProject
