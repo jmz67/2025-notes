@@ -60,7 +60,7 @@ GOPATH：工作目录，将来我们的 go 项目的工作路径 C:\Users\admin\
 
 在开发项目的时候，我们文件结构如下：
 
-![[Pasted image 20250212001014.png]]
+![[Pasted image 20250212001121.png]]
 
 ```go
 
