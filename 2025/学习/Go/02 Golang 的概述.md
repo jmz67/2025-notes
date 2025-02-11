@@ -34,3 +34,4 @@ SDK 下载：[Go下载 - Go语言中文网 - Golang中文社区](https://studygo
 
 ![[Pasted image 20250211233631.png]]
 
+我们选择使用 amd64.zip 的
