@@ -78,4 +78,8 @@ func main() {
 4. func main() {} 这是一个主函数，代表这是程序的入口
 
 
+```
+go build hello.go
+```
 
+我们会de'dao
