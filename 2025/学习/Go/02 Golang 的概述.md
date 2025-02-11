@@ -63,6 +63,15 @@ GOPATH：工作目录，将来我们的 go 项目的工作路径 C:\Users\admin\
 ![[Pasted image 20250212001121.png]]
 
 ```go
+// 开发一个 hello.go 程序，可以输出 hello world
+package main
+import "fmt"
 
+func main() {
+    fmt.Println("hello, world!")
+}
 ```
+
+1. go 文件的后缀是 .go 
+2. package main 说明该文件所在的包是 main 这个包，在 
 
