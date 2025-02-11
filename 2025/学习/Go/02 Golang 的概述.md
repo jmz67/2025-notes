@@ -30,4 +30,7 @@ Go 语言保证了既能达到静态编译语言的安全和性能，又可以�
 
 SDK 简称 Software Development Kit 软件开发工具包，是提供给开发人员使用的，其中包含了对应开发语言的工具包。
 
-SDK 下载：
+SDK 下载：[Go下载 - Go语言中文网 - Golang中文社区](https://studygolang.com/dl)
+
+![[Pasted image 20250211233631.png]]
+
