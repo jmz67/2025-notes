@@ -18,7 +18,17 @@ UI 库当然很好，如果你坚持使用这些库而不去对它做修改的�
 - li
 - section
 
-这些元素都是块级元素，块级元素会按照列进行排列
+### inline 
+
+### inline block
+
+### none 
+
+### flex 
+
+### grid
+
+
 
 
 
