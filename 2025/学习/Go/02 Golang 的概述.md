@@ -75,5 +75,7 @@ func main() {
 1. go 文件的后缀是 .go 
 2. package main 说明该文件所在的包是 main 这个包，在 go 中每个文件都要归属一个包
 3. import "fmt" 表示引入一个包，包名为 fmt 引入该包之后，就可以使用 fmt 包的函数，比如 fmt.Println
-4. func main()
+4. func main() {} 这是一个主函数，代表这是程序的入口
+
+
 
