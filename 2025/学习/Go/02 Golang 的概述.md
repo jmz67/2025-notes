@@ -48,5 +48,5 @@ msi 是需要安装来使用的，zip 解压就可以使用。我们选择使用
 
 GOROOT：指定 SDK 的安装路径 F:\DevEnv\go\go
 Path：添加 SDK 的 /bin 目录 %GOROOT%\bin
-GOPATH：工作目录，将来我们的 go 项目的工作路径
+GOPATH：工作目录，将来我们的 go 项目的工作路径 C:\Users\admin\Desktop\GoProject
 
