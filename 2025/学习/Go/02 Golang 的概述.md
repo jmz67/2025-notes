@@ -28,4 +28,5 @@ Go 语言保证了既能达到静态编译语言的安全和性能，又可以�
 
 ## 2.4 Windows 下搭建 GO 开发环境-安装和配置 SDK
 
-SDK 简称 Software Developmentr
+SDK 简称 Software Development Kit 软件开发工具包，是提供给开发人员使用的，其中包含了对应开发语言的工具包。
+
