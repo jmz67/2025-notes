@@ -26,4 +26,6 @@ Go 语言保证了既能达到静态编译语言的安全和性能，又可以�
 6. 函数可以返回多个值
 7. 新的创新：比如切片 slice，延时执行 defer 等
 
-## 2.4
+## 2.4 Windows 下搭建 GO 开发环境-安装和配置 SDK
+
+SDK 简称 Software Developmentr
