@@ -8,11 +8,11 @@ UI 库当然很好，如果你坚持使用这些库而不去对它做修改的�
 
 ## Tailwind Utilities
 
-## Display peoperty
+### Display peoperty
 
-### display
+#### display
 
-### block
+#### block
 
 - div
 - h1
@@ -20,15 +20,15 @@ UI 库当然很好，如果你坚持使用这些库而不去对它做修改的�
 - li
 - section
 
-### inline 
+#### inline 
 
-### inline block
+#### inline block
 
-### none 
+#### none 
 
-### flex 
+#### flex 
 
-### grid
+#### grid
 
 
 
