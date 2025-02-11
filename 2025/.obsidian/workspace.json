@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "TailWindCSS"
             }
+          },
+          {
+            "id": "7a9be7310d923272",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -141,13 +151,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/Vue/TailWindCSS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TailWindCSS"
+              "title": "Outline"
             }
           }
         ],
@@ -169,10 +178,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "be129bc71f8ed5cf",
+  "active": "7a9be7310d923272",
   "lastOpenFiles": [
-    "学习/Go/02 Golang 的概述.md",
     "学习/Vue/TailWindCSS.md",
+    "学习/Go/02 Golang 的概述.md",
     "学习/Go/pictures/Pasted image 20250212001121.png",
     "学习/Go/pictures/Pasted image 20250212001014.png",
     "学习/Go/pictures/Pasted image 20250211233631.png",
