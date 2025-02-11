@@ -34,4 +34,6 @@ SDK 下载：[Go下载 - Go语言中文网 - Golang中文社区](https://studygo
 
 ![[Pasted image 20250211233631.png]]
 
-我们选择使用 amd64.zip 的
+msi 是需要安装来使用的，zip 解压就可以使用。我们选择使用 amd64.zip 的来使用。
+
+
