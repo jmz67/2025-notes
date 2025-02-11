@@ -82,4 +82,6 @@ func main() {
 go build hello.go
 ```
 
-我们会de'dao
+我们会得到一个 hello.exe 文件，直接在终端运行 hello.exe 就可以看到输出了，也可以使用 go run hello.go 在实际的工作环境中，应该是先编译后运行。
+
+
