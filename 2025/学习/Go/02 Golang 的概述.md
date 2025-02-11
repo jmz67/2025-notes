@@ -24,4 +24,5 @@ Go 语言保证了既能达到静态编译语言的安全和性能，又可以�
 	3. 基于 CPS 并发模型 Communicating Sequential Processes 实现
 5. 吸收了管道通信机制，形成 Go 语言特有的管道 channel，可以实现不同的 goroutine
 6. 函数可以返回多个值
-7. 新的创新：比如切片 slice，ya
+7. 新的创新：比如切片 slice，延时执行 defer 等
+
