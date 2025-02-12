@@ -26,7 +26,15 @@ console.log(fetch("https://api.randomuser.me/?nat=US&result=1"));
 
 回头再来看 fetch 的结果。挂起的 promise 表示获取数据之前的状态。我们要串接一个名为 .then() 的函数。这个函数接收一个回调函数，在前一步操作执行成功后运行。也就是先获取一些数据，然后再做其他的操作。
 
-这里我们想做的其他操作是把响应变成 
+这里我们想做的其他操作是把响应变成 json 格式：
+
+```js
+fetch("https://api.randomuser.me/?nat=US&result=1").then(res => 
+	console.log(res.json())
+);
+```
+
+then 方法在 
 ## 2.6 类
 
 ## 2.7 ES6 模块
