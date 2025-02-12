@@ -16,7 +16,11 @@ header.innerHTML = "Hey!";
 
 在以前，请求 REST API 是一件非常复杂的事情，为了将数据加载进入应用中，需要编写 20 多行的代码，后来 fetch 的出现拯救了我们，感谢 ECMAScript 的这一善举。
 
-我们从 randomuser.me API 获取一些数据。这个 API 提供了电子邮件地址，姓名，电话号码，地理位置d'den
+我们从 randomuser.me API 获取一些数据。这个 API 提供了电子邮件地址，姓名，电话号码，地理位置等成员信息，可以作为虚拟数据。fetch 函数只接受一个参数，也就是资源的 URL。
+
+```js
+console.log(fetch("https://api."))
+```
 ## 2.6 类
 
 ## 2.7 ES6 模块
