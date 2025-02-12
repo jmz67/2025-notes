@@ -6,5 +6,7 @@ Js 模块是一组可以重用的代码，方便插入其他 Js 文件中而不�
 
 ```js
 export const print=(message) => log(message, new Date())
-export 
+export const log=(message, timestamp) => 
+	console.log(`${timestamp.toString()}: ${message}`)
 ```
+
