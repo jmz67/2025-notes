@@ -44,7 +44,9 @@ fetch("https://api.randomuser.me/?nat=US&results=1")
 .catch(console.error);
 ```
 
+### 2.5.2 async/await
 
+处理 promise 的另一种方法是创建异步函数，一些开发者倾向于使用异步函数句法，因为所用的句法较为熟悉，jiu
 
 ## 2.6 类
 
