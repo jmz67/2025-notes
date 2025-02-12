@@ -47,4 +47,4 @@ l("log a message");
 import * as fns from './text-helpers'
 ```
 
-import 和 export 句法还没有得到所有的浏览器和 node 的支持，然而，和其他的 Js 新句法一样，Babel 支持。这意味着我们可以在自己的源码中使用这些句法，Babel 知道在何处寻找我们要使用的句法，把找到的模块
+import 和 export 句法还没有得到所有的浏览器和 node 的支持，然而，和其他的 Js 新句法一样，Babel 支持。这意味着我们可以在自己的源码中使用这些句法，Babel 知道在何处寻找我们要使用的句法，把找到的模块添加到编译到的 Js 代码中。
