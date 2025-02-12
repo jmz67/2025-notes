@@ -35,7 +35,8 @@
               "title": "数字人初诊复诊"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -154,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/React/2 Js 新特性.md",
+                "file": "工作/数字人初诊复诊.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2 Js 新特性 的大纲"
+              "title": "数字人初诊复诊 的大纲"
             }
           }
         ],
@@ -182,10 +183,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "9cc0667b5fc0a97b",
+  "active": "ab3048f8944351db",
   "lastOpenFiles": [
-    "工作/数字人初诊复诊.md",
     "学习/React/2 Js 新特性.md",
+    "工作/数字人初诊复诊.md",
     "工作/工作日志/202502.md",
     "学习/FastAPI/Dependencies.md",
     "学习/React/REACT学习手册（第二版）.pdf",
