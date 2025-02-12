@@ -23,8 +23,13 @@ export default new Expedition("Mt. Freel", 2, ["water", "snack"]);
 在其他文件中使用一个模块，可以使用 import 导入。导出多个对象的模块可以充分利用对象析构。使用 export default 的模块导入为一个变量：
 
 ```js
-import {print, log} from "./text-helpers"
-import freel from "./mt-freel"
+import {print, log} from "./text-helpers";
+import freel from "./mt-freel";
 
-pri
+print("print a message");
+log("log a message");
+
+freel.print();
 ```
+
+导入的模块变量也可以
