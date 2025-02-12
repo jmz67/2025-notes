@@ -22,7 +22,9 @@ header.innerHTML = "Hey!";
 console.log(fetch("https://api.randomuser.me/?nat=US&result=1"));
 ```
 
-在控制台中可以看到输出一个挂起的 promise。promise 为理解 Js 中的异步行为提供了一种方式。promise 是一个对象，表示异步操作的状态是挂起，已完成或是失败。这就好像是浏览器告诉你，“嘿”
+在控制台中可以看到输出一个挂起的 promise。promise 为理解 Js 中的异步行为提供了一种方式。promise 是一个对象，表示异步操作的状态是挂起，已完成或是失败。这就好像是浏览器告诉你，“嘿，我会尽我自己所能去获取这个数据。不管成功与否，我都会回过头来告诉你进展的。”
+
+回头再来看 fetch 的结果。挂起的 promise 表示获取数据之前的状态。我们要串接一个名为 .then() 
 ## 2.6 类
 
 ## 2.7 ES6 模块
