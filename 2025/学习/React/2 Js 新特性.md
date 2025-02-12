@@ -44,5 +44,7 @@ l("log a message");
 此外也可以使用 * 把一切都导入为一个变量：
 
 ```js
-import *
+import * as fns from './text-helpers'
 ```
+
+import 和 export 句法还没有得到所有的浏览器和 node 的支持，然而，和其他的
