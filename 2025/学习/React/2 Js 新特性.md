@@ -36,6 +36,15 @@ fetch("https://api.randomuser.me/?nat=US&result=1").then(res =>
 
 then 方法在 promise 得到成功处理后调用回调函数。不管回调函数返回什么，都会被作为下一个 then 函数的参数。因此，我们可以串接多个 then 函数处理成功的 promise。
 
+```js
+fetch("https://api.randomuser.me/?nat=US&results=1")
+.then(res => res.json()) 
+.then(json => json.results) 
+.then(console.log) 
+.catch(console.error);
+```
+
+
 
 ## 2.6 类
 
