@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "学习/Go/01 如何学习新技术.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "01 如何学习新技术"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md",
+                "file": "学习/Go/01 如何学习新技术.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "01 如何学习新技术 的大纲"
             }
           }
         ],
@@ -182,11 +182,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "5dbe457b7b8c53c7",
+  "active": "cb1e191864876a76",
   "lastOpenFiles": [
+    "学习/React",
+    "未命名.md",
     "学习/Go/01 如何学习新技术.md",
     "学习/Go/02 Golang 的概述.md",
-    "未命名.md",
     "学习/FastAPI/Dependencies.md",
     "学习/TailWindCSS & React & NikeWebDemo.md",
     "学习/Go/pictures/Pasted image 20250212001121.png",
