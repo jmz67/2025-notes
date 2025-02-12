@@ -10,3 +10,4 @@ export const log=(message, timestamp) =>
 	console.log(`${timestamp.toString()}: ${message}`)
 ```
 
+export 可以导出供其他模块使用的任何 Js 类型。在这个示例中，导出的是 print 和 log 
