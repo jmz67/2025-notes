@@ -12,4 +12,4 @@ export const log=(message, timestamp) =>
 
 export 可以导出供其他模块使用的任何 Js 类型。在这个示例中，导出的是 print 和 log 两个函数，其他的内容外部不可以访问。
 
-模块也可以只导出一个主变量，此时，使用 export default 。例如，mt-freel.js 可以导出一个特定的探险
+模块也可以只导出一个主变量，此时，使用 export default 。
