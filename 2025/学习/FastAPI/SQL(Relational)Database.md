@@ -38,5 +38,12 @@ engine = create_engine(sqlite_url, connect_args=connect_args)
 
 Don't worry, with the way the code is structured, we'll make sure we use **a single SQL Model _session_ per request** later, this is actually what the `check_same_thread` is trying to achieve.
 
+**创建表**
+
+```python
+def create_db_and_tables():
+	SQLModel.metadata.create_all(engine)
+```
+
 
 
