@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/工作日志/202502.md",
+                "file": "工作/数字人初诊复诊.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "202502"
+              "title": "数字人初诊复诊"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202502.md",
+                "file": "工作/数字人初诊复诊.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "202502 的大纲"
+              "title": "数字人初诊复诊 的大纲"
             }
           }
         ],
@@ -185,9 +185,9 @@
   },
   "active": "ab3048f8944351db",
   "lastOpenFiles": [
+    "工作/工作日志/202502.md",
     "学习/React/2 Js 新特性.md",
     "工作/数字人初诊复诊.md",
-    "工作/工作日志/202502.md",
     "学习/FastAPI/Dependencies.md",
     "学习/React/REACT学习手册（第二版）.pdf",
     "学习/Go/01 如何学习新技术.md",
