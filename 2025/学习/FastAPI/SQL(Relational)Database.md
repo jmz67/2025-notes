@@ -71,6 +71,7 @@ def get_session():
 SessionDep = Annotated[Session, Depends(get_session)]
 ```
 
+我们来解释一下 `SessionDep = Annotated[Session, Depends(get_session)]` 这行代码，
 ### **启动时创建数据库表**
 
 ```python
