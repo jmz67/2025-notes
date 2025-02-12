@@ -22,3 +22,4 @@ class Hero(SQLModel, table=True):
 
 **创建引擎**
 
+SQLModel 引擎（实际上就是 sqlalchemy 引擎）负责保持到数据库的连接。
