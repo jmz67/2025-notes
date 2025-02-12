@@ -56,6 +56,10 @@ Then we create an `Annotated` dependency `SessionDep` to simplify the rest o
 ```python
 def get_session():
 	with Session(engine) as session:
-		yield se
+		yield session
+
+SessionDep = Annotated[Session, Depends(get_session)]
 ```
+
+**启动时创建数据库表**
 
