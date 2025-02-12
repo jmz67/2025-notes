@@ -8,7 +8,9 @@ const header = document.getElementById("heading");
 header.innerHTML = "Hey!";
 ```
 
-这些就是指令，去选择 id 为 heading 的元素，然后把这个元素中的 HTML 设置为 Hey! ，这一切都是同步的。
+这些就是指令，去选择 id 为 heading 的元素，然后把这个元素中的 HTML 设置为 Hey! ，这一切都是同步的。一项操作在执行的过程中，不执行其他的操作。
+
+在现代的 web 中，离不开异步任务，这种任务
 
 ## 2.6 类
 
