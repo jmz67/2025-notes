@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -179,7 +180,8 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "vscode-editor:新建代码文件": false
     }
   },
   "active": "9cc0667b5fc0a97b",
