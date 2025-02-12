@@ -23,3 +23,12 @@ class Hero(SQLModel, table=True):
 **创建引擎**
 
 SQLModel 引擎（实际上就是 sqlalchemy 引擎）负责保持到数据库的连接。
+
+You would have **one single `engine` object** for all your code to connect to the same database.
+
+```python
+sqlite_file_name = "database.db"
+sqlite_url = f"sqlite:///{sqlite_file_nam}"
+
+```
+
