@@ -63,3 +63,11 @@ SessionDep = Annotated[Session, Depends(get_session)]
 
 **启动时创建数据库表**
 
+```python
+app = FastAPI() 
+
+@app.on_event("startup") 
+def on_startup(): 
+	create_db_and_tables()
+```
+
