@@ -22,7 +22,7 @@ header.innerHTML = "Hey!";
 console.log(fetch("https://api.randomuser.me/?nat=US&result=1"));
 ```
 
-在控制台中可以看到输出一个挂起的 promise。peo
+在控制台中可以看到输出一个挂起的 promise。promise 为理解 Js 中的异步行为提供了一种方式。promise 是一个对象，表示异步操作的状态是挂起，已完成或是失败。这就好像是浏览器告诉你，“嘿”
 ## 2.6 类
 
 ## 2.7 ES6 模块
