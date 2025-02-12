@@ -45,5 +45,7 @@ def create_db_and_tables():
 	SQLModel.metadata.create_all(engine)
 ```
 
+**创建一个会话依赖 session dependency**
 
+一个 Session 将对象存储在内存中，并跟踪数据中所需要的任何更改
 
