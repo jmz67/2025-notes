@@ -74,8 +74,8 @@ SessionDep = Annotated[Session, Depends(get_session)]
 我们来解释一下 `SessionDep = Annotated[Session, Depends(get_session)]` 这行代码，这行代码实际上做了如下的事情：
 
 - 声明了一个名为 SessionDep 的依赖，它的类型是 Session。
-- 告诉FastAPI，`SessionDep`的实际值由`get_session`函数提供。
-- 通过`Depends`，FastAPI会自动调用`get_session`函数，获取`Session`对象，并将其注入到需要`SessionDep`的函数或路由中。
+- 告诉FastAPI，SessionDep 的实际值由 get_session 函数提供。
+- 通过 Depends，FastAPI 会自动调用 get_session 函数，获取 Session 对象，并将其注入到需要SessionDep 的函数或路由中。
 
 ### **启动时创建数据库表**
 
