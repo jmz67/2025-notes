@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/学习日志/202502.md",
+                "file": "学习/Go/02 Golang 的概述.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 202502"
+              "title": "Outline of 02 Golang 的概述"
             }
           }
         ],
