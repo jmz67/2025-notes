@@ -5,5 +5,6 @@ Js 模块是一组可以重用的代码，方便插入其他 Js 文件中而不�
 下面的 text-helper.js 模块中导出了两个函数：
 
 ```js
-export const print
+export const print=(message) => log(message, new Date())
+export 
 ```
