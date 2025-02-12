@@ -5,8 +5,10 @@
 
 ```js
 const header = document.getElementById("heading");
-header.innerHTML = "Hey!"
+header.innerHTML = "Hey!";
 ```
+
+这些就是指令，去选择 id 为 heading 的元素，然后把这个元素中的 HTML 设置为 Hey! ，这一切都是同步的。
 
 ## 2.6 类
 
