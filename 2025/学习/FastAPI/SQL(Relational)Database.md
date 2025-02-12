@@ -20,7 +20,7 @@ class Hero(SQLModel, table=True):
 # Code below omitted 👇
 ```
 
-**创建引擎**
+### **创建引擎**
 
 SQLModel 引擎（实际上就是 sqlalchemy 引擎）负责保持到数据库的连接。
 
@@ -38,16 +38,22 @@ engine = create_engine(sqlite_url, connect_args=connect_args)
 
 Don't worry, with the way the code is structured, we'll make sure we use **a single SQL Model _session_ per request** later, this is actually what the `check_same_thread` is trying to achieve.
 
-**创建表**
+### **创建表**
 
 ```python
 def create_db_and_tables():
 	SQLModel.metadata.create_all(engine)
 ```
 
+`SQLModel.metadata.create_all(engine)` 的主要作用是在应用启动时**首次创建数据库表**。它的行为是：
+
+- **检查表是否存在：** 它会检查数据库中是否已经存在与你的 SQLModel 模型（例如 `Item`）相对应的表。
+- **如果表不存在则创建：** 如果表不存在，`create_all()` 会根据你的模型定义（字段、类型、约束等）在数据库中创建新的表。
+- **如果表已存在则不做任何操作：** **如果表已经存在，`create_all()` 就不会执行任何操作，它不会尝试去比较模型定义和数据库表的结构，也不会自动修改已有的表结构。** 它主要负责的是 **创建**，而不是 **维护** 或 **迁移** 表结构。
 
 
-**创建一个会话依赖 session dependency**
+
+### **创建一个会话依赖 session dependency**
 
 一个 Session 将对象存储在内存中，并跟踪数据中所需要的任何更改，然后使用引擎和数据库进行交互。
 
@@ -63,7 +69,7 @@ def get_session():
 SessionDep = Annotated[Session, Depends(get_session)]
 ```
 
-**启动时创建数据库表**
+### **启动时创建数据库表**
 
 ```python
 app = FastAPI() 
