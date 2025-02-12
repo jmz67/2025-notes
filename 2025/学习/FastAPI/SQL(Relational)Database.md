@@ -34,5 +34,5 @@ connect_args = {"check_same_thread": False}
 engine = create_engine(sqlite_url, connect_args=connect_args)
 ```
 
-
+使用 check_same_thread=False 允许 FastAPI 在不同的线程中使用相同的 SQLite 数据库。这是必要的，y'wei
 
