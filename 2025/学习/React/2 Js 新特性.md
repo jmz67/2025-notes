@@ -14,7 +14,9 @@ header.innerHTML = "Hey!";
 
 ### 2.5.1 使用 fetch 处理简单的 promise
 
-在以前，请求 REST API 是一件非常
+在以前，请求 REST API 是一件非常复杂的事情，为了将数据加载进入应用中，需要编写 20 多行的代码，后来 fetch 的出现拯救了我们，感谢 ECMAScript 的这一善举。
+
+
 
 ## 2.6 类
 
