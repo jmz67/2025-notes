@@ -4,4 +4,23 @@
 
 Js 支持函数式编程，因为在 Js 中，函数是一等成员。这意味着，变量可以做到的事情函数都可以做到。最新的 Js 句法对这门语言做了一些改进，使用函数式编程更加方便了，例如箭头函数，promise 和展开运算符。
 
-在 Js 中，函数可以表示应Y
+在 Js 中，函数可以表示应用的数据。你应该已经注意到了，函数可以使用 var，let 或是 const 关键字声明，就像声明字符串，数字等变量一样。
+
+```js
+var log = function(message) {
+    console.log(message);
+};
+
+log("In js, function are variables")
+```
+
+这个函数还可以使用箭头函数句法来编写。函数式程序员经常编写小巧的函数，箭头函数句法大大简化了这个过程。
+
+```js
+const log = message => {
+    console.log(message);
+};
+```
+
+由于函数是变量，那就可以把函数添加到对象中去。
+
