@@ -119,5 +119,20 @@ go build -o myhello.exe hello.go
 常用的转义字符有如下：
 
 1. \t 表示一个制表符
+2. \n 表示换行符
+3. \r 表示回车，表示从当前行的最前面开始输出，覆盖掉以前的内容
+4. 
+
+```
+package main
+
+import "fmt" // fmt 包中主要提供格式化，输出，输入的函数
+
+func main() {
+    // 演示转义字符的使用
+    fmt.Println("tom\tjack")
+}
+```
+
 
 
