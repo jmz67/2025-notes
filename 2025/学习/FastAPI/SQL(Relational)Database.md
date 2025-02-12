@@ -49,5 +49,13 @@ def create_db_and_tables():
 
 一个 Session 将对象存储在内存中，并跟踪数据中所需要的任何更改，然后使用引擎和数据库进行交互。
 
-我们将创建一个 FastAPI 依赖项，它将保证为每个请求提供一个新的 Session 。这确保了我们du
+我们将创建一个 FastAPI 依赖项，它将保证为每个请求提供一个新的 Session 。这确保了我们对每个请求使用单个会话，而减少冲突。
+
+Then we create an `Annotated` dependency `SessionDep` to simplify the rest of the code that will use this dependency.
+
+```python
+def get_session():
+	with Session(engine) as session:
+		yield se
+```
 
