@@ -47,5 +47,7 @@ def create_db_and_tables():
 
 **创建一个会话依赖 session dependency**
 
-一个 Session 将对象存储在内存中，并跟踪数据中所需要的任何更改
+一个 Session 将对象存储在内存中，并跟踪数据中所需要的任何更改，然后使用引擎和数据库进行交互。
+
+我们将创建一个 FastAPI 依赖项，它将保证为每个请求提供一个新的 Session 。这确保了我们du
 
