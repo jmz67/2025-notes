@@ -32,4 +32,8 @@ log("log a message");
 freel.print();
 ```
 
-导入的模块变量也可以
+导入的模块变量也可以放在其他变量名下面：
+
+```js
+import {print as p, log as l} from "./text-helper"
+```
