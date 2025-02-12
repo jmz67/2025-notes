@@ -87,6 +87,7 @@ def on_startup():
 	create_db_and_tables()
 ```
 
+此处，在应用程序启动事件中，我们创建了表。而对于生产环境，我们可能需要一个可以在启动程序之前运行的迁移脚本。SQLModel 将会拥有封装 Alembic 的迁移工具，但目前您可以直接使用 [Alembic](https://alembic.sqlalchemy.org/en/latest/)。
 
 ## 在多个数据模型下构建应用
 
