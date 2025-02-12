@@ -19,8 +19,10 @@ header.innerHTML = "Hey!";
 我们从 randomuser.me API 获取一些数据。这个 API 提供了电子邮件地址，姓名，电话号码，地理位置等成员信息，可以作为虚拟数据。fetch 函数只接受一个参数，也就是资源的 URL。
 
 ```js
-console.log(fetch("https://api."))
+console.log(fetch("https://api.randomuser.me/?nat=US&result=1"));
 ```
+
+在控制台中可以看到输出一个挂起的 promise。peo
 ## 2.6 类
 
 ## 2.7 ES6 模块
