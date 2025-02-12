@@ -18,4 +18,6 @@ export 可以导出供其他模块使用的任何 Js 类型。在这个示例中
 export default new Expedition("Mt. Freel", 2, ["water", "snack"]);
 ```
 
-如果只想要导出一个类型，就可以把 export 换成 export default 。同样，export 和 export default 都可以用于导出任何
+如果只想要导出一个类型，就可以把 export 换成 export default 。同样，export 和 export default 都可以用于导出任何 Js 类型：原始类型，对象，数组和函数。
+
+在其他文件中使用一个模块，可以使用 import 导入。导出多个对象的模块可以充分利用对象析构。使用 default 
