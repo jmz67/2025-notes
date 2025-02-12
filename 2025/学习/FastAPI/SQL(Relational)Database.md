@@ -4,6 +4,8 @@ SQLModel 是建立在 SQLAlchemy 和 Pydantic 之上的。
 pip install sqlmodel
 ```
 
+## 在单一数据模型下构建应用
+
 ```python
 from typing import Annotated
 
@@ -78,4 +80,7 @@ app = FastAPI()
 def on_startup(): 
 	create_db_and_tables()
 ```
+
+
+## 在多个数据模型下构建应用
 
