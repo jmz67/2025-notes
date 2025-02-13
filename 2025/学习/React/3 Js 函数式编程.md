@@ -99,4 +99,6 @@ const Welcome = () => (
 render(<Welcome />, document.getElementById("target"));
 ```
 
-React 是声明式的。这里，Welcome 组件描述了如何渲染 DOM。render 函数使用组件中声明的zhi
+React 是声明式的。这里，Welcome 组件描述了如何渲染 DOM。render 函数使用组件中声明的指令构建 DOM，隐藏了如何渲染 DOM 的细节信息。可以清楚地看出，我们想做的是在 ID 为 target 的元素中渲染 Welcome 组件。
+
+## 3。3 
