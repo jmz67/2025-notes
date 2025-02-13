@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/数字人初诊复诊.md",
+                "file": "学习/React/3 Js 函数式编程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "数字人初诊复诊"
+              "title": "3 Js 函数式编程"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/数字人初诊复诊.md",
+                "file": "学习/React/3 Js 函数式编程.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数字人初诊复诊 的大纲"
+              "title": "3 Js 函数式编程 的大纲"
             }
           }
         ],
@@ -172,6 +172,8 @@
   },
   "active": "9cc0667b5fc0a97b",
   "lastOpenFiles": [
+    "工作/工作日志/202502.md",
+    "工作/数字人初诊复诊.md",
     "学习/React/2 Js 新特性.md",
     "学习/React/3 Js 函数式编程.md",
     "学习/Go/03 Go 变量.md",
@@ -186,8 +188,6 @@
     "学习/Go/02 Golang 的概述.md",
     "学习/FastAPI/Dependencies.md",
     "学习/FastAPI/SQL(Relational)Database.md",
-    "工作/数字人初诊复诊.md",
-    "工作/工作日志/202502.md",
     "学习/React",
     "未命名.md",
     "学习/TailWindCSS & React & NikeWebDemo.md",
