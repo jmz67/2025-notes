@@ -59,5 +59,9 @@ console.log(urlFriendly);
 采用声明式编程风格的程序易于理解，因为代码本身就说明了在做什么。
 
 ```js
-
+const loadAndMapMembers = compose(
+    combineWith(sessionStorage, "members"),
+    ...
+)
 ```
+
