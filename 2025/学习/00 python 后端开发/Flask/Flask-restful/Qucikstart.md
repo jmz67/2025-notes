@@ -49,8 +49,14 @@ api.add_resource(
 While Flask provides easy access to request data (i.e. querystring or POST form encoded data), it is still a pain to validate form data. Flask-RESTful has built-in support for request data validation using a library similar to [argparse](http://docs.python.org/dev/library/argparse.html).
 
 ```python
+from flask_restful import requarse
 
+parser = requarse.RequestParser()
+parser.add_argument("rate", type=int, help="Rate to charge for this resource")
+args = parser.parse_args()
 ```
+
+
 
 
 
