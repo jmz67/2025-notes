@@ -58,4 +58,6 @@
 
 在单页应用中，浏览器只在开始时加载一个 HTML 文档。在用户浏览网站的过程中，始终待在同一个页面。用户不断与应用进行交互，Js 则不断销毁和创建新的用户界面。这给人感觉就像是从一个页面跳到了另一个页面，但是实际上你仍然在相同的 HTML 页面上，背后繁重的工作都交给了 Js 了。
 
-DOM API 是一系列对象，给 Js 和浏览器进行交互，修改 DOM。如果你曾经使用过 document.createElement 或是 document.appendChild
+DOM API 是一系列对象，给 Js 和浏览器进行交互，修改 DOM。如果你曾经使用过 document.createElement 或是 document.appendChild，那你就用过 DOM API。
+
+React 是代我们更新浏览器 DOM 的一个库。我们不再需要
