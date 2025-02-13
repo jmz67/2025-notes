@@ -48,5 +48,10 @@ console.log(urlFriendly)
 下面来看看我们如何使用声明式编程风格完成这一任务：
 
 ```js
+const string = "Restaurants in Hanalei";
+const urlFriendly = string.replace(/ /g, "-");
 
+console.log(urlFriendly);
 ```
+
+这里我们使用 string.replace 通过正则表达式把所有空格
