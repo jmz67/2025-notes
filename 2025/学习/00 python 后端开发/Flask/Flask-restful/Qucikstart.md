@@ -28,6 +28,29 @@ Flask-RESTful
 很多时候，在一个 API 中，你的资源会有多个 url。你可以通过多个 url 指向 Api 对象上的方法。Each one will be routed to your Resource.
 
 ```python
+api.add_resource(
+    HelloWorld,
+    '/',
+    '/hello'
+)
+```
+
+You can also match parts of the path as variables to your resource methods.
+
+```python
+api.add_resource(
+    Todo,
+    '/todo/<int:todo_id>', endpoint="todo_ep"
+)
+```
+
+### Argument Parsing 
+
+While Flask provides easy access to request data (i.e. querystring or POST form encoded data), it is still a pain to validate form data. Flask-RESTful has built-in support for request data validation using a library similar to [argparse](http://docs.python.org/dev/library/argparse.html).
+
+```python
 
 ```
+
+
 
