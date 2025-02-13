@@ -74,6 +74,11 @@ getFakeMembers(100).then(loadAndMapMembers);
 ```js
 const target = document.getElementById("target");
 const wrapper = document.createElement("div");
-const hea
+const headline = document.createElement("h1");
+
+wrapper.id = "welcome";
+headline.innerText = "Hello World";
+
+wrapper.appendChild
 ```
 
