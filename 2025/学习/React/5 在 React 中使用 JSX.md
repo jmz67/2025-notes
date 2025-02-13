@@ -7,6 +7,22 @@ JSX 是 JS 中的 JS 和 XML 中的 X 的综合体，是对 JS 的扩展，**使
 ## 5.1 使用 JSX 创建 React 元素
 
 ```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>React Samples</title>
+    </head>
+    <body>
+        <!-- 目标容器 -->
+        <div id="root"></div>
 
+        <!-- React 和 ReactDOM 库（开发版本） -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<!-- 引入 Babel，用于在线编译 JSX -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </body>
+</html>
 ```
 
