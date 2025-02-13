@@ -21,4 +21,14 @@ args = parse.parse_args()
 
 **Also note: Arguments declared in your request parser but not set in the request itself will default to None.**
 
-### 
+### Required Arguments 
+
+To require a value be passed for an argument, just add `required=True` to the call to `add_argument()` .
+
+```python
+parser.add_argument('name', required=True, help = "Name cannot be blank")
+```
+
+### Multiple Values & Lists
+
+如果你想要以列表的形式接受一个键的多个值
