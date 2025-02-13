@@ -89,5 +89,9 @@ if __name__ == '__main__':
 curl -X POST -H "Content-Type: application/json" -d "{\"rate\": 10}" http://127.0.0.1:5000/todos
 ```
 
+### Data Formatting
+
+在这里我们将介绍如何在 Flask-RESTful 中进行数据格式化，以便将 Python 对象序列化为合适在 HTTP 响应中返回的数据格式。
+
 
 
