@@ -142,3 +142,5 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
+在这里不加 @marshal_with(resource_fields) 装饰器的第二个接口会报错：TypeError: Object of type TodoDao is not JSON serializable
+
