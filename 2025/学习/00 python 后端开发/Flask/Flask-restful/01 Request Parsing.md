@@ -52,3 +52,10 @@ args["name"] # ["bob", "sue", "joe"]
 
 ### Argument Location 
 
+By default, the `RequestParser` tries to parse values from `flask.Request.values`, and `flask.Request.json`.
+
+Use the `location` argument to `add_argument()` to specify alternate locations to pull the values from. Any variable on the [`flask.Request`](https://flask.palletsprojects.com/en/2.3.x/api/#flask.Request "(in Flask v2.3.x)") can be used. For example：
+
+```python
+
+```
