@@ -31,5 +31,17 @@ const log = message => {
 为了充分理解声明式编程，要和命令式编程对比一下。命令式编程风格只关注如何使用代码得到结果。以一个常见的任务为例：让字符串符合 URL 格式要求。通常，我们要把字符串中的空格替换成连字符，因为空格不符合 URL 的格式要求。先使用命令式风格解决这个任务：
 
 ```js
+const string = "Restaurants in Hanalei";
+const urlFriendly = "";
 
+for (var i=0; i < string.length; i++) {
+    if(string[i] === " "){
+        urlFriendly += "-"
+    } else {
+        urlFriendly += string[i]
+    }
+}
+
+console.log(urlFriendly)
 ```
+
