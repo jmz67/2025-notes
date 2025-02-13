@@ -130,4 +130,7 @@ function rateColor(color, rating) {
     color.rating = rating;
     return color;
 }
+
+console.log(rateColor(color_lawn, 5).rating) // 5
+console.log()
 ```
