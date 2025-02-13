@@ -56,7 +56,38 @@ parser.add_argument("rate", type=int, help="Rate to charge for this resource")
 args = parser.parse_args()
 ```
 
+```python
+from flask import Flask
+from flask_restful import Api, Resource, reqparse
 
+app = Flask(__name__)
+api = Api(app)
+
+# 创建请求解析器
+parser = reqparse.RequestParser()
+parser.add_argument('rate', type=int, help='Rate to charge for this resource', required=True)
+
+class TodoResource(Resource):
+    def post(self):
+        # 解析请求数据
+        args = parser.parse_args()
+        
+        # 获取解析后的参数
+        rate = args['rate']
+        
+        # 假设返回 rate
+        return {'message': f'Resource rate is set to {rate}'}, 200
+
+# 将资源添加到 API 路由
+api.add_resource(TodoResource, '/todos')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+```
+curl -X POST -H "Content-Type: application/json" -d "{\"rate\": 10}" http://127.0.0.1:5000/todos
+```
 
 
 
