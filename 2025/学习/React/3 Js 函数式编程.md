@@ -79,6 +79,9 @@ const headline = document.createElement("h1");
 wrapper.id = "welcome";
 headline.innerText = "Hello World";
 
-wrapper.appendChild
+wrapper.appendChild(headline);
+target.appendChild(wrapper);
 ```
+
+这段代码涉及到创建元素，设置元素，以及把yu
 
