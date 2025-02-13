@@ -178,8 +178,6 @@ class Todo(Resource):
         del TODOS[todo_id]
         return '', 204
 
-  
-
     def put(self, todo_id):
         args = parser.parse_args()
         task = {'task': args['task']}
