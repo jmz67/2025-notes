@@ -31,4 +31,8 @@
 
 这是在浏览器中使用 React 需要做的最少的工作。你可以将 Js 代码放在单独的文件中，不过页面中加载时必须放在 React 后面。为了在浏览器控制台中看到所有错误消息和警告，我们使用的是 React 的开发版本。我们也可使用 react.production.min.js 和 react-dom.production.min.js ，换成供生产环境使用的简化版本，只是看不到警告消息了。
 
-## 4.2 React yuan'su
+## 4.2 React 元素
+
+简单来说，HTML 是一系列指令，让浏览器构建 DOM。浏览器加载 HTML 并渲染用户界面，构成 HTML 文档的元素变成 DOM 元素。
+
+比如说你想要一个菜谱
