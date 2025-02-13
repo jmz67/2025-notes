@@ -45,3 +45,8 @@ for (var i=0; i < string.length; i++) {
 console.log(urlFriendly)
 ```
 
+下面来看看我们如何使用声明式编程风格完成这一任务：
+
+```js
+
+```
