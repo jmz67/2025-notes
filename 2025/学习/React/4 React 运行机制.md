@@ -67,9 +67,20 @@ React 是代我们更新浏览器 DOM 的一个库。我们不再需要关心构
 我们可以使用 React.createElement 创建一个表示 h1 的 React 元素：
 
 ```html
-React.createElement("h1", {id: "recip"})
+React.createElement("h1", {id: "recipe-0"}, "Baked Salmon");
 ```
 
+第一个参数指定想要创建的元素类型，这里我们想创建的是一个 h1 元素。第二个参数设定元素的属性。这个 h1 有个 id 属性，值为 recipe-0 。第三个参数指定元素的子节点，即插入起始和结束标签之间的节点（这里只插入了一些文本）。
+
+渲染的时候，React 将把这个元素转换成真正的 DOM 元素：
+
+```html
+<h1 id="recipe-0">Baked Salmon</h1>
+```
+
+属性以类似的方式赋予新创建的 DOM 元素，添加到标签的属性中，而子节点则作为元素内的文本。React 组件实际上就是 JS 字面量，告知 React 如何构建 DOM 元素。
+
+在ko
 ## 4.3 React-DOM
 
 
