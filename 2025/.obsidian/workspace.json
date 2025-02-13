@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习/00 python 后端开发/Flask/Flask-restful/Untitled.md",
+                "file": "学习/00 python 后端开发/Flask/Untitled.md",
                 "mode": "source",
                 "source": false
               },
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/00 python 后端开发/Flask/Flask-restful/Untitled.md",
+                "file": "学习/00 python 后端开发/Flask/Untitled.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -155,7 +155,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,16 +172,18 @@
   },
   "active": "7a9be7310d923272",
   "lastOpenFiles": [
-    "学习/00 python 后端开发/Flask/Flask-restful/02 Output fields.md",
-    "学习/00 python 后端开发/Flask/Flask-restful/Untitled.md",
-    "学习/00 python 后端开发/Flask/Flask-restful/01 Request Parsing.md",
     "学习/00 python 后端开发/Flask/Flask-restful/00 Qucikstart.md",
+    "学习/00 python 后端开发/Flask/Untitled.md",
+    "学习/00 python 后端开发/Flask/Flask-restful/01 Request Parsing.md",
+    "学习/00 python 后端开发/FastAPI/04 请求体.md",
     "学习/00 python 后端开发/FastAPI/03 查询参数.md",
+    "学习/00 python 后端开发/FastAPI/安全-第一步.md",
+    "学习/00 python 后端开发/Flask/Flask-restful/04 Intermediate Usage.md",
+    "学习/00 python 后端开发/Flask/Flask-restful/02 Output fields.md",
+    "学习/00 python 后端开发/Flask/Flask-restful/03 Extending Flask-RESTful.md",
     "学习/00 python 后端开发/Flask/Flask-restful",
     "学习/00 python 后端开发",
     "学习/00 python 后端开发/Flask",
-    "学习/00 python 后端开发/FastAPI/04 请求体.md",
-    "学习/00 python 后端开发/FastAPI/安全-第一步.md",
     "学习/FastAPI/05 查询参数和字符串校验.md",
     "工作/账号密码&常用信息.md",
     "学习/React/4 React 运行机制.md",
@@ -208,7 +211,6 @@
     "学习/学习日志",
     "工作/工作日志",
     "学习/Vue/6 组件进阶.md",
-    "学习/Vue/0 Vue 深入浅出.md",
     "工作/pictures/Pasted image 20250211103439.png",
     "工作/pictures/Pasted image 20250211102426.png"
   ]
