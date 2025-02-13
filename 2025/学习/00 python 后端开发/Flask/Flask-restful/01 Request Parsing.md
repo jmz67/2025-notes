@@ -31,4 +31,24 @@ parser.add_argument('name', required=True, help = "Name cannot be blank")
 
 ### Multiple Values & Lists
 
-如果你想要以列表的形式接受一个键的多个值
+如果你想要以列表的形式接受一个键的多个值，则可以传递 `action='append'`
+
+```python
+parser.add_argument('name', action='append')
+```
+
+这将允许你进行如下查询
+
+```python
+curl http://api.example.com -d "name=bob" -d "name=sue" -d "name=joe"
+```
+
+And your args will look like this 
+
+```python
+args = parser.parse_args()
+args["name"] # ["bob", "sue", "joe"]
+```
+
+### Argument Location 
+

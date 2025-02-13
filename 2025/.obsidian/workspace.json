@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/FastAPI/05 查询参数和字符串校验.md",
+                "file": "学习/00 python 后端开发/Flask/Flask-restful/01 Request Parsing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 05 查询参数和字符串校验"
+              "title": "Outline of 01 Request Parsing"
             }
           }
         ],
@@ -155,8 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
