@@ -72,6 +72,8 @@ getFakeMembers(100).then(loadAndMapMembers);
 下面再来看一个任务：构建文档对象模型（document object model，DOM）声明式方法关注的是如何构建 DOM：
 
 ```js
-
+const target = document.getElementById("target");
+const wrapper = document.createElement("div");
+const hea
 ```
 
