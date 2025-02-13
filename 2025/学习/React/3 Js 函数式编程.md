@@ -83,5 +83,11 @@ wrapper.appendChild(headline);
 target.appendChild(wrapper);
 ```
 
-这段代码涉及到创建元素，设置元素，以及把yu
+这段代码涉及到创建元素，设置元素，以及把元素添加进入文档中。这样一来就很难做出改动和添加的功能，或者扩充到 10000 行代码。
+
+下面我们来看看 react 组件以声明式的方式构建 DOM：
+
+```js
+
+```
 
