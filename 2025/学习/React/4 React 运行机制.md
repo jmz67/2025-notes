@@ -37,5 +37,18 @@
 
 比如说你想要一个菜谱构建 HTML 层次结构。这项任务可能的一种实现方案如下所示：
 
+```html
+<section id="baked-salmon">
+    <h1>Baked Salmon</h1>
+    <ul class="ingredients">
+        <li>2 lb salmon</li>
+        <li>5 sprigs fresh rosemary</li>
+        <li>2 tablespoons olive oil</li>
+    </ul>
+    <section class="instruction">
+        <h2>Cooking Instruction</h2>
+        <p>....</p>
+    </section>
+</section>
 ```
-```
+
