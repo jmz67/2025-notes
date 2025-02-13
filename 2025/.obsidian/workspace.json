@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -172,6 +171,9 @@
   },
   "active": "7a9be7310d923272",
   "lastOpenFiles": [
+    "学习/Go/02 Golang 的概述.md",
+    "学习/Go/01 如何学习新技术.md",
+    "学习/Go/03 Go 变量.md",
     "学习/01 python 后端开发/Flask/01 快速开始.md",
     "学习/01 python 后端开发/Flask/Flask-restful/00 Qucikstart.md",
     "学习/01 python 后端开发/Flask/Flask-restful/01 Request Parsing.md",
@@ -193,11 +195,8 @@
     "学习/01 python 后端开发/FastAPI/SQL(Relational)Database.md",
     "学习/React/3 Js 函数式编程.md",
     "学习/TailWindCSS & React & NikeWebDemo.md",
-    "学习/Go/03 Go 变量.md",
     "Untitled.md",
     "学习/React/2 Js 新特性.md",
-    "学习/Go/01 如何学习新技术.md",
-    "学习/Go/02 Golang 的概述.md",
     "学习/React/REACT学习手册（第二版）.pdf",
     "学习/React",
     "学习/Go/pictures/Pasted image 20250212001121.png",
