@@ -62,6 +62,14 @@ DOM API 是一系列对象，给 Js 和浏览器进行交互，修改 DOM。如�
 
 React 是代我们更新浏览器 DOM 的一个库。我们不再需要关心构建高性能单页应用相关的复杂问题了，一切都交给了 React 。有了 React ，我们不再直接和 DOM API 进行交互，而是指明想让 React 构建什么，React 收到指令之后就会帮助我们渲染和协调元素。
 
+浏览器 DOM 由 DOM 元素组成，类似地，React DOM 由 React 元素组成。DOM 元素和 React 元素看着类似，其实区别很大。React 元素是真正的 DOM 元素的描述。换句话说，React 元素是如何创建浏览器 DOM 的指令。
+
+我们可以使用 React.createElement 创建一个表示 h1 的 React 元素：
+
+```html
+React.createElement("h1", {id: "recip"})
+```
+
 ## 4.3 React-DOM
 
 

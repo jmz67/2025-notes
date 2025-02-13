@@ -19,9 +19,31 @@ JSX 是 JS 中的 JS 和 XML 中的 X 的综合体，是对 JS 的扩展，**使
 
         <!-- React 和 ReactDOM 库（开发版本） -->
         <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-<!-- 引入 Babel，用于在线编译 JSX -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <!-- 引入 Babel，用于在线编译 JSX -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <scipt type="text/babel">
+            // 定义一个函数式组件 IngredientsList
+            function IngredientsList() {
+                const ingredients = [
+                    "Salmon",
+                    "Pine Nuts",
+                    "Butter Lettuce"
+                ];
+
+                return (
+                    <ul>
+                        {ingredients.map((ingredient, i) => (
+                            <li key={i}>{ingredient}</li>
+                        ))}
+                    </ul>
+                )
+            }
+
+            // 渲染 IngredientsList 组件到 DOM 中
+            ReactDOM.render(<IngredientsList />, document.getElementById("root"));
+        </script>
     </body>
 </html>
 ```
