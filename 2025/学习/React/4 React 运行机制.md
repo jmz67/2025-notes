@@ -7,5 +7,26 @@
 为了在浏览器中使用 React，我们需要引入两个库：React 和 ReactDOM。前者用于创建视图，后者则具体负责在浏览器中渲染 UI。这两个库都可以通过 unpkg CDN 引用（链接见下代码片段）。我们来创建一个 HTML 文档：
 
 ```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>React Samples</title>
+    </head>
+    <body>
+        <!-- 目标容器 -->
+        <div id="root"></div>
 
+        <!-- React 和 ReactDOM 库（开发版本） -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js">
+        </script>
+        <script src="https://unpkg.com/react@16/umd/react-dom.development.js">
+        </script>
+        <script>
+            // 纯 React 和 Js 代码
+        </script>
+    </body>
+</html>
 ```
+
+这是在浏览器中使用 React 需要做的zu
