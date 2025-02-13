@@ -35,8 +35,7 @@
               "title": "数字人初诊复诊"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/数字人初诊复诊.md",
+                "file": "学习/React/4 React 运行机制.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数字人初诊复诊 的大纲"
+              "title": "4 React 运行机制 的大纲"
             }
           }
         ],
@@ -185,12 +184,12 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "bf2f2c6c50040750",
+  "active": "9cc0667b5fc0a97b",
   "lastOpenFiles": [
+    "工作/数字人初诊复诊.md",
     "学习/React/4 React 运行机制.md",
     "学习/React/3 Js 函数式编程.md",
     "工作/工作日志/202502.md",
-    "工作/数字人初诊复诊.md",
     "学习/React/2 Js 新特性.md",
     "学习/Go/03 Go 变量.md",
     "学习/FastAPI/安全性.md",
