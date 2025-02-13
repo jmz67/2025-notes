@@ -88,6 +88,15 @@ target.appendChild(wrapper);
 下面我们来看看 react 组件以声明式的方式构建 DOM：
 
 ```js
+const { render } = ReactDOM;
 
+const Welcome = () => (
+    <div id="welcome">
+        <h1>Hello World</h1>
+    </div>
+);
+
+render(<Welcome />, document.getElementById("target"));
 ```
 
+React 是声明式的。这里，Welcome 组件描述了如何渲染 DOM。render 函数使用组件中声明的zhi
