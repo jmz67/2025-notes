@@ -1,3 +1,5 @@
+[Flask-RESTful — Flask-RESTful 0.3.10 documentation](https://flask-restful.readthedocs.io/en/latest/)
+
 一个最小的 Flask-RESTful-API 是这样的：
 
 ```python
