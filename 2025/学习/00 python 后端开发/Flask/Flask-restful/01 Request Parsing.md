@@ -57,5 +57,19 @@ By default, the `RequestParser` tries to parse values from `flask.Request.val
 Use the `location` argument to `add_argument()` to specify alternate locations to pull the values from. Any variable on the [`flask.Request`](https://flask.palletsprojects.com/en/2.3.x/api/#flask.Request "(in Flask v2.3.x)") can be used. For example：
 
 ```python
+# look only in the POST body 
+parser.add_argument("name", type=int, location="form")
 
+# look only in the querysrtring 
+parser.add_argument("PageSize", type=int, location="args")
+
+# From the request headers 
+parser.add_argument("User-Agent", location="args")
+
+# From http cookies
+parser.add_argument('session_id', location='cookies')
+
+# From file uploads
+parser.add_argument('picture', type=werkzeug.datastructures.FileStorage, location='files')
 ```
+
