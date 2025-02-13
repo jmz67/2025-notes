@@ -132,5 +132,7 @@ function rateColor(color, rating) {
 }
 
 console.log(rateColor(color_lawn, 5).rating) // 5
-console.log()
+console.log(color_lawn.rating) // 5
 ```
+
+**在 Js 中，函数的参数式对真正数据的引用**，像前例那样设置颜色的评分会更改或改变原颜色对象。
