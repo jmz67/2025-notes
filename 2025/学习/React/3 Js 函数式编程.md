@@ -62,6 +62,10 @@ console.log(urlFriendly);
 const loadAndMapMembers = compose(
     combineWith(sessionStorage, "members"),
     ...
-)
+);
+
+getFakeMembers(100).then(loadAndMapMembers);
 ```
+
+声明式方式易于理解和阅读，各个函数是如何shi'xain
 
