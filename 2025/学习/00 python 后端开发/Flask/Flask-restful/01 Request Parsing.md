@@ -15,4 +15,10 @@ args = parse.parse_args()
 
 请注意：默认参数的类型是 unicode 字符串。在 python3 里面是 str 在 python2 是 unicode 。
 
-如果你指定了 help 的值，它将被当作错误信息呈现每当进行参数解析的时候类型错误被发现的时候
+如果你指定了 help 的值，它将被当作错误信息呈现每当进行参数解析的时候类型错误被发现的时候。如果你未指定帮助信息，默认的行为是返回类型错误的消息本身。
+
+**By default, arguments are not required. Also, arguments supplied in the request that are not part of the RequestParser will be ignored.**
+
+**Also note: Arguments declared in your request parser but not set in the request itself will default to None.**
+
+### 
