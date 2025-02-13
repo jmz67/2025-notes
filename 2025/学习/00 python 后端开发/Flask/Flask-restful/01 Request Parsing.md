@@ -5,5 +5,14 @@ Flask-RESTful's request parsing interface, reqparse, is modeled after the argpar
 下面是请求解析器的一个简单示例，它寻找两个参数字典：一个整数一个字符串
 
 ```python
+from flask_restful import reqparse
 
+parser = reqparse.RequestParser()
+parser.add_argument('rate', type=int, help="Rate cannot be converted")
+parser.add_argument('name')
+args = parse.parse_args()
 ```
+
+请注意：默认参数的类型是 unicode 字符串。在 python3 里面是 str 在 python2 是 unicode 。
+
+如果你指定了 help 的值，它将被当作错误信息呈现每当进行参数解析的时候类型错误被发现的时候
