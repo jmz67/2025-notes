@@ -54,4 +54,10 @@ const urlFriendly = string.replace(/ /g, "-");
 console.log(urlFriendly);
 ```
 
-这里我们使用 string.replace 通过正则表达式把所有空格替换成了连字符。使用 string.replace 就是在描述应该做什么操作：把字符串中的空格替换掉。具体如何处理空格则隐藏在 replace 函数中。在采用声明式编程e'f
+这里我们使用 string.replace 通过正则表达式把所有空格替换成了连字符。使用 string.replace 就是在描述应该做什么操作：把字符串中的空格替换掉。具体如何处理空格则隐藏在 replace 函数中。在采用声明式编程风格的程序中，句法本身描述的式应该做什么事，至于怎么做则被隐藏起来了。
+
+采用声明式编程风格的程序易于理解，因为代码本身就说明了在做什么。
+
+```js
+
+```
