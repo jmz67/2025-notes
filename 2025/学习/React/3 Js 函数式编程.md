@@ -126,5 +126,8 @@ let color_lawn = {
 我们可以构建一个函数为颜色打分，使用这个函数更改 color 对象的评分。
 
 ```js
-
+function rateColor(color, rating) {
+    color.rating = rating;
+    return color;
+}
 ```
