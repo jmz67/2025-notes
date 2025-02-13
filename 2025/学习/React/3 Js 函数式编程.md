@@ -67,5 +67,5 @@ const loadAndMapMembers = compose(
 getFakeMembers(100).then(loadAndMapMembers);
 ```
 
-声明式方式易于理解和阅读，各个函数是如何shi'xain
+声明式方式易于理解和阅读，各个函数是如何实现的都隐藏了起来。这些小巧的函数命名合理，而且以一种清晰明了的方式组合在一起，一眼就可以看出成员数据在加载之后保存起来了，然后又通过映射再打印出来。这种方式不需要duo
 
