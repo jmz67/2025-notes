@@ -22,3 +22,12 @@ if __name__ == "__main__":
 ### Resourceful Routing
 
 Flask-RESTful 
+
+### Endpoints 
+
+很多时候，在一个 API 中，你的资源会有多个 url。你可以通过多个 url 指向 Api 对象上的方法。Each one will be routed to your Resource.
+
+```python
+
+```
+
