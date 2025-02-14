@@ -210,7 +210,7 @@ const secretIngredients = [
 function IngredientsList() {
     return (
         <ul createName="ingredients">
-            {ingredients.map((ingredient) => (
+            {props.ingredients.map((ingredient) => (
                 <li key={ingredient}>
                     {ingredient}
                 </li>
