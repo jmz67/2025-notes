@@ -1,5 +1,6 @@
 {
   "cssTheme": "Atom",
   "theme": "obsidian",
-  "baseFontSize": 15
+  "baseFontSize": 15,
+  "textFontFamily": "微软雅黑"
 }
