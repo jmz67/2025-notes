@@ -145,7 +145,7 @@ ReactDOM.render(dish, document.getElementById("root"));
 这段代码在 DOM 中渲染标题元素，把一个 h1 元素添加到 id 为 root 的 div 元素（已经在 HTML 中定义）中。这个 div 元素在 body 标签内构建。
 
 ```html
-
+<dody>
 ```
 ## 4.4 React 组件
 
