@@ -82,11 +82,154 @@ React.createElement("h1", {id: "recipe-0"}, "Baked Salmon");
 
 在控制台中输出这个元素，我们会看到如下内容：
 
+<<<<<<< HEAD
 
 
 
+=======
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>React Samples</title>
+    </head>
+    <body>
+        <!-- 目标容器 -->
+        <div id="root"></div>
+
+        <!-- React 和 ReactDOM 库（开发版本） -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js">
+        </script>
+        <script src="https://unpkg.com/react@16/umd/react-dom.development.js">
+        </script>
+        <script>
+            const reactElement = React.createElement(
+                "h1", {"id": "recipe-0"}, "Baked Salmon"
+            );
+
+            ReactDOM.render(
+                reactElement,
+                document.getElementById("root")
+            );
+
+			console.log(reactElement);
+        </script>
+    </body>
+</html>
+```
+
+```html
+1. $$typeof: Symbol(react.element)
+2. key: null
+3. props: {id: 'recipe-0', children: 'Baked Salmon'}
+4. ref: null
+5. type: "h1"
+6. _owner: null
+7. _store: {validated: false}
+8. _self: null
+9. _source: null
+10. [[Prototype]]: Object
+```
+
+这是一个 React 元素的结构，其中一些字段是给 React 使用的，这些字段我们会在后续进行介绍。在这里我们先讲 type 和 props 字段。
+
+React 元素的 type 属性告诉 React 要创建的是什么类型的 HTML 或 SVG 元素。props 属性表示构建一个 DOM 元素所需要的数据和子元素。children 属性则表示嵌套显示在元素内的文本。
+>>>>>>> 14a225fc8db8e5d4943643c43382db61f3409311
 ## 4.3 React-DOM
 
+创建 React 元素之后，我们希望在浏览器中看到它的效果。ReactDOM 就提供了在浏览器中渲染 React 元素所需要的工具。渲染所需的 render 方法在 ReactDOM 中。
 
+React 元素，包括它的子元素，使用 ReactDOM.render 在 DOM 中渲染。我们想渲染的元素通过第一个参数传入，第二个参数是目标节点，即指明在哪里渲染元素。
+
+```js
+const dish = React.createElement("h1", null, "Baked Salmon");
+
+ReactDOM.render(dish, document.getElementById("root"));
+```
+
+这段代码在 DOM 中渲染标题元素，把一个 h1 元素添加到 id 为 root 的 div 元素（已经在 HTML 中定义）中。这个 div 元素在 body 标签内构建。
+
+```html
+<body>
+    <div id="root">
+        <h1>Baked Salmon</h1>
+    </div>
+</body>
+```
 ## 4.4 React 组件
+
+不管用户界面的体量多大，内容是什么，或者是用什么技术创建的，都是由不同的部件构成的。按钮，列表，标题，各个部件组合在一起构成完整的用户界面。
+
+在 React 中我们将这样的部件叫做组件。组件方便重用相同的结构，只需在结构中填充不同的数据即可。使用 React 构建用户界面，应当尽量考虑将元素分解为可以复用的片段。
+
+我们将编写一个函数创建组件，返回可用在用户界面中重复使用的部件。下面我们来编写一个函数，返回配料无序列表。我们把这个函数命名为 IngredientsList 。
+
+```js
+function IngredientsList() {
+    return React.createElement(
+        "ul",
+        { createName: "ingredients" },
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter")
+    );
+}
+
+ReactDOM.render(
+    React.createElement(IngredientsList, null, null),
+    document.getElementById("root")
+);
+```
+
+这个组件的名称为 IngredientsList 。上述函数输出的元素如下所示：
+
+```html
+<IngredientsList>
+  <ul class="ingredients">
+    <li>1 cup unsalted butter</li>
+    <li>2 cups sugar</li>
+    <li>3 large eggs</li>
+    <li>1 teaspoon vanilla extract</li>
+    <li>2 cups all-purpose flour</li>
+    <li>1 teaspoon baking powder</li>
+    <li>1/2 teaspoon salt</li>
+  </ul>
+</IngredientsList>
+```
+
+我们也可以先定义组件，然后再把数据传给组件，作为组件的属性。也就是说，如果组件可以动态渲染数据该多好？让我们去实现这种愿望：
+
+```js
+const secretIngredients = [
+    "1 cup unsalted butter",
+    "2 cups sugar",
+    "3 large eggs",
+    // ...
+];
+
+function IngredientsList(props) {
+    return React.createElement(
+        "ul",
+        { className: "ingredients" },
+        props.ingredients.map((ingredient, i) => React.createElement("li", {key: i}, ingredient))
+    );
+}
+```
+
+然后我们要通过 createElement 的第二个参数将 secretIngredients 传给 ingredients 属性：
+
+```js
+ReactDOM.render(
+    React.createElement(IngredientsList, {ingredients: secretIngredients}, null),
+    document.getElementById("root")
+)
+```
+
+现在我们来看一下 DOM。数据属性 ingredients 是一个数组，含有八种配料。我们使用一个循环创建各个 li 标签。因此可以把循环的索引设置为唯一的键。
 

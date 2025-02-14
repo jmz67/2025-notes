@@ -23,7 +23,7 @@ JSX 是 JS 中的 JS 和 XML 中的 X 的综合体，是对 JS 的扩展，**使
         <!-- 引入 Babel，用于在线编译 JSX -->
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-        <scipt type="text/babel">
+        <script type="text/babel">
             // 定义一个函数式组件 IngredientsList
             function IngredientsList() {
                 const ingredients = [
