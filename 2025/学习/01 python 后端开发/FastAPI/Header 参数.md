@@ -35,3 +35,17 @@ async def read_items(
 
 警告：注意，使用这个模式的时候要慎重，有些 HTTP 代理和服务器不支持使用带有下划线的请求头。
 
+```
+C:\Users\admin\Desktop\NtHealth\wenzhengSystem>curl -X GET http://127.0.0.1:8000/items/ -H "strange_header: test_value_curl"
+{"strange_header":"test_value_curl"}
+```
+
+## Header 参数模型
+
+如果你有一组相关的 header 参数，你可以创建一个 pydantic 模型来声明它们。这将允许你在多个地方能够重用模型，并且可以一次性声明所有参数的验证和元数据。
+
+### 使用 Pydantic 模型的 Header 参数
+
+```python
+
+```
