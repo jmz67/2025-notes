@@ -45,3 +45,30 @@ Star 组件渲染单个星标，根据 selected 属性的值填充相应的颜�
 
 五星评价系统十分流行，不过十星评价系统更为精准。在开发者把这个组件添加到自己的应用中时，我们应该让他们自行选择想使用多少颗星。为此，要在 StarRating 组件中添加一个 totalStar 属性：
 
+```js
+const createArray = length => [...Array(length)]
+
+export default function StarRating({totalStar=5}) {
+    return createArray(totalStars).map((n, i) => <Star key={i} />)
+}
+```
+
+
+## 6.2 useState 钩子
+
+
+
+## 6.3 为提高可重用性而重构
+
+
+## 6.4 组件树中的状态
+
+
+### 6.4.1 沿组件树向下发送状态
+
+
+### 6.4.2 沿组件树向上发送交互
+
+
+## 6.5 构建表单
+
