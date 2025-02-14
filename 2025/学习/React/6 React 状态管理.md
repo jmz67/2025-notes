@@ -16,5 +16,22 @@ StartRating 组件供用户为内容打分，给出心目中的星级数。较�
 npm i react-icons
 ```
 
-react-icons 是一个 npm 库，以 React 组件的形式分发，包含数百个 SVG 图标。安装这个库之后，我们便可以使用数个流行的图标库中的数百个 SVG 图标。这个库中包含的全部图标可以到它的网站中查看 https://react-icons.netlify.com 。我们将使用 Font Awesome 中的星标：
+react-icons 是一个 npm 库，以 React 组件的形式分发，包含数百个 SVG 图标。安装这个库之后，我们便可以使用数个流行的图标库中的数百个 SVG 图标。这个库中包含的全部图标可以到它的网站中查看 [React Icons](https://react-icons.github.io/react-icons/) 。我们将使用 Font Awesome 中的星标：
+
+```js
+import React from "react"
+import {FaStar} from 'react-icons/fa'
+
+export default function StarRating() {
+    return [
+        <FaStar color="red" />,
+        <FaStar color="red" />,
+        <FaStar color="red" />,
+        <FaStar color="red" />,
+        <FaStar color="red" />
+    ];
+}
+```
+
+这里，我们创建一个 StarRating 组件，渲染从 react-icons 中导入的五个 SVG 星标。前三个星标填充红色，后两个填充灰色。首先渲染星标，是为了让自己知道要构建什么。我们将把选中的星标填充为红色，而未选中的则填充为灰色。下面来创建一个组件，根据 selected 属性自动为星标填充颜色：
 
