@@ -83,9 +83,23 @@ React.createElement("h1", {id: "recipe-0"}, "Baked Salmon");
 在控制台中输出这个元素，我们会看到如下内容：
 
 ```html
+1. $$typeof: Symbol(react.element)
+2. key: null
+3. props: {id: 'recipe-0', children: 'Baked Salmon'}
+4. ref: null
+5. type: "h1"
+6. _owner: null
+7. _store: {validated: false}
+8. _self: null
+9. _source: null
+10. [[Prototype]]: Object
 ```
+
+这是一个 React 元素的结构，其中一些字段是给 React 使用的，这些字段我们会在后续进行介绍。在这里我们先讲 type 和 props 字段。
+
+React 元素的 type 属性告诉 React 要创建的是什么类型的 HTML 或 SVG 元素。props 属性表示构建一个 DOM 元素所需要的数据和子元素。children 属性则表示嵌套显示在元素内的文本。
 ## 4.3 React-DOM
 
-
+创建 React 元素之后，我们希望在浏览器中看到它的效果。ReactDOM 就提供了在浏览器中渲染 React 元素所需要的g'ju
 ## 4.4 React 组件
 
