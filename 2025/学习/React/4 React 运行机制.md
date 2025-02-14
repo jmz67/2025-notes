@@ -160,5 +160,29 @@ ReactDOM.render(dish, document.getElementById("root"));
 我们将编写一个函数创建组件，返回可用在用户界面中重复使用的部件。下面我们来编写一个函数，返回配料无序列表。我们把这个函数命名为 IngredientsList 。
 
 ```js
+function IngredientsList() {
+    return React.createElement(
+        "ul",
+        { createName: "ingredients" },
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter"),
+        React.createElement("li", null, "1 cup unsalted butter")
+    );
+}
+
+ReactDOM.render(
+    React.createElement(IngredientsList, null, null),
+    document.getElementById("root")
+);
+```
+
+这个组件的名称为 IngredientsList 。上述函数输出的元素如下所示：
+
+```html
 
 ```
