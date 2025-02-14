@@ -170,43 +170,6 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "floating": {
-    "id": "d2cc7da93714c23b",
-    "type": "floating",
-    "children": [
-      {
-        "id": "58df273dbf9ffa4f",
-        "type": "window",
-        "children": [
-          {
-            "id": "2497ca64d7a1b233",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "67ae14d454718738",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "学习/React/REACT学习手册（第二版）.pdf"
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "REACT学习手册（第二版）"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 0,
-        "y": 0,
-        "width": 720,
-        "height": 852,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
   "active": "1ee115c976277ba4",
   "lastOpenFiles": [
     "学习/React/REACT学习手册（第二版）.pdf",
