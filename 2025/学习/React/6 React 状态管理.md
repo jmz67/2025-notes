@@ -27,11 +27,21 @@ export default function StarRating() {
         <FaStar color="red" />,
         <FaStar color="red" />,
         <FaStar color="red" />,
-        <FaStar color="red" />,
-        <FaStar color="red" />
+        <FaStar color="grey" />,
+        <FaStar color="grey" />
     ];
 }
 ```
 
 这里，我们创建一个 StarRating 组件，渲染从 react-icons 中导入的五个 SVG 星标。前三个星标填充红色，后两个填充灰色。首先渲染星标，是为了让自己知道要构建什么。我们将把选中的星标填充为红色，而未选中的则填充为灰色。下面来创建一个组件，根据 selected 属性自动为星标填充颜色：
+
+```js
+const Star = ({ selected = false }) => {
+    <FaStar color={selected ? "red" : "grey"} />
+};
+```
+
+Star 组件渲染单个星标，根据 selected 属性的值填充相应的颜色。如果没有把 selected 属性传给该组件，我们假定没有选中当前星标，填充默认的灰色。
+
+五星评价系统十分流行，不过十星评价系统更为精准。在开发者把这个组件添加到自己的应用中时，我们应该让他们自行选择想使用多少颗星。为此，要在 StarRating 组件中添加一个 totalStar 属性：
 
