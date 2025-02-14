@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/数字人初诊复诊.md",
+                "file": "工作/账号密码&常用信息.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "数字人初诊复诊"
+              "title": "账号密码&常用信息"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -209,8 +208,8 @@
   },
   "active": "1ee115c976277ba4",
   "lastOpenFiles": [
-    "工作/工作日志/202502.md",
     "工作/数字人初诊复诊.md",
+    "工作/工作日志/202502.md",
     "工作/账号密码&常用信息.md",
     "学习/React/4 React 运行机制.md",
     "学习/React/REACT学习手册（第二版）.pdf",
