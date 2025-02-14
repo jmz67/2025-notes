@@ -134,6 +134,18 @@ React 元素的 type 属性告诉 React 要创建的是什么类型的 HTML 或 
 
 创建 React 元素之后，我们希望在浏览器中看到它的效果。ReactDOM 就提供了在浏览器中渲染 React 元素所需要的工具。渲染所需的 render 方法在 ReactDOM 中。
 
-React 元素，包括它的子元素，使用 ReactDOM.render 在 DOM 中渲染。我们想渲染的元素通过第一个参数传入，第二个参数是目标节点，即指明在n
+React 元素，包括它的子元素，使用 ReactDOM.render 在 DOM 中渲染。我们想渲染的元素通过第一个参数传入，第二个参数是目标节点，即指明在哪里渲染元素。
+
+```js
+const dish = React.createElement("h1", null, "Baked Salmon");
+
+ReactDOM.render(dish, document.getElementById("root"));
+```
+
+这段代码在 DOM 中渲染标题元素，把一个 h1 元素添加到 id 为 root 的 div 元素（已经在 HTML 中定义）中。这个 div 元素在 body 标签内构建。
+
+```html
+
+```
 ## 4.4 React 组件
 
