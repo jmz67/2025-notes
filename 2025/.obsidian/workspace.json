@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -169,8 +168,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "6459d5b23b66bedf",
+  "active": "cb1e191864876a76",
   "lastOpenFiles": [
+    "学习/Untitled",
     "学习/React/5 在 React 中使用 JSX.md",
     "学习/React/6 React 状态管理.md",
     "学习/Go/00 入门/05 查找重复的行.md",
@@ -205,7 +205,6 @@
     "学习/01 python 后端开发/FastAPI/03 查询参数.md",
     "学习/01 python 后端开发/FastAPI/安全-第一步.md",
     "学习/01 python 后端开发/Flask/Flask-restful/04 Intermediate Usage.md",
-    "学习/01 python 后端开发/Flask/Flask-restful/02 Output fields.md",
     "学习/01 python 后端开发/Flask/Flask-restful",
     "学习/01 python 后端开发",
     "学习/01 python 后端开发/Flask",
