@@ -200,5 +200,31 @@ ReactDOM.render(
 我们也可以先定义组件，然后再把数据传给组件，作为组件的属性。也就是说，如果组件可以动态渲染数据该多好？让我们去实现这种愿望：
 
 ```js
+const secretIngredients = [
+    "1 cup unsalted butter",
+    "2 cups sugar",
+    "3 large eggs",
+    // ...
+];
 
+function IngredientsList() {
+    return (
+        <ul createName="ingredients">
+            {ingredients.map((ingredient) => (
+                <li key={ingredient}>
+                    {ingredient}
+                </li>
+            ))}
+        </ul>
+    )
+};
+```
+
+然后我们要通过 createElement 的第二个参数将 secretIngredients 传给 ingredients 属性：
+
+```js
+ReactDOM.render(
+    React.createElement(IngredientsList, {ingredients: secretIngredients}, null),
+    document.getElementById("root")
+)
 ```
