@@ -179,7 +179,8 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "vscode-editor:Create Code File": false
+      "vscode-editor:Create Code File": false,
+      "github-sync:Sync with Remote": false
     }
   },
   "active": "7a9be7310d923272",
