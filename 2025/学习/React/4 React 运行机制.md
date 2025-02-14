@@ -83,6 +83,38 @@ React.createElement("h1", {id: "recipe-0"}, "Baked Salmon");
 在控制台中输出这个元素，我们会看到如下内容：
 
 ```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>React Samples</title>
+    </head>
+    <body>
+        <!-- 目标容器 -->
+        <div id="root"></div>
+
+        <!-- React 和 ReactDOM 库（开发版本） -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js">
+        </script>
+        <script src="https://unpkg.com/react@16/umd/react-dom.development.js">
+        </script>
+        <script>
+            const reactElement = React.createElement(
+                "h1", {"id": "recipe-0"}, "Baked Salmon"
+            );
+
+            ReactDOM.render(
+                reactElement,
+                document.getElementById("root")
+            );
+
+			console.log(reactElement);
+        </script>
+    </body>
+</html>
+```
+
+```html
 1. $$typeof: Symbol(react.element)
 2. key: null
 3. props: {id: 'recipe-0', children: 'Baked Salmon'}
@@ -100,6 +132,8 @@ React.createElement("h1", {id: "recipe-0"}, "Baked Salmon");
 React 元素的 type 属性告诉 React 要创建的是什么类型的 HTML 或 SVG 元素。props 属性表示构建一个 DOM 元素所需要的数据和子元素。children 属性则表示嵌套显示在元素内的文本。
 ## 4.3 React-DOM
 
-创建 React 元素之后，我们希望在浏览器中看到它的效果。ReactDOM 就提供了在浏览器中渲染 React 元素所需要的g'ju
+创建 React 元素之后，我们希望在浏览器中看到它的效果。ReactDOM 就提供了在浏览器中渲染 React 元素所需要的工具。渲染所需的 render 方法在 ReactDOM 中。
+
+React 元素，包括它的子元素，使用 ReactDOM.render 在 DOM 中渲染。我们想渲染的元素通过第一个参数传入，第二个参数是目标节点，即指明在n
 ## 4.4 React 组件
 
