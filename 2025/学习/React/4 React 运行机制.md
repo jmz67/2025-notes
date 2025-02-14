@@ -184,5 +184,21 @@ ReactDOM.render(
 这个组件的名称为 IngredientsList 。上述函数输出的元素如下所示：
 
 ```html
+<IngredientsList>
+  <ul class="ingredients">
+    <li>1 cup unsalted butter</li>
+    <li>2 cups sugar</li>
+    <li>3 large eggs</li>
+    <li>1 teaspoon vanilla extract</li>
+    <li>2 cups all-purpose flour</li>
+    <li>1 teaspoon baking powder</li>
+    <li>1/2 teaspoon salt</li>
+  </ul>
+</IngredientsList>
+```
+
+我们也可以先定义组件，然后再把数据传给组件，作为组件的属性。也就是说，如果组件可以动态渲染数据该多好？让我们去实现这种愿望：
+
+```js
 
 ```
