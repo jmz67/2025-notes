@@ -207,11 +207,11 @@ const secretIngredients = [
     // ...
 ];
 
-function IngredientsList() {
+function IngredientsList(props) {
     return React.createElement(
         "ul",
         { className: "ingredients" },
-        items.map((ingredient, i) => React.createElement("li", {key: i}, ingredient))
+        props.ingredients.map((ingredient, i) => React.createElement("li", {key: i}, ingredient))
     );
 }
 ```
