@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1f41932c7dc4f182",
+        "id": "f94162f6b1147f90",
         "type": "tabs",
         "children": [
           {
-            "id": "7a9be7310d923272",
+            "id": "5be19e6d22cafc7c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,20 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "4 React 运行机制"
-            }
-          },
-          {
-            "id": "f71e094183cd5782",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/工作日志/202502.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "202502"
             }
           }
         ]
@@ -58,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -155,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/React/4 React 运行机制.md",
+                "file": "学习/FastAPI/03 查询参数.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 4 React 运行机制"
+              "title": "03 查询参数 的大纲"
             }
           }
         ],
@@ -174,58 +160,94 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
       "github-sync:Sync with Remote": false,
-      "vscode-editor:Create Code File": false
+      "vscode-editor:新建代码文件": false
     }
   },
-  "active": "7a9be7310d923272",
+  "floating": {
+    "id": "d2cc7da93714c23b",
+    "type": "floating",
+    "children": [
+      {
+        "id": "58df273dbf9ffa4f",
+        "type": "window",
+        "children": [
+          {
+            "id": "2497ca64d7a1b233",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "67ae14d454718738",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "学习/React/REACT学习手册（第二版）.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "REACT学习手册（第二版）"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 0,
+        "width": 720,
+        "height": 852,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "5be19e6d22cafc7c",
   "lastOpenFiles": [
-    "学习/React/5 在 React 中使用 JSX.md",
+    "学习/React/REACT学习手册（第二版）.pdf",
     "学习/React/4 React 运行机制.md",
-    "工作/工作日志/202502.md",
-    "学习/Go/00 入门/05 查找重复的行.md",
-    "学习/Go/00 入门/04 命令行参数.md",
-    "学习/Go/00 入门/03 Hello World.md",
-    "学习/Go/00 入门/02 Golang 的概述.md",
-    "学习/Go/00 入门/01 如何学习新技术.md",
-    "学习/Go/00 入门/pictures/Pasted image 20250214003907.png",
-    "学习/Go/00 入门/pictures",
-    "学习/Go/01 程序结构/03 Go 变量.md",
     "工作/数字人初诊复诊.md",
     "工作/账号密码&常用信息.md",
-    "学习/00 学习日志/202502.md",
-    "学习/Go/01 程序结构",
-    "学习/Go/入门/Untitled",
-    "学习/Go/00 入门",
+    "学习/FastAPI/03 查询参数.md",
+    "学习/React/5 在 React 中使用 JSX.md",
     "学习/Go/Web 服务.md",
-    "学习/01 python 后端开发/Flask/01 快速开始.md",
-    "学习/01 python 后端开发/Flask/Flask-restful/00 Qucikstart.md",
-    "学习/01 python 后端开发/Flask/Flask-restful/01 Request Parsing.md",
-    "学习/01 python 后端开发/FastAPI/04 请求体.md",
-    "学习/01 python 后端开发/FastAPI/03 查询参数.md",
-    "学习/01 python 后端开发/FastAPI/安全-第一步.md",
+    "学习/Go/01 程序结构/03 Go 变量.md",
+    "学习/Go/01 程序结构",
+    "学习/Go/00 入门/pictures/Pasted image 20250214003907.png",
+    "学习/Go/00 入门/03 Hello World.md",
+    "学习/Go/00 入门/pictures",
+    "学习/Go/00 入门/05 查找重复的行.md",
+    "学习/Go/00 入门/04 命令行参数.md",
+    "学习/Go/00 入门/02 Golang 的概述.md",
+    "学习/Go/00 入门/01 如何学习新技术.md",
+    "学习/Go/00 入门",
     "学习/01 python 后端开发/Flask/Flask-restful/04 Intermediate Usage.md",
     "学习/01 python 后端开发/Flask/Flask-restful/02 Output fields.md",
     "学习/01 python 后端开发/Flask/Flask-restful/03 Extending Flask-RESTful.md",
-    "学习/01 python 后端开发/Flask/Flask-restful",
-    "学习/01 python 后端开发",
-    "学习/01 python 后端开发/Flask",
-    "学习/FastAPI/05 查询参数和字符串校验.md",
-    "学习/01 python 后端开发/FastAPI/安全性.md",
+    "学习/01 python 后端开发/Flask/Flask-restful/01 Request Parsing.md",
+    "学习/01 python 后端开发/Flask/Flask-restful/00 Qucikstart.md",
     "学习/01 python 后端开发/FastAPI/SQL(Relational)Database.md",
-    "学习/React/3 Js 函数式编程.md",
-    "学习/React/REACT学习手册（第二版）.pdf",
+    "学习/01 python 后端开发/FastAPI/安全性.md",
+    "学习/01 python 后端开发/FastAPI/安全-第一步.md",
+    "学习/01 python 后端开发/FastAPI/Dependencies.md",
+    "学习/01 python 后端开发/FastAPI/04 请求体.md",
+    "学习/01 python 后端开发/FastAPI/03 查询参数.md",
+    "学习/01 python 后端开发/Flask/Flask-restful",
+    "学习/01 python 后端开发/Flask/01 快速开始.md",
+    "学习/01 python 后端开发/FastAPI",
+    "学习/01 python 后端开发/Flask",
+    "学习/01 python 后端开发",
+    "学习/00 学习日志/202502.md",
+    "学习/00 学习日志",
     "学习/React",
     "学习/Go/pictures/Pasted image 20250212001121.png",
     "学习/Go/pictures/Pasted image 20250212001014.png",
     "学习/Go/pictures/Pasted image 20250211233631.png",
-    "学习/Go/pictures",
     "工作/pictures/Pasted image 20250211103439.png",
     "工作/pictures/Pasted image 20250211102426.png"
   ]

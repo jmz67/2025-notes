@@ -80,7 +80,10 @@ React.createElement("h1", {id: "recipe-0"}, "Baked Salmon");
 
 属性以类似的方式赋予新创建的 DOM 元素，添加到标签的属性中，而子节点则作为元素内的文本。React 组件实际上就是 JS 字面量，告知 React 如何构建 DOM 元素。
 
-在ko
+在控制台中输出这个元素，我们会看到如下内容：
+
+```html
+```
 ## 4.3 React-DOM
 
 
