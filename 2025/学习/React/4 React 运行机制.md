@@ -208,16 +208,12 @@ const secretIngredients = [
 ];
 
 function IngredientsList() {
-    return (
-        <ul createName="ingredients">
-            {props.ingredients.map((ingredient) => (
-                <li key={ingredient}>
-                    {ingredient}
-                </li>
-            ))}
-        </ul>
-    )
-};
+    return React.createElement(
+        "ul",
+        { className: "ingredients" },
+        items.map((ingredient, i) => React.createElement("li", {key: i}, ingredient))
+    );
+}
 ```
 
 然后我们要通过 createElement 的第二个参数将 secretIngredients 传给 ingredients 属性：
