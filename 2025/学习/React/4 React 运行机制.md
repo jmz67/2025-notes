@@ -228,3 +228,6 @@ ReactDOM.render(
     document.getElementById("root")
 )
 ```
+
+现在我们来看一下 DOM。数据属性 ingredients 是一个数组，含有八种配料。我们使用一个循环创建各个 li 标签。因此可以把循环的索引设置为唯一的键。
+
