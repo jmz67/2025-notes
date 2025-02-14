@@ -66,3 +66,21 @@ class CommonHeaders(BaseModel):
 async def read_items(headers: Annotated[CommonHeaders, Header()]):
     return headers
 ```
+
+```
+C:\Users\admin\Desktop\NtHealth\wenzhengSystem>curl -X GET http://127.0.0.1:8000/items/ ^
+More? -H "Host: example.com" ^
+More? -H "Save-Data: true" ^
+More? -H "If-Modified-Since: Tue, 25 Jul 2023 10:00:00 GMT" ^
+More? -H "Traceparent: 00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-00" ^
+More? -H "X-Tag: tag1" ^
+More? -H "X-Tag: tag2"
+
+{"host":"example.com","save_data":true,"if_modified_since":"Tue, 25 Jul 2023 10:00:00 GMT","traceparent":"00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-00","x_tag":["tag1","tag2"]}
+```
+
+**FastAPI** 将从请求中接收到的 **headers** 中**提取**出**每个字段**的数据，并提供您定义的 Pydantic 模型。
+
+### 禁止额外的 Headers
+
+在某些特殊的情况下（可能不常见），我们可能希望限制想要
