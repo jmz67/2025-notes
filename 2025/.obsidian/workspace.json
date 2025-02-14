@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -180,15 +179,14 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "github-sync:Sync with Remote": false,
       "vscode-editor:Create Code File": false
     }
   },
   "active": "7a9be7310d923272",
   "lastOpenFiles": [
-    "学习/React/5 在 React 中使用 JSX.md",
-    "学习/React/4 React 运行机制.md",
     "工作/工作日志/202502.md",
+    "学习/React/4 React 运行机制.md",
+    "学习/React/5 在 React 中使用 JSX.md",
     "学习/Go/00 入门/05 查找重复的行.md",
     "学习/Go/00 入门/04 命令行参数.md",
     "学习/Go/00 入门/03 Hello World.md",
