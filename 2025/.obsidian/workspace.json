@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
+                "file": "学习/React/4 React 运行机制.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "账号密码&常用信息"
+              "title": "4 React 运行机制"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -208,11 +209,11 @@
   },
   "active": "1ee115c976277ba4",
   "lastOpenFiles": [
+    "学习/React/REACT学习手册（第二版）.pdf",
+    "学习/React/4 React 运行机制.md",
+    "工作/账号密码&常用信息.md",
     "工作/数字人初诊复诊.md",
     "工作/工作日志/202502.md",
-    "工作/账号密码&常用信息.md",
-    "学习/React/4 React 运行机制.md",
-    "学习/React/REACT学习手册（第二版）.pdf",
     "学习/FastAPI/03 查询参数.md",
     "学习/React/5 在 React 中使用 JSX.md",
     "学习/Go/Web 服务.md",
@@ -242,7 +243,6 @@
     "学习/01 python 后端开发/FastAPI",
     "学习/01 python 后端开发/Flask",
     "学习/01 python 后端开发",
-    "学习/00 学习日志/202502.md",
     "学习/00 学习日志",
     "学习/React",
     "学习/Go/pictures/Pasted image 20250212001121.png",
