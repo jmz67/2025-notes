@@ -47,5 +47,7 @@ C:\Users\admin\Desktop\NtHealth\wenzhengSystem>curl -X GET http://127.0.0.1:8000
 ### 使用 Pydantic 模型的 Header 参数
 
 ```python
+from typing import Annotated
 
+from fastapi import FastAPI, Header
 ```
