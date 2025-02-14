@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/React/4 React 运行机制.md",
+                "file": "学习/01 python 后端开发/Flask/01 快速开始.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 4 React 运行机制"
+              "title": "Outline of 01 快速开始"
             }
           }
         ],
@@ -169,8 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
