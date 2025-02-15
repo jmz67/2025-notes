@@ -90,5 +90,35 @@ parser.add_argument("text", location=['headers', 'values'])
 在开发 RESTful API 时， 你可能会为每个资源 resource 编写不同的解析器。如果这些解析器有共同的参数，可以通过继承来避免重复定义。
 
 ```python
+from flask_restful import reqparse 
 
+# 父解析器
+parser = reqparse.RequestParser()
+parser.add_argument('foo', type=int)
+
+# 复制父解析器并扩展
+parser_copy = parser.copy()
+parser_copy.add_argument('bar', type=int)
+
+# parser_copy 现在包含 'foo' 和 'bar'
 ```
+
+覆盖参数：可以使用 replace_argument() 方法覆盖父解析器中的参数。
+
+```python
+parser_copy.replace_argument('foo', required=True, location='json')
+```
+
+移除参数：可以使用 remove_argument() 方法完全移除某个参数。
+
+```python
+parser_copy.remove_argument('foo')
+```
+
+### 错误处理 Error Handling
+
+RequestParser 默认会在遇到第一个错误时终止解析，并返回错误信息。但有时你可能希望将所有错误信息一次性返回给客户端。
+
+**批量错误处理：**
+
+可以通过以下两种方式启用批量c
