@@ -90,7 +90,13 @@ export default function StarRating({totalStar=5}) {
 
 ### 6.6.1 把颜色放入上下文
 
+在 React 中使用上下文，首先要把数据放入上下文供应组件，并把供应组件添加到组件树中。我们使用 React 提供的 createContext 函数创建上下文对象。这个对象包含两个组件：一个上下文 Provider 和一个 Consumer 。
 
+下面我们把 color-data.json 文件中的默认颜色放入上下文中。我们将在应用的入口文件 index.js 中添加上下文。
+
+```js
+
+```
 
 ### 6.6.2 使用 useContext 获取颜色
 
