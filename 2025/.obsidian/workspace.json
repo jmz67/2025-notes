@@ -155,7 +155,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,8 +172,9 @@
   },
   "active": "6459d5b23b66bedf",
   "lastOpenFiles": [
-    "学习/01 python 后端开发/网络编程基础/01.md",
+    "学习/01 python 后端开发/流畅的 Python/Untitled.md",
     "学习/01 python 后端开发/流畅的 Python/01 Python 数据模型.md",
+    "学习/01 python 后端开发/网络编程基础/01.md",
     "学习/03 Vue/循序渐进Vue.js 3前端开发实战.pdf",
     "学习/04 Go/00 入门/09 Web 服务.md",
     "学习/04 Go/00 入门/02 Golang 的概述.md",
@@ -201,7 +203,6 @@
     "学习/01 python 后端开发/Flask/Flask-restful/04 Intermediate Usage.md",
     "学习/Untitled",
     "学习/02 React/5 在 React 中使用 JSX.md",
-    "工作/工作日志/202502.md",
     "学习/01 python 后端开发/Flask/pictures/Pasted image 20250214194655.png",
     "学习/01 python 后端开发/Flask/pictures/Pasted image 20250214184735.png",
     "学习/01 python 后端开发/Flask/pictures",
