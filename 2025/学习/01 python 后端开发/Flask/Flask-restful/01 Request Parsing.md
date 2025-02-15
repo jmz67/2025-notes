@@ -121,4 +121,26 @@ RequestParser 默认会在遇到第一个错误时终止解析，并返回错误
 
 **批量错误处理：**
 
-可以通过以下两种方式启用批量c
+可以通过以下两种方式启用批量错误处理：
+
+1. **全局配置：**
+
+在 Flask 应用中设置 BUNDLE_ERRORS 配置项为 True ：
+
+```python
+from flask import Flask 
+
+app = Flask(__name__)
+app.config['BUNDLE_ERRORS'] = True
+```
+
+但请注意，这是一个全局设置，会覆盖所有 `RequestParser` 实例中的 `bundle_errors` 选项。
+
+2. **实例配置：**
+
+在创建 RequestParser 时，通过 bundle_errors=True 参数启用批量错误处理：
+
+```python
+parser = reqparse.RequestParser(bundle_errors=True)
+```
+
