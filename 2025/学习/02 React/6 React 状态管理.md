@@ -158,7 +158,12 @@ export default function ColorList() {
 }
 ```
 
-这里，我们修改 ColorList 组件，删掉 `colors=[]` 属性，因为 colors 将从上下文中获取。为了从上下文中获取值，useContext 钩子要用到上下文hsi'li
+这里，我们修改 ColorList 组件，删掉 `colors=[]` 属性，因为 colors 将从上下文中获取。为了从上下文中获取值，useContext 钩子要用到上下文实例。为此，我们从创建上下文及把供应组件添加到组件树中的 index.js 文件里导入了 ColorContext 实例。现在，ColorList 可以根据上下文提供的数据构建用户界面了。
+
+#### 使用上下文消费组件
+
+
+
 ### 6.6.3 有状态的上下文供应组件
 
 
