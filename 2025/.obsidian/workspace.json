@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -169,8 +168,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "6459d5b23b66bedf",
+  "active": "cb1e191864876a76",
   "lastOpenFiles": [
+    "学习/03 Vue/循序渐进Vue.js 3前端开发实战.pdf",
     "学习/04 Go/00 入门/09 Web 服务.md",
     "学习/04 Go/00 入门/02 Golang 的概述.md",
     "学习/04 Go/00 入门/04 命令行参数.md",
