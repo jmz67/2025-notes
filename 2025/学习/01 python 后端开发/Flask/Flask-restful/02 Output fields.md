@@ -21,4 +21,18 @@ resource_fields 定义了哪些字段会被序列化并返回。
 
 marshal_with 装饰器，将数据对象通过字段过滤后返回。它支持单个对象，字段和对象列表。
 
-envelope
+envelope 参数：可选参数，用于将结果包装在一个键下。例如返回的 JSON 数据会包含一个 resource 的键。
+
+```
+C:\Users\admin\Desktop\test>curl http://127.0.0.1:5000/todo
+{
+    "resource": {
+        "name": "John Doe",
+        "address": "123 Main St",
+        "date_updated": "Sat, 15 Feb 2025 09:39:38 -0000"
+    }
+}
+```
+
+
+
