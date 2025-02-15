@@ -11,6 +11,13 @@ Flask-RESTful 默认支持 JSON ，那么如何让 Flask-RESTful 支持其他格
 ```python
 @api.representation('application/json')
 def output_json(data, code, headers=None):
+    """
+    自定义 JSON 输出函数。
+    :param data: 要返回的数据。
+    :param code: HTTP 状态码。
+    :param headers: HTTP 响应头。
+    :return: Flask Response 对象。
+    """
     resp = make_response(json.dumps(data), code)
     resp.headers.extend(headers or {})
     return resp
@@ -21,4 +28,19 @@ def output_json(data, code, headers=None):
     - `data` 是要返回的数据。    
     - `code` 是 HTTP 状态码（比如 200 表示成功，404 表示找不到）。    
     - `headers` 是一些额外的信息，比如告诉客户端数据的类型。
+
+注意：Flask-RESTful 使用 Python 标准库中的 json 模块，而不是 Flask 的 flask.json 模块。这是因为 Flask 的 JSON 序列化器包含了一些不在 JSON 规范的功能。如果您的应用需要这些自定义的功能，我们可以安装上述方法替换掉默认的 JSON 表示，使用 Flask 的 JSON 模块。
+
+您可以通过在应用配置中提供 `RESTFUL_JSON` 属性来配置默认的 Flask-RESTful JSON 表示的格式化方式。这个设置是一个字典，其键对应于 `json.dumps()` 的关键字参数。
+
+```python
+class MyConfig(object):
+    RESTFUL_JSON = {
+        'separators': (', ', ': '),  # JSON 格式化时使用的分隔符
+        'indent': 2,                # JSON 缩进级别
+        'cls': MyCustomEncoder      # 自定义的 JSON 编码器
+    }
+```
+
+> **注意**：如果应用处于调试模式（`app.debug = True`），并且在 `RESTFUL_JSON` 配置设置中没有声明 `sort_keys` 或 `indent`，Flask-RESTful 将分别提供默认值 `True` 和 `4`。
 
