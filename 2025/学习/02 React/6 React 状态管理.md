@@ -95,8 +95,24 @@ export default function StarRating({totalStar=5}) {
 下面我们把 color-data.json 文件中的默认颜色放入上下文中。我们将在应用的入口文件 index.js 中添加上下文。
 
 ```js
+import React, { createContext } from "react";
+import colors from "./color-data";
+import { render } from "react-dom";
+import App from "./App";
 
+export const ColorContext = creatContext();
+
+render(
+    <ColorContext.Provider value={{colors}}>
+        <App />
+    </ColorContext.Provider>,
+    document.getElementById("root")
+);
 ```
+
+我们使用 createContext 函数创建一个 React 上下文实例。名为 ColorContext 。这个颜色上下文包含两个组件：ColorContext.Provider 和 ColorContext.Consumer 。我们要使用供应组件把颜色放到状态中。把数据添加到上下文中的方法是为 Provider 的 value 属性设值。
+
+这里，我们把一个包含 colors 的对象添加
 
 ### 6.6.2 使用 useContext 获取颜色
 
