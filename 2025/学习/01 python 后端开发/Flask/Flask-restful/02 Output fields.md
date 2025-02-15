@@ -34,5 +34,23 @@ C:\Users\admin\Desktop\test>curl http://127.0.0.1:5000/todo
 }
 ```
 
+> 等效的显式写法：
 
+```python
+class Todo(Resource):
+    def get(self, **kwargs):
+        return marshal(db_get_todo(), resource_fields), 200
+```
 
+### 重命名属性
+
+有时，公开的字段名和内部字段名不同。你可以通过 attribute 参数配置这种映射。
+
+```python
+fields = {
+    'name': fields.String(attribute='private_name'),
+    'address': fields.String,
+}
+```
+
+也可以将 lambda 或任何ke
