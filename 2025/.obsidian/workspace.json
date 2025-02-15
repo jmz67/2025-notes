@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习/04 Go/00 入门/08 并发获取多个 URL.md",
+                "file": "学习/04 Go/00 入门/09 Web 服务.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08 并发获取多个 URL"
+              "title": "09 Web 服务"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -141,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/04 Go/00 入门/08 并发获取多个 URL.md",
+                "file": "学习/04 Go/00 入门/09 Web 服务.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 08 并发获取多个 URL"
+              "title": "Outline of 09 Web 服务"
             }
           }
         ],
@@ -155,7 +154,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,14 +171,15 @@
   },
   "active": "6459d5b23b66bedf",
   "lastOpenFiles": [
+    "学习/04 Go/00 入门/02 Golang 的概述.md",
+    "学习/04 Go/00 入门/04 命令行参数.md",
+    "学习/04 Go/00 入门/07 获取 URL.md",
     "学习/04 Go/00 入门/09 Web 服务.md",
     "学习/04 Go/00 入门/08 并发获取多个 URL.md",
     "学习/01 python 后端开发/网络编程基础/01.md",
     "学习/01 python 后端开发/流畅的 Python",
-    "学习/04 Go/00 入门/07 获取 URL.md",
     "学习/04 Go/00 入门/05 查找重复的行.md",
     "学习/04 Go/00 入门/03 Hello World.md",
-    "学习/04 Go/00 入门/02 Golang 的概述.md",
     "学习/04 Go/01 程序结构/02 声明.md",
     "学习/04 Go/01 程序结构/01 命名.md",
     "学习/04 Go/01 程序结构/03 Go 变量.md",
@@ -195,7 +196,6 @@
     "学习/01 python 后端开发/网络编程基础/02 IP 地址.md",
     "学习/01 python 后端开发/网络编程基础",
     "学习/04 Go/00 入门/pictures/Pasted image 20250215003355.png",
-    "学习/04 Go/00 入门/04 命令行参数.md",
     "学习/01 python 后端开发/Flask/Flask-restful/04 Intermediate Usage.md",
     "学习/Untitled",
     "学习/02 React/5 在 React 中使用 JSX.md",
