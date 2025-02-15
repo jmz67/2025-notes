@@ -3,5 +3,24 @@
 为了最简单的展示基于 HTTP 获取信息的方式，下面给出一个示例程序 fetch ，这个程序将获取对应的 url ，并将其源文本打印出来；这个例子的灵感来源于 curl 工具。。当然，curl 提供的功能更为复杂丰富，这里只编写最简单的样例。这个样例之后还会多次被用到。
 
 ```go
+// Fetch print the content found at a URL
+package main 
 
+import (
+    "fmt"
+    "io/ioutil"
+    "net/http"
+    "os"
+)
+
+func main() {
+    for _, url := range os.Args[1:] {
+        resp, err := http.Get(url)
+        if err != nil {
+            fmt.Fprintf(os.Stderr, )
+        }
+    }
+}
 ```
+
+这个程序从两个 package 中导入了函数，net/http 和 io/ioutil 包，
