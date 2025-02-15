@@ -158,8 +158,22 @@ export default function App() {
 App 组件位于组件树的根部。在这个组件中添加 useState 钩子就接入颜色的状态管理。在这个示例中，colorData 是前面给出的示例颜色数组。App 组件以 colorData 为 colors 的初始状态。然后把 colors 向下传给 ColorList 的组件。
 
 ```js
+import React from "react";
+import Color from "./Color";
 
+export default function ColorList({colors=[]}) {
+    if(!colors.length) return <div>No Colors Listed.</div>
+    return (
+        <div>
+            {
+                colors.map(color => <Color key={color.id} {...color} />)
+            }
+        </div>
+    );
+}
 ```
+
+
 
 ### 6.4.2 沿组件树向上发送交互
 
