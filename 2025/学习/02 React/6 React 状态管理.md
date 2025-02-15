@@ -66,8 +66,22 @@ import {FaStar} from "react-icons/fa"
 用户选中的星标数量表示评定的分值。我们将创建一个名为 selectedStars 的状态变量，存储用户评定的分值。我们直接在 StarRating 组件中使用 useState 钩子创建这个变量：
 
 ```js
-
+export default function StartRating({totalStars = 5}) {
+    const [selectedStars] = useState(3);
+    return (
+        <>
+            {createArray(totalStars).map((n, i)=>(
+                <Star key={i} selected={selectedStars > 1} />
+            ))}
+            <p>
+                {selectedStars} of {totalStars} stars
+            </p>
+        </>
+    );
+}
 ```
+
+
 ## 6.3 为提高可重用性而重构
 
 
