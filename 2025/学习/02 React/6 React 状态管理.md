@@ -142,7 +142,24 @@ export default function App() {
 
 ### 6.4.1 沿组件树向下发送状态
 
-这一步，我们把状态存储在 Color Organizer 应用的根组件（）
+这一步，我们把状态存储在 Color Organizer 应用的根组件（即 App 组件）中，然后把颜色向下传给子组件，负责渲染。在这个应用中，只有 App 组件持有状态。下面使用 useState 钩子把颜色列表添加到 App 组件中：
+
+```js
+import React, {useState} from "react";
+import colorData from "./color-data.json"
+import ColorList from "./ColorList.js"
+
+export default function App() {
+    const [colors] = useState(colorData);
+    return <ColorList colors={colors} />;
+}
+```
+
+App 组件位于组件树的根部。在这个组件中添加 useState 钩子就接入颜色的状态管理。在这个示例中，colorData 是前面给出的示例颜色数组。App 组件以 colorData 为 colors 的初始状态。然后把 colors 向下传给 ColorList 的组件。
+
+```js
+
+```
 
 ### 6.4.2 沿组件树向上发送交互
 
