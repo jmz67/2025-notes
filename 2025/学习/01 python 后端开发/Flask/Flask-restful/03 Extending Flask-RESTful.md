@@ -68,3 +68,29 @@ class MyCustomEncoder(json.JSONEncoder):
 
 ### 自定义字段和输入
 
+
+
+### 自定义错误处理器
+
+在请求过程中遇到某些错误时，您可能希望返回特定的消息或状态码。你可以告诉 Flask-RESTful 你想如何处理每个错误/异常，这样你就不必用 try/except 块填充你的 API 代码。
+
+```
+errors = {
+    'UserAlreadyExistsError': {
+        'message': "A user with that username already exists.",
+        'status': 409,
+    },
+    'ResourceDoesNotExist': {
+        'message': "A resource with that ID no longer exists.",
+        'status': 410,
+        'extra': "Any extra information you want.",
+    },
+}
+```
+
+```python
+app = Flask(__name__)
+api = flask_restful.Api(app, errors=errors)
+```
+
+Note: Custom Exceptions must have [`HTTPException`](https://werkzeug.palletsprojects.com/en/2.3.x/exceptions/#werkzeug.exceptions.HTTPException "(in Werkzeug v2.3.x)") as the base Exception.
