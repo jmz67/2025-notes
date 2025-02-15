@@ -99,6 +99,17 @@ const [selectedStars] = useState(3);
 
 ## 6.3 为提高可重用性而重构
 
+现在，Star 组件可以放到线上进行使用了。只要想从用户那里收集评分， 你的应用就可以使用这个组件。然而，如果你想把这个组件发布在 npm 上，供世界上的其他人使用，用于从用户那里收集评分，或许应该考虑再多处理几种情况。
+
+首先考虑 style 属性，这个属性的作用在于为元素添加 css 样式。其他开发者，甚至你自己，以后很有可能要修改这个容器的样式。届时你可能会这么做：
+
+```js
+export default function App() {
+    return <StarRating style={{backgroundColor: "lightblue"}} />;
+}
+```
+
+
 
 ## 6.4 组件树中的状态
 
