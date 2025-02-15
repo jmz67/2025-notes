@@ -81,6 +81,21 @@ export default function StartRating({totalStars = 5}) {
 }
 ```
 
+在 React 中使用 useState 钩子的时候，`const [selectedStars] = useState(3);` 这种语法涉及到 js 的数组解构特性。useState 钩子返回一个数组，这个数组包含两个元素：
+
+- 当前状态值
+- 函数，用于更新这个状态值的函数
+
+```jsx
+const [selectedStars, setSelectedStars] = useState(3);
+```
+
+使用解构，你可以只提取你关心的状态值，而忽略更新函数。例如，如果你只关心状态值而不需要直接访问更新函数，你可以这样做：
+
+```jsx
+const [selectedStars] = useState(3);
+```
+
 
 ## 6.3 为提高可重用性而重构
 
