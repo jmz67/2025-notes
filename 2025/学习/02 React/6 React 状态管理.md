@@ -141,9 +141,24 @@ export default function App() {
 加上钩子的辅助，使用上下文简直让人身心愉悦。useContext 钩子用于从上下文中获取值，它从上下文 Comsumer 中获取我们需要的值。ColorList 不用再从属性中获取 colors 数组，而是直接通过 useContext 钩子获取。
 
 ```js
+import React, {useContext} from "react";
+import {ColorContext} from "./";
+import Color from "./Color";
 
+export default function ColorList() {
+    const {colors} = useContext(ColorContext);
+    if (!colors.length) return <div>No Colors Listed. (Add a Color)</div>
+    return (
+        <div className="color-list">
+            {
+                colors.map(color => <Color key={color.id} {...color} />)
+            }
+        </div>
+    );
+}
 ```
 
+这里，我们修改 ColorList 组件，删掉 `colors=[]` 属性，因为 colors 将从上下文中获取。为了从上下文中获取值，useContext 钩子要用到上下文hsi'li
 ### 6.6.3 有状态的上下文供应组件
 
 
