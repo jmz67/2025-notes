@@ -56,8 +56,18 @@ export default function StarRating({totalStar=5}) {
 
 ## 6.2 useState 钩子
 
+现在是时候把 StarRating 组件变成可点击的了，即让用户改变 rating 的值。由于 rating 是个可变化的值，我们将使用 React 状态存储和修改它的值。状态通过 React 的 Hooks（钩子）特性纳入函数组件。Hooks 是一组可重用的代码逻辑，放在组件树之外，用于接入组件的功能。React 自带多个钩子，可以直接使用。这里，我们想为 React 组件添加状态，要使用的 React 钩子是 useState。这个钩子在 react 包中，导入即可：
 
+```js
+import React, {useState} from "react";
+import {FaStar} from "react-icons/fa"
+```
 
+用户选中的星标数量表示评定的分值。我们将创建一个名为 selectedStars 的状态变量，存储用户评定的分值。我们直接在 StarRating 组件中使用 useState 钩子创建这个变量：
+
+```js
+
+```
 ## 6.3 为提高可重用性而重构
 
 
