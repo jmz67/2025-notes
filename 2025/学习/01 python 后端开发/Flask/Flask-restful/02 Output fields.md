@@ -2,3 +2,23 @@ Flask-RESTful 提供了一种简单的方法来控制你在响应中实际渲染
 
 ### 基本用法（Basic Usage）
 
+```python
+from flask_restful import Resource, fields, marshal_with
+
+resource_fields = {
+    "name": fields.String,
+    "address": fields.String,
+    "data_updated": fields.DateTime(dt_format='rfc822'),
+}
+
+class Todo(Resource):
+    @marshal_with(resource_fields, envelop='resource')
+    def get(self, **kwargs):
+        return do_get_todo() # Some function that queries the db 
+```
+
+resource_fields 定义了哪些字段会被序列化并返回。
+
+marshal_with 装饰器，将数据对象通过字段过滤后返回。它支持单个对象，字段和对象列表。
+
+envelope
