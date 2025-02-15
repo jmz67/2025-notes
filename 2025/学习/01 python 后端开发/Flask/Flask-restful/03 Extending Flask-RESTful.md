@@ -34,13 +34,37 @@ def output_json(data, code, headers=None):
 您可以通过在应用配置中提供 `RESTFUL_JSON` 属性来配置默认的 Flask-RESTful JSON 表示的格式化方式。这个设置是一个字典，其键对应于 `json.dumps()` 的关键字参数。
 
 ```python
+# app.py
+
+from custom_encoder import MyCustomEncoder
+
 class MyConfig(object):
     RESTFUL_JSON = {
         'separators': (', ', ': '),  # JSON 格式化时使用的分隔符
         'indent': 2,                # JSON 缩进级别
         'cls': MyCustomEncoder      # 自定义的 JSON 编码器
     }
+
+app = Flask(__name__)
+
+app.config.from_object(MyConfig)
+```
+
+```python
+# custom_encoder.py
+
+import json 
+
+class MyCustomEncoder(json.JSONEncoder):
+    def default(self, obj):
+        # 如果需要处理特殊的数据类型，可以在这里实现
+        if isinstance(obj, set):
+            return list(obj)
+
+        return super().default(obj)
 ```
 
 > **注意**：如果应用处于调试模式（`app.debug = True`），并且在 `RESTFUL_JSON` 配置设置中没有声明 `sort_keys` 或 `indent`，Flask-RESTful 将分别提供默认值 `True` 和 `4`。
+
+### 自定义字段和输入
 
