@@ -112,7 +112,12 @@ render(
 
 我们使用 createContext 函数创建一个 React 上下文实例。名为 ColorContext 。这个颜色上下文包含两个组件：ColorContext.Provider 和 ColorContext.Consumer 。我们要使用供应组件把颜色放到状态中。把数据添加到上下文中的方法是为 Provider 的 value 属性设值。
 
-这里，我们把一个包含 colors 的对象添加
+这里，我们把一个包含 colors 的对象添加到上下文中。由于我们把整个 App 组件都放在供应组件中，因此 colors 数组可以供给整个组件树的任何上下文消费组件使用。注意，我们还导出了 ColorContext 。这是必须的一步，因为从上下文中获取 colors 时需要使用 ColorContext.Consumer 。
+
+> 上下文供应组件不是总要包含整个应用。有时也会包含部分特定的组件，这样效率更高。供应组件只为所含的子组件提供上下文值。
+> 一个应用中可以有多个上下文供应组件。其实，你可能已经在不知道的情况下在自己的 React 应用中使用了上下文供应组件。很多支持 React 的 npm 包在背后就使用上下文。
+
+现在，我们在上下文中提供了 colors 值，App 组件无需再持有状态，并通过属性xiang'xia
 
 ### 6.6.2 使用 useContext 获取颜色
 
