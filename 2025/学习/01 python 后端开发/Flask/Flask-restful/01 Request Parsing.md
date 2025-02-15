@@ -81,3 +81,14 @@ RequestParser 允许你从多个位置获取参数，例如请求头，请求体
 parser.add_argument("text", location=['headers', 'values'])
 ```
 
+**大小写敏感性**：如果列表中包含 `headers`，参数名称将不再区分大小写，必须与标题大小写（title case）完全匹配。例如，`Content-Type` 和 `content-type` 将被视为不同参数。
+
+**特殊情况**：如果单独指定 `location='headers'`（不作为列表），参数名称仍然保持大小写不敏感。
+
+### 解析器继承 Parser Inheritance 
+
+在开发 RESTful API 时， 你可能会为每个资源 resource 编写不同的解析器。如果这些解析器有共同的参数，可以通过继承来避免重复定义。
+
+```python
+
+```
