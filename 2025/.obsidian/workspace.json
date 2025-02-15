@@ -142,7 +142,7 @@
               "type": "outline",
               "state": {
                 "file": "学习/01 python 后端开发/网络编程基础/01.md",
-                "followCursor": false,
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -169,7 +169,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "6459d5b23b66bedf",
+  "active": "2ad6e507df75cf0f",
   "lastOpenFiles": [
     "学习/01 python 后端开发/网络编程基础/02 IP 地址.md",
     "学习/01 python 后端开发/网络编程基础/01.md",
