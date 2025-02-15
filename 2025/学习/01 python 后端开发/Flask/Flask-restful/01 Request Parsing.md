@@ -73,3 +73,11 @@ parser.add_argument('session_id', location='cookies')
 parser.add_argument('picture', type=werkzeug.datastructures.FileStorage, location='files')
 ```
 
+### 多位置参数
+
+RequestParser 允许你从多个位置获取参数，例如请求头，请求体等，我们可以通过将一个列表传递给 location 参数来指定多个位置。
+
+```python
+parser.add_argument("text", location=['headers', 'values'])
+```
+
