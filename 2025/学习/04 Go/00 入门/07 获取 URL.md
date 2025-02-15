@@ -23,4 +23,5 @@ func main() {
 }
 ```
 
-这个程序从两个 package 中导入了函数，net/http 和 io/ioutil 包，
+这个程序从两个 package 中导入了函数，net/http 和 io/ioutil 包，http.Get 函数是创建 HTTP 请求的函数，如果获取过程没有出错，那么会在 resp 这个结构体中得到访问的请求结果。resp 的 Body 字段包括了一个可读的服务器响应流。ioutil.ReadAll 函数从 response 中读取到全部内容；
+
