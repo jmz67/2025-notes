@@ -53,4 +53,21 @@ fields = {
 }
 ```
 
-也可以将 lambda 或任何ke
+也可以将 lambda 或任何可调用对象指定为属性：
+
+```python
+fields = {
+    "name": fields.String(attribute=lambda x: x._private_name),
+    "address": fields.String,
+}
+```
+
+也可以使用 attribute 访问嵌套属性
+
+```python
+fields = {
+    'name': fields.String(attribute='people_list.0.person_dictionary.name'),
+    'address': fields.String,
+}
+```
+
