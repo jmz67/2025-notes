@@ -122,12 +122,27 @@ render(
 App 组件的很多行代码都可以删除，现在该组件只需要渲染 AddColorForm 和 ColorList ，不用再关心数据：
 
 ```js
+import React from "react";
+import ColorList from "./ColorList";
+import AddColorForm from "./AddColorForm";
 
+export default function App() {
+    return (
+        <>
+            <AddColorForm />
+            <ColorList />
+        </>
+    );
+}
 ```
 
 ### 6.6.2 使用 useContext 获取颜色
 
+加上钩子的辅助，使用上下文简直让人身心愉悦。useContext 钩子用于从上下文中获取值，它从上下文 Comsumer 中获取我们需要的值。ColorList 不用再从属性中获取 colors 数组，而是直接通过 useContext 钩子获取。
 
+```js
+
+```
 
 ### 6.6.3 有状态的上下文供应组件
 
