@@ -7,21 +7,28 @@
 package main 
 
 import (
-    "fmt"
-    "io/ioutil"
-    "net/http"
-    "os"
+    "fmt" // 标准库，用于格式化输入输出
+    "io/ioutil" // 提供给 IO 的高级操作，如读取文件或网络响应
+    "net/http" // 提供 HTTP 客户端和服务器的实现
+    "os" // 提供和操作系统交互的功能
 )
 
 func main() {
     for _, url := range os.Args[1:] {
+        // 遍历命令行参数，跳过第一个参数，即程序名称
+        // 在这里是遍历每个 URL 
         resp, err := http.Get(url)
+        // 发送 HTTP GET 请求到指定的 URL 
         if err != nil {
+            // 如果发生错误，程序就会将错误信息打印到标准错误
             fmt.Fprintf(os.Stderr, "fetch: %v\n", err)
+            // 退出程序
             os.Exit(1)
         }
         b, err := ioutil.ReadAll(resp.Body)
+        // 读取 HTTP 响应的正文内容
         resp.Body.Close()
+        // 关闭响应体，释放资源
         if err != nil {
             fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
             os.Exit(1)
