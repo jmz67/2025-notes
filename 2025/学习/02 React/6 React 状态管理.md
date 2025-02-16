@@ -219,6 +219,11 @@ export default function Color({id, title, color, rating, onRemove = f => f}) {
 
 这里我们修改 Color 组件，添加了一个按钮，供用户删除颜色。首先，从 react-icons 中导入一个垃圾桶图标。然后，把 FaTrash 图标放在一个按钮中，再为这个按钮添加一个 onClick 处理函数，调用随 id 等一起传入的属性列表中的 onRemove 函数。用户点击 Remove 按钮后，调用 onRemove ，传入想删除的颜色的 id。鉴于此，我们才从 Color 组件的属性中获取 id 值。
 
+这个解决方法很好，因为保证了 Color 组件的纯粹性。Color 组件没有状态，可以轻易在应用中的其他部分，甚至是其他应用中重用。Color 组件不关心用户点击 Remove 按钮后会发生什么，它只负责通知父组件发生了这个事件，并传递用户想删除的颜色的有关信息。这个事件的处理责任在父级组件身上：
+
+```js
+
+```
 
 ## 6.5 构建表单
 
