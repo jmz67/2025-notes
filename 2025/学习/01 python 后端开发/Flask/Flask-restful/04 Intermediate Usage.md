@@ -55,3 +55,24 @@ api.add_resource(Baz, '/Baz', '/Baz/<string:id>')
 
 common 目录中的内容只是你希望用来支持资源模块的东西。
 
+### 使用蓝图
+
+查看 flask 文档中的蓝图部分，了解什么是蓝图以及为什么应该使用它们。以下是如何将一个 Api 连接到蓝图的示例：
+
+```python
+from flask import Flask, Blueprint 
+from flask_restful import Api, Resource, url_for
+
+app = Flask(__name__)
+api_bp = Blueprint('api', __name__)
+api = Api(api_bp)
+
+class TodoItem(Resource):
+    def get(self, id):
+        return {
+            "task": 'Say "Hello, World!"'
+        }
+
+api.add_resource(TodoItem, '/todos/<int:id>')
+app.register_blueprint(api_bp)
+```
