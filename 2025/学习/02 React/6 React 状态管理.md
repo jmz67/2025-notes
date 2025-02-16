@@ -264,7 +264,7 @@ export default function App() {
 
 在 React 中构建表单组件有好几种模式可以选择。在其中一个模式中，要使用 React 的一项特性直接访问 DOM 节点。这个特性称之为 ref 。在 React 中，ref 是一个对象，存储着一个组件整个生命周期内的值。ref 适合在几个场景下使用。本节介绍如何使用 ref 直接访问 DOM 节点。
 
-我们可以使用 React 提供的 useRef 钩子创建 ref。下面使用这个钩子创建 AddColorForm 组件。
+我们可以使用 React 提供的 useRef 钩子创建 ref。下面使用这个钩子创建 AddColorForm 组件。useRef 是 React 提供的一个钩子，用于创建 ref。它返回一个可变的引用对象，其 current 属性被初始化为传递的参数（`initialValue`）。这个对象将在组件的整个生命周期内持续存在。
 
 ```js
 import React, {useRef} from "react"
