@@ -37,6 +37,21 @@ class Foo(Resource):
 这个设置的关键在于 app.py 文件：
 
 ```python
+from flask import Flask 
+from flask_restful import Api 
+from myapi.resources.foo import Foo 
+from myapi.resources.bar import Bar 
+from myapi.resources.baz import Baz 
 
+app = Flask(__name__)
+api = Api(app)
+
+api.add_resource(Foo, '/Foo', '/Foo/<string:id>')
+api.add_resource(Bar, '/Bar', '/Bar/<string:id>')
+api.add_resource(Baz, '/Baz', '/Baz/<string:id>')
 ```
+
+你可以想象，在一个特别大或复杂的 API 中，这个文件最终会成为一个非常有价值的文件，因为它列出了 API 中的所有路由和资源。你还会使用这个文件来设置任何配置值（before_request() 、after_request() ）。基本上，这个文件配置了你的整个 API。
+
+common 目录中的内容只是你希望用来支持资源模块的东西。
 
