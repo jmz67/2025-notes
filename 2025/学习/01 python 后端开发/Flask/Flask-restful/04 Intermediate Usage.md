@@ -19,4 +19,24 @@ myapi/
         util.py     # 一些通用基础函数
 ```
 
-common 目录可能只包含一组用于应用中通用需求的辅助函数。它也可以包含例如资源所需的任何zi'd
+common 目录可能只包含一组用于应用中通用需求的辅助函数。它也可以包含例如资源所需的任何自定义输入输出类型。
+
+在资源文件中，我们只需要定义资源对象。以下是一个 foo.py 的示例：
+
+```python
+from flask_restful import Resource
+
+class Foo(Resource):
+    def get(self):
+        pass 
+
+    def post(self):
+        pass 
+```
+
+这个设置的关键在于 app.py 文件：
+
+```python
+
+```
+
