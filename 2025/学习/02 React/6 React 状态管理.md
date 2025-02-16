@@ -173,7 +173,11 @@ export default function ColorList({colors=[]}) {
 }
 ```
 
+Color 组件接受三个属性：title，color 和 rating。这些属性的值在各个 color 对象中，已经通过展开运算符 <Color {...color} /> 传给该组件。这样做，color 对象中的各个字段将使用和键相同的名称传给 Color 组件。Color 组件负责显示这些值。title 在一个 h1 元素渲染。color 值显示为一个 div 元素的背景色（backgroundColor）。rating 继续沿着组件树向下传递，传给 StarRating 组件，以着色的星标突出显示。
 
+```js
+
+```
 
 ### 6.4.2 沿组件树向上发送交互
 
