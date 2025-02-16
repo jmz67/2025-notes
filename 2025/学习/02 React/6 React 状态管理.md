@@ -291,8 +291,16 @@ return (
 ```
 
 ```js
-
+const submit = e = {
+    e.preventDefault();
+    const title = txtTitle.current.value;
+    const color = hexColor.current.value;
+    onNewColor(title, color);
+    txtTitle.current.value = "";
+    hexColor.current.value = "";
+};
 ```
+
 
 ## 6.6 React 上下文
 
