@@ -237,7 +237,25 @@ export default function ColorList({colors = [], onRemoveColor = f => f}) {
 }
 ```
 
-onRemoveColor 回调函数：ColorList 组件接受一个 onRemoveColor 回调函数，并将其传递给每个 Color 组件。事件代理：ColorList 组件作为中间层，将子组件的shi
+onRemoveColor 回调函数：ColorList 组件接受一个 onRemoveColor 回调函数，并将其传递给每个 Color 组件。事件代理：ColorList 组件作为中间层，将子组件的事件代理给父组件。
+
+ColorList 组件的父级组件的 App，状态就是在这个组件中接入的。因此，我们要在这里捕获颜色的 id，从状态中删除对应的颜色。
+
+```js
+export default function App() {
+    const [color, setColors] = useState(colorDate)
+    return  (
+        <ColorList
+            colors={colors}
+            onRemoveColor={id => {
+                const newColors = colors.filter(color => color.id !== id);
+                setColors(newColors);
+            }}
+    );
+}
+```
+
+
 
 ## 6.5 构建表单
 
