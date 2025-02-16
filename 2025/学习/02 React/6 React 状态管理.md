@@ -267,8 +267,30 @@ export default function App() {
 我们可以使用 React 提供的 useRef 钩子创建 ref。下面使用这个钩子创建 AddColorForm 组件。
 
 ```js
+import React, {useRef} from "react"
 
+export default function AddColorForm({onNewColor = f => f}) {
+    const txtTitle = useRef();
+    const hexColor = useRef();
+    const submit = e => { ... }
+
+    return (...)
+}
 ```
+
+首先创建这个组件，我们还使用 useRef 钩子创建两个 ref。txtTitle ref 引用添加在表单中的文本输入框，用于收集颜色的标题。hexColor ref 用于访问 HTML 颜色输入框中的十六进制的颜色值。这两个 ref 的值可以在 JSX 中直接使用 ref 属性设定：
+
+```js
+return (
+    <form onSubmit={submit}>
+        <input ref={txtTitle} type="text" placeholder="color title..." required />
+        <input ref={hexColor} type="color" required />
+        <button>ADD</button>
+    </form>
+);
+```
+
+
 ## 6.6 React 上下文
 
 在 React 的早期版本中，把状态集中放在组件树的根部是一个重要的模式，让我们受益良多。作为 React 开发者，我们都应该掌握如何通过属性在组件树中向上和向下传递状态。然而，随着 React 的发展，以及组件树枝繁叶茂，遵守这个原则慢慢变得不切实际，对于很多开发者来说，在复杂的应用中集中于组件树的根部维护状态不是一件容易的事情。在众多组件之间向上和向下传递状态，操作繁琐，而且容易出错。
