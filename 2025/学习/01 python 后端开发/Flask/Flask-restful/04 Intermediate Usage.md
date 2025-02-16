@@ -126,4 +126,20 @@ user_fields = {
     }),
 }
 
+class User(Resource):
+    @marshal_with(user_fields)
+    def post(self):
+        args=post_parser.parse_args()
+        user=create_user(args.username, args.email, args.user_priority)
+        return user 
+
+    @marshal_with(user_fields)
+    def get(self, id):
+        args = post_parser.parse_args()
+        user = fetch_user(id)
+        return user 
 ```
+
+### 将构造函数参数传递给资源
+
+你的资源实现可能需要外部依赖项。这些依赖项最好通过构造函数传递，以此实现松耦合。Api.add_resource() 方法有两个关键字参数：resource_class_args 和 resource_class_kwargs 。它们的值将被
