@@ -79,3 +79,10 @@ app.register_blueprint(api_bp)
 
 api = Api(api_bp) 创建一个 flask-restful 的 Api 实例，并将其绑定到蓝图 api_bp 上。这意味着所有通过 api 添加到资源都会注册的蓝图上。
 
+### 完整的参数解析示例
+
+在文档的其他地方，我们已经详细描述了如何使用 reqparse 示例。在这里，我们将设置一个具有多个输入参数的资源，以此展示更多选项。我们将定义一个名为用户的资源。
+
+```python
+
+```
