@@ -176,12 +176,29 @@ export default function ColorList({colors=[]}) {
 Color 组件接受三个属性：title，color 和 rating。这些属性的值在各个 color 对象中，已经通过展开运算符 <Color {...color} /> 传给该组件。这样做，color 对象中的各个字段将使用和键相同的名称传给 Color 组件。Color 组件负责显示这些值。title 在一个 h1 元素渲染。color 值显示为一个 div 元素的背景色（backgroundColor）。rating 继续沿着组件树向下传递，传给 StarRating 组件，以着色的星标突出显示。
 
 ```js
-
+export default function StarRating({totalStars = 5, selectedStars = 0}) {
+    return (
+        <>
+            {createArray(totalStars).map((n, i) => (
+                <Star 
+                    key={i}
+                    selected={selectedStars > i}
+                />
+            ))}
+            <p>
+                {selectedStars} of {totalStars} stars
+            </p>
+        </>
+    );
+}
 ```
+
 
 ### 6.4.2 沿组件树向上发送交互
 
+目前，我们编写了一系列 React 组件，通过属性沿着组件树从父级组件向子组件传递数据，在 UI 中渲染了 colors 数组。那么，如果我们想从列表中删除一个颜色，或者修改某个颜色的评分，该怎么办呢？colors 存储在组件树的根部状态。我们要收集子组件的交互，沿组件树向上发送给根组件，在那里修改状态。
 
+比如说我们想在各个颜色的标题旁边添加一个 Remove 按钮，让用户从状态中删除yan'se
 ## 6.5 构建表单
 
 
