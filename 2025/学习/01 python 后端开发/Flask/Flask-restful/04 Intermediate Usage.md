@@ -142,4 +142,17 @@ class User(Resource):
 
 ### 将构造函数参数传递给资源
 
-你的资源实现可能需要外部依赖项。这些依赖项最好通过构造函数传递，以此实现松耦合。Api.add_resource() 方法有两个关键字参数：resource_class_args 和 resource_class_kwargs 。它们的值将被
+你的资源实现可能需要外部依赖项。这些依赖项最好通过构造函数传递，以此实现松耦合。Api.add_resource() 方法有两个关键字参数：resource_class_args 和 resource_class_kwargs 。它们的值将被转发并传递到你的资源实现的构造函数中。
+
+```python
+from flask_restful import Resource 
+
+class TodoNext(Resource):
+    def __init__(self, **kwargs):
+        # smart_engine 是个黑盒依赖项
+        self.smart_engine = kwargs["smart_engine"]
+
+    def get(self):
+        return self.smart_engine.next_todo()
+```
+
