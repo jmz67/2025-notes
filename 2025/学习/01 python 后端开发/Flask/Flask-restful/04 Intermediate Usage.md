@@ -76,3 +76,6 @@ class TodoItem(Resource):
 api.add_resource(TodoItem, '/todos/<int:id>')
 app.register_blueprint(api_bp)
 ```
+
+api = Api(api_bp) 创建一个 flask-restful 的 Api 实例，并将其绑定到蓝图 api_bp 上。这意味着所有通过 api 添加到资源都会注册的蓝图上。
+
