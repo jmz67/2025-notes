@@ -196,7 +196,9 @@ export default function StarRating({totalStars = 5, selectedStars = 0}) {
 
 ### 6.4.2 沿组件树向上发送交互
 
-目前，我们编写了一系列 React 组件，通过属性沿着组件树从父级组件向子组件传递数据，在 UI 中渲染了 colors 数组。那么，如果我们想从列表中删除一个颜色，或者修改某个颜色的评分，该怎么办呢？colors 存储在组件树的根部状态。我们要收集子组件的交互，沿组件树向上发送给根组件，在那里修改状态。
+在 React 中，子组件通常不直接修改父组件的状态，而是通过回调函数将事件传递给父组件，由父组件来修改状态。这种设计模式叫做提升状态。
+
+> 目前，我们编写了一系列 React 组件，通过属性沿着组件树从父级组件向子组件传递数据，在 UI 中渲染了 colors 数组。那么，如果我们想从列表中删除一个颜色，或者修改某个颜色的评分，该怎么办呢？colors 存储在组件树的根部状态。我们要收集子组件的交互，沿组件树向上发送给根组件，在那里修改状态。
 
 比如说我们想在各个颜色的标题旁边添加一个 Remove 按钮，让用户从状态中删除颜色。这个按钮应该添加到 Color 组件中：
 
@@ -222,7 +224,15 @@ export default function Color({id, title, color, rating, onRemove = f => f}) {
 这个解决方法很好，因为保证了 Color 组件的纯粹性。Color 组件没有状态，可以轻易在应用中的其他部分，甚至是其他应用中重用。Color 组件不关心用户点击 Remove 按钮后会发生什么，它只负责通知父组件发生了这个事件，并传递用户想删除的颜色的有关信息。这个事件的处理责任在父级组件身上：
 
 ```js
+export default function ColorList({colors = [], onRemoveColor = f => f}) {
+    if (!colors.length) return <div>No Colors Listed.(Add a Color)</div>;
 
+    return (
+        colors.map(color => (
+            <Color key={color.id} {...color} onRemove={onRemoveColor} />
+        ))
+    );
+}
 ```
 
 ## 6.5 构建表单
