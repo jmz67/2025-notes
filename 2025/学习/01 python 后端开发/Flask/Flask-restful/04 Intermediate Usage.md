@@ -84,5 +84,46 @@ api = Api(api_bp) 创建一个 flask-restful 的 Api 实例，并将其绑定到
 在文档的其他地方，我们已经详细描述了如何使用 reqparse 示例。在这里，我们将设置一个具有多个输入参数的资源，以此展示更多选项。我们将定义一个名为用户的资源。
 
 ```python
+from flask_restful import fields, marshal_with, reqparse, Resource
+
+def email(email_str):
+    """如果有效，返回 email_str，否则抛出异常。"""
+    if valid_email(email_str):
+        return email_str 
+    else:
+        raise ValueError("{} 不是一个有效的电子邮件".format(email_str))
+
+post_parser = reqparse.RequestParser()
+post_parser.add_argument(
+    "username", dest="username",
+    location='form', required=True,
+    help='用户的用户名',
+)
+
+post_parser.add_argument(
+    "email", dest="email",
+    location="form", type="email"
+    help='用户的电子邮件'
+)
+
+post_parser.add_argument(
+    "user_priority", dest="user_priority",
+    type=int, location="form",
+    default=1, choices=range(5), help='用户的优先级',
+)
+
+user_fields = {
+    'id': fields.Integer,
+    'username': fields.String,
+    'email': fields.String,
+    'user_priority': fields.Integer,
+    'custom_greeting': fields.FormattedString('嘿，{username}！'),
+    'date_created': fields.DateTime,
+    'date_updated': fields.DateTime,
+    'links': fields.Nested({
+        'friends': fields.Url('user_friends'),
+        'posts': fields.Url('user_posts'),
+    }),
+}
 
 ```
