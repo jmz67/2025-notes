@@ -11,14 +11,12 @@
             "id": "5a0ea8eed33c23ed",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "学习/01 后端开发/Flask/02 教程.md",
-                "mode": "source",
-                "source": false
+                "file": "学习/02 React/REACT学习手册（第二版）.pdf"
               },
-              "icon": "lucide-file",
-              "title": "02 教程"
+              "icon": "lucide-file-text",
+              "title": "REACT学习手册（第二版）"
             }
           }
         ]
@@ -153,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/01 后端开发/Flask/02 教程.md",
+                "file": "学习/02 React/REACT学习手册（第二版）.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "02 教程 的大纲"
+              "title": "REACT学习手册（第二版） 的大纲"
             }
           }
         ],
@@ -184,13 +182,13 @@
   },
   "active": "5a0ea8eed33c23ed",
   "lastOpenFiles": [
+    "学习/01 后端开发/Flask/02 教程.md",
     "学习/02 React/REACT学习手册（第二版）.pdf",
     "工作/工作日志/202502.md",
     "学习/00 学习日志/202502.md",
     "工作/账号密码&常用信息.md",
     "工作/大模型能力平台.md",
     "工作/数字人初诊复诊.md",
-    "学习/01 后端开发/Flask/02 教程.md",
     "学习/05 算法/01 代码随想录/01 回溯算法.md",
     "学习/05 算法/vector 常用用法.md",
     "学习/05 算法/vector 常用用法.md",
@@ -222,7 +220,6 @@
     "学习/04 Go/01 程序结构",
     "学习/04 Go/00 入门",
     "学习/04 Go",
-    "学习/03 Vue/循序渐进Vue.js 3前端开发实战.pdf",
     "学习/03 Vue/6 组件进阶.md",
     "学习/03 Vue/0 Vue 深入浅出.md",
     "学习/02 React/项目实践/TailWindCSS & React & NikeWebDemo.md",
