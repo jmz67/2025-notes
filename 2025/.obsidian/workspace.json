@@ -35,7 +35,8 @@
               "title": "7 使用钩子增强组件"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,10 +185,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "6459d5b23b66bedf",
+  "active": "aa7c4400186a710a",
   "lastOpenFiles": [
-    "学习/02 React/7 使用钩子增强组件.md",
     "学习/00 学习日志/202502.md",
+    "学习/02 React/7 使用钩子增强组件.md",
     "学习/05 算法/vector 常用用法.md",
     "学习/05 算法/01 代码随想录/01 回溯算法.md",
     "未命名.md",
