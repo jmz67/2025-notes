@@ -25,17 +25,16 @@
             "id": "49ff665ed2e11152",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "工作/数字人初诊复诊.md",
-                "mode": "source",
-                "source": false
+                "file": "学习/02 React/REACT学习手册（第二版）.pdf"
               },
-              "icon": "lucide-file",
-              "title": "数字人初诊复诊"
+              "icon": "lucide-file-text",
+              "title": "REACT学习手册（第二版）"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -167,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/01 后端开发/Flask/02 教程.md",
+                "file": "学习/02 React/REACT学习手册（第二版）.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "02 教程 的大纲"
+              "title": "REACT学习手册（第二版） 的大纲"
             }
           }
         ],
@@ -196,17 +195,17 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "5a0ea8eed33c23ed",
+  "active": "49ff665ed2e11152",
   "lastOpenFiles": [
-    "学习/05 算法/01 代码随想录/01 回溯算法.md",
-    "工作/数字人初诊复诊.md",
-    "学习/00 学习日志/202502.md",
-    "学习/01 后端开发/Flask/02 教程.md",
-    "工作/账号密码&常用信息.md",
-    "学习/05 算法/vector 常用用法.md",
-    "学习/05 算法/vector 常用用法.md",
     "工作/工作日志/202502.md",
+    "学习/00 学习日志/202502.md",
+    "工作/账号密码&常用信息.md",
     "工作/大模型能力平台.md",
+    "工作/数字人初诊复诊.md",
+    "学习/01 后端开发/Flask/02 教程.md",
+    "学习/05 算法/01 代码随想录/01 回溯算法.md",
+    "学习/05 算法/vector 常用用法.md",
+    "学习/05 算法/vector 常用用法.md",
     "Untitled.md",
     "未命名.md",
     "学习/05 算法/01 代码随想录/pictures/Pasted image 20250217010018.png",
