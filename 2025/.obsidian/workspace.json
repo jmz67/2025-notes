@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -211,12 +211,12 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "49ff665ed2e11152",
+  "active": "668b0bfd73506c98",
   "lastOpenFiles": [
+    "工作/数字人初诊复诊.md",
     "工作/账号密码&常用信息.md",
     "学习/01 后端开发/Flask/02 教程.md",
     "学习/05 算法/01 代码随想录/01 回溯算法.md",
-    "工作/数字人初诊复诊.md",
     "学习/05 算法/vector 常用用法.md",
     "学习/00 学习日志/202502.md",
     "学习/05 算法/vector 常用用法.md",
