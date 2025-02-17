@@ -35,8 +35,7 @@
               "title": "202502"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/00 学习日志/202502.md",
+                "file": "学习/01 后端开发/网络编程基础/黑马网络编程.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 202502"
+              "title": "Outline of 黑马网络编程"
             }
           }
         ],
@@ -185,10 +184,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "30eef9389a58f578",
+  "active": "6459d5b23b66bedf",
   "lastOpenFiles": [
-    "学习/01 后端开发/网络编程基础/黑马网络编程.md",
     "学习/00 学习日志/202502.md",
+    "学习/01 后端开发/网络编程基础/黑马网络编程.md",
     "学习/01 后端开发/线程安全.md",
     "学习/02 React/7 使用钩子增强组件.md",
     "学习/02 React/4 React 运行机制.md",
