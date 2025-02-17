@@ -35,7 +35,8 @@
               "title": "数字人初诊复诊"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,8 +197,9 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "b6d2bcfdaaa551c7",
+  "active": "5a0ea8eed33c23ed",
   "lastOpenFiles": [
+    "学习/05 算法/01 代码随想录/01 回溯算法.md",
     "学习/00 学习日志/202502.md",
     "学习/05 算法/vector 常用用法.md",
     "工作/数字人初诊复诊.md",
@@ -209,7 +211,6 @@
     "未命名.md",
     "学习/05 算法/01 代码随想录/pictures/Pasted image 20250217010018.png",
     "学习/05 算法/01 代码随想录/pictures",
-    "学习/05 算法/01 代码随想录/01 回溯算法.md",
     "学习/05 算法/01 代码随想录",
     "学习/05 算法",
     "学习/04 Go/pictures/Pasted image 20250212001121.png",
