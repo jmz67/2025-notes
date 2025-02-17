@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "02 教程"
             }
-          },
-          {
-            "id": "49ff665ed2e11152",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "学习/02 React/REACT学习手册（第二版）.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "REACT学习手册（第二版）"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -166,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/02 React/REACT学习手册（第二版）.pdf",
+                "file": "学习/01 后端开发/Flask/02 教程.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "REACT学习手册（第二版） 的大纲"
+              "title": "02 教程 的大纲"
             }
           }
         ],
@@ -195,8 +182,9 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "49ff665ed2e11152",
+  "active": "5a0ea8eed33c23ed",
   "lastOpenFiles": [
+    "学习/02 React/REACT学习手册（第二版）.pdf",
     "工作/工作日志/202502.md",
     "学习/00 学习日志/202502.md",
     "工作/账号密码&常用信息.md",
@@ -238,7 +226,6 @@
     "学习/03 Vue/6 组件进阶.md",
     "学习/03 Vue/0 Vue 深入浅出.md",
     "学习/02 React/项目实践/TailWindCSS & React & NikeWebDemo.md",
-    "学习/02 React/6 React 状态管理.md",
     "学习/01 后端开发/Flask/pictures/Pasted image 20250214194655.png",
     "学习/01 后端开发/Flask/pictures/Pasted image 20250214184735.png",
     "学习/Go/00 入门/pictures/Pasted image 20250214003907.png",
