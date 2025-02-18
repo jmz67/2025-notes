@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -185,7 +184,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "6c96799811243a1b",
+  "active": "cb1e191864876a76",
   "lastOpenFiles": [
     "学习/00 学习日志/202502.md",
     "Untitled.md",
