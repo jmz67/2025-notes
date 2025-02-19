@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/Dify 源码改造/源码部署.md",
+                "file": "工作/Dify 源码改造/登录逻辑.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "源码部署"
+              "title": "登录逻辑"
             }
           }
         ]
@@ -90,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -184,8 +183,11 @@
   },
   "active": "16db0391b1426edb",
   "lastOpenFiles": [
-    "工作/账号密码&常用信息.md",
+    "工作/Dify 源码改造/NormalForm 1.jsx",
+    "工作/Dify 源码改造/NormalForm.jsx",
     "工作/Dify 源码改造/源码部署.md",
+    "工作/Dify 源码改造/登录逻辑.md",
+    "工作/账号密码&常用信息.md",
     "工作/Dify 源码改造",
     "工作/数字人初诊复诊.md",
     "Untitled.md",
@@ -222,10 +224,7 @@
     "学习/04 Go/00 入门/06 GIF 动画.md",
     "学习/04 Go/00 入门/05 查找重复的行.md",
     "学习/04 Go/00 入门/04 命令行参数.md",
-    "学习/04 Go/00 入门/03 Hello World.md",
-    "学习/04 Go/00 入门/02 Golang 的概述.md",
     "学习/04 Go/01 程序结构",
-    "学习/04 Go/00 入门",
     "学习/01 后端开发/Flask/pictures/Pasted image 20250214194655.png",
     "学习/01 后端开发/Flask/pictures/Pasted image 20250214184735.png",
     "学习/Go/00 入门/pictures/Pasted image 20250214003907.png",
