@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/Dify 源码改造/Postre 数据库.md",
+                "file": "工作/Dify 源码改造/登录逻辑.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Postre 数据库"
+              "title": "登录逻辑"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/01 后端开发/网络编程基础/黑马网络编程.md",
+                "file": "工作/Dify 源码改造/登录逻辑.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 黑马网络编程"
+              "title": "登录逻辑 的大纲"
             }
           }
         ],
@@ -154,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,12 +170,13 @@
   },
   "active": "6459d5b23b66bedf",
   "lastOpenFiles": [
+    "工作/Dify 源码改造/Postre 数据库.md",
+    "工作/Dify 源码改造/pictures/Pasted image 20250220005926.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220005424.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220005050.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220004710.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220004235.png",
     "工作/Dify 源码改造/登录逻辑.md",
-    "工作/Dify 源码改造/Postre 数据库.md",
     "工作/Dify 源码改造/pictures/Pasted image 20250219232606.png",
     "工作/Dify 源码改造/pictures",
     "工作/工作日志/202502.md",
@@ -214,8 +214,6 @@
     "学习/04 Go/00 入门/09 Web 服务.md",
     "学习/04 Go/00 入门/pictures/Pasted image 20250215003355.png",
     "学习/01 后端开发/Flask/pictures/Pasted image 20250214194655.png",
-    "学习/01 后端开发/Flask/pictures/Pasted image 20250214184735.png",
-    "学习/04 Go/00 入门/pictures/Pasted image 20250214003907.png",
-    "学习/04 Go/pictures/Pasted image 20250212001121.png"
+    "学习/01 后端开发/Flask/pictures/Pasted image 20250214184735.png"
   ]
 }

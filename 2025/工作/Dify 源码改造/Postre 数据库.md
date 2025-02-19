@@ -99,3 +99,45 @@ List of relations
 
 ![[Pasted image 20250220005424.png]]
 
+![[Pasted image 20250220005926.png]]
+
+```
+[
+  {
+    "id": "c3d87549-dbdd-4021-bf19-298e5ed44bbe",
+    "name": "zjm",
+    "email": "2836191515@qq.com",
+    "password": "NjYzNWRiZDExYmUzNWU5Mzk2NTVjMmVkNGY1MTFjYjIzMmMxMzZjNWQ3MzllOTRkZTM2MDEwZjIzZTRlY2RlMA==",
+    "password_salt": "13mZjScKyLbG0I5ojHfgQQ==",
+    "avatar": null,
+    "interface_language": "en-US",
+    "interface_theme": "light",
+    "timezone": "America/New_York",
+    "last_login_at": "2025-02-18T18:37:24.910045",
+    "last_login_ip": "127.0.0.1",
+    "status": "active",
+    "initialized_at": "2025-02-18T18:37:11.635225",
+    "created_at": "2025-02-18T18:37:12",
+    "updated_at": "2025-02-18T18:37:12",
+    "last_active_at": "2025-02-18T18:37:12"
+  },
+  {
+    "id": "28b960f1-03eb-4122-b253-a4d40dcd5d39",
+    "name": "hr",
+    "email": "hr@gmail.com",
+    "password": "ZGM4NTc1NTI4MWE0NDE2ODQ4NDk1NDEzODhiZWMxMGY5MTMxN2JkZjIwZTQ4ODRjOGUxZDZmZmZjNzJiZjZhYQ==",
+    "password_salt": "K/Jh0UtYdCSd6ao+Z9lHyg==",
+    "avatar": null,
+    "interface_language": "zh-Hans",
+    "interface_theme": "light",
+    "timezone": "Asia/Shanghai",
+    "last_login_at": "2025-02-18T18:47:01.405428",
+    "last_login_ip": "127.0.0.1",
+    "status": "active",
+    "initialized_at": "2025-02-18T18:45:00.928373",
+    "created_at": "2025-02-18T18:44:05",
+    "updated_at": "2025-02-18T18:44:05",
+    "last_active_at": "2025-02-18T18:44:05"
+  }
+]
+```
