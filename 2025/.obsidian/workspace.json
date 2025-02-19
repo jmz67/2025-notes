@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -172,6 +171,8 @@
   },
   "active": "6459d5b23b66bedf",
   "lastOpenFiles": [
+    "工作/Dify 源码改造/pictures/Pasted image 20250220005050.png",
+    "工作/Dify 源码改造/pictures/Pasted image 20250220004710.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220004235.png",
     "工作/Dify 源码改造/登录逻辑.md",
     "工作/Dify 源码改造/Postre 数据库.md",
@@ -215,8 +216,6 @@
     "学习/01 后端开发/Flask/pictures/Pasted image 20250214184735.png",
     "学习/04 Go/00 入门/pictures/Pasted image 20250214003907.png",
     "学习/04 Go/pictures/Pasted image 20250212001121.png",
-    "学习/04 Go/pictures/Pasted image 20250212001014.png",
-    "学习/04 Go/pictures/Pasted image 20250211233631.png",
-    "工作/pictures/Pasted image 20250211103439.png"
+    "学习/04 Go/pictures/Pasted image 20250212001014.png"
   ]
 }

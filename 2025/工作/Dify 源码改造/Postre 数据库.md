@@ -93,3 +93,7 @@ List of relations
 (74 rows)
 ```
 
+![[Pasted image 20250220004710.png]]
+
+![[Pasted image 20250220005050.png]]
+
