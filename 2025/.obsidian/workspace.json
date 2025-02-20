@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/Dify 源码改造/登录逻辑.md",
+                "file": "工作/Dify 源码改造/Postre 数据库.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "登录逻辑"
+              "title": "Postre 数据库"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "16db0391b1426edb",
   "lastOpenFiles": [
+    "工作/Dify 源码改造/登录逻辑.md",
     "工作/Dify 源码改造/pictures/Pasted image 20250220005424.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220005050.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220004710.png",
@@ -193,7 +194,6 @@
     "工作/Dify 源码改造/NormalForm 1.jsx",
     "工作/Dify 源码改造/NormalForm.jsx",
     "工作/Dify 源码改造/源码部署.md",
-    "工作/Dify 源码改造/登录逻辑.md",
     "工作/账号密码&常用信息.md",
     "工作/Dify 源码改造",
     "工作/数字人初诊复诊.md",
@@ -223,7 +223,6 @@
     "学习/04 Go/01 程序结构/02 声明.md",
     "学习/04 Go/01 程序结构/01 命名.md",
     "学习/04 Go/00 入门/pictures/Pasted image 20250215003355.png",
-    "学习/04 Go/00 入门/pictures/Pasted image 20250214003907.png",
     "学习/04 Go/00 入门/09 Web 服务.md",
     "学习/04 Go/00 入门/07 获取 URL.md",
     "学习/04 Go/00 入门/08 并发获取多个 URL.md",
