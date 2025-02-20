@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/工作日志/202502.md",
+                "file": "工作/Dify 源码改造/邀请用户.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "202502"
+              "title": "邀请用户"
             }
           }
         ],
@@ -105,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -167,13 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202502.md",
+                "file": "工作/Dify 源码改造/邀请用户.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "202502 的大纲"
+              "title": "邀请用户 的大纲"
             }
           }
         ],
@@ -197,11 +198,11 @@
   },
   "active": "bfe321d85472b449",
   "lastOpenFiles": [
+    "工作/工作日志/202502.md",
     "工作/Dify 源码改造/登录逻辑.md",
     "工作/Dify 源码改造/邀请用户.md",
     "工作/Dify 源码改造/源码部署.md",
     "工作/Dify 源码改造/Postre 数据库.md",
-    "工作/工作日志/202502.md",
     "工作/Dify 源码改造/pictures/Pasted image 20250220172407.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220172234.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220005424.png",
