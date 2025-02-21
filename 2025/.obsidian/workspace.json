@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/Dify 源码改造/登录逻辑.md",
+                "file": "工作/Dify 源码改造/容器部署和源码改造指南.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "登录逻辑"
+              "title": "容器部署和源码改造指南"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/Dify 源码改造/登录逻辑.md",
+                "file": "工作/Dify 源码改造/容器部署和源码改造指南.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "登录逻辑 的大纲"
+              "title": "容器部署和源码改造指南 的大纲"
             }
           }
         ],
@@ -170,17 +170,25 @@
   },
   "active": "6459d5b23b66bedf",
   "lastOpenFiles": [
-    "工作/Dify 源码改造/Postre 数据库.md",
+    "工作/大模型能力平台.md",
+    "工作/Dify 源码改造/源码部署.md",
+    "工作/Dify 源码改造/邀请用户.md",
+    "工作/Dify 源码改造/容器部署和源码改造指南.md",
+    "工作/Dify 源码改造/数据库操作.md",
+    "工作/Dify 源码改造/登录逻辑.md",
+    "未命名 1.md",
+    "工作/Dify 源码改造/pictures/Pasted image 20250221195952.png",
+    "工作/Dify 源码改造/pictures/Pasted image 20250221162850.png",
+    "工作/Dify 源码改造/pictures/Pasted image 20250221162531.png",
+    "工作/Dify 源码改造/pictures/Pasted image 20250221162417.png",
+    "工作/Dify 源码改造/pictures/Pasted image 20250221161931.png",
+    "工作/Dify 源码改造/pictures/Pasted image 20250220172407.png",
+    "工作/Dify 源码改造/pictures/Pasted image 20250220172234.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220005926.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220005424.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220005050.png",
-    "工作/Dify 源码改造/pictures/Pasted image 20250220004710.png",
-    "工作/Dify 源码改造/pictures/Pasted image 20250220004235.png",
-    "工作/Dify 源码改造/登录逻辑.md",
-    "工作/Dify 源码改造/pictures/Pasted image 20250219232606.png",
     "工作/Dify 源码改造/pictures",
     "工作/工作日志/202502.md",
-    "工作/Dify 源码改造/源码部署.md",
     "工作/Dify 源码改造/NormalForm.jsx",
     "工作/Dify 源码改造/NormalForm 1.jsx",
     "工作/Dify 源码改造",
@@ -198,8 +206,6 @@
     "学习/05 算法/vector 常用用法.md",
     "学习/05 算法/01 代码随想录/01 回溯算法.md",
     "未命名.md",
-    "工作/大模型能力平台.md",
-    "学习/05 算法/01 代码随想录/pictures/Pasted image 20250217010018.png",
     "学习/05 算法/01 代码随想录/pictures",
     "学习/02 React/项目实践/TailWindCSS & React & NikeWebDemo.md",
     "学习/05 算法/01 代码随想录",
@@ -209,11 +215,6 @@
     "学习/01 后端开发/Flask/Flask-restful/04 Intermediate Usage.md",
     "学习/01 后端开发/Flask/02 教程.md",
     "学习/01 后端开发/Flask/01 快速开始.md",
-    "学习/01 后端开发/流畅的 Python/02 数据部分/02 序列构成的数组.md",
-    "学习/01 后端开发/流畅的 Python/01 序幕/01 Python 数据模型.md",
-    "学习/04 Go/00 入门/09 Web 服务.md",
-    "学习/04 Go/00 入门/pictures/Pasted image 20250215003355.png",
-    "学习/01 后端开发/Flask/pictures/Pasted image 20250214194655.png",
-    "学习/01 后端开发/Flask/pictures/Pasted image 20250214184735.png"
+    "学习/01 后端开发/流畅的 Python/02 数据部分/02 序列构成的数组.md"
   ]
 }
