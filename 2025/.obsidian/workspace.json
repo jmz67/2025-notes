@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "57ccadaafe625faa",
+        "id": "f03fd4f736d8bf16",
         "type": "tabs",
         "children": [
           {
-            "id": "6459d5b23b66bedf",
+            "id": "466b168a4b87dc18",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/账号密码&常用信息.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "账号密码&常用信息"
+              "title": "新标签页"
             }
           }
         ]
@@ -140,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "账号密码&常用信息 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -168,14 +163,16 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "6459d5b23b66bedf",
+  "active": "466b168a4b87dc18",
   "lastOpenFiles": [
+    "工作/账号密码&常用信息.md",
+    "工作/数字人初诊复诊.md",
+    "工作/Dify 源码改造/源码部署.md",
+    "工作/大模型能力平台.md",
+    "工作/Dify 源码改造/邀请用户.md",
+    "工作/Dify 源码改造/数据库操作.md",
     "工作/Dify 源码改造/容器部署和源码改造指南.md",
     "工作/Dify 源码改造/登录逻辑.md",
-    "工作/Dify 源码改造/数据库操作.md",
-    "工作/Dify 源码改造/源码部署.md",
-    "工作/Dify 源码改造/邀请用户.md",
-    "工作/大模型能力平台.md",
     "未命名 1.md",
     "工作/Dify 源码改造/pictures/Pasted image 20250221195952.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250221162850.png",
@@ -213,8 +210,6 @@
     "学习/01 python 后端开发/面试",
     "学习/02 React/项目实践",
     "学习/01 后端开发/Flask/Flask-restful/04 Intermediate Usage.md",
-    "学习/01 后端开发/Flask/02 教程.md",
-    "学习/01 后端开发/Flask/01 快速开始.md",
-    "学习/01 后端开发/流畅的 Python/02 数据部分/02 序列构成的数组.md"
+    "学习/01 后端开发/Flask/02 教程.md"
   ]
 }
