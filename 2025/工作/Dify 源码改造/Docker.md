@@ -35,3 +35,20 @@ time="2025-03-10T21:48:11+08:00" level=warning msg="D:\\milvus\\docker-compose.y
 network ai declared as external, but could not be found
 ```
 
+```
+docker network create ai
+```
+
+```
+D:\milvus>docker network create ai
+d39b162b4d02f771dd80607144e95e683707a7202c7bc26697363f07009fd268
+
+D:\milvus>docker-compose up -d
+time="2025-03-10T22:07:28+08:00" level=warning msg="D:\\milvus\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+[+] Running 3/3
+ ✔ Container milvus-etcd        Started                                                                            0.7s
+ ✔ Container milvus-minio       Started                                                                            0.7s
+ ✔ Container milvus-standalone  Started 
+```
+
+
