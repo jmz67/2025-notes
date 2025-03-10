@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/Dify 源码改造/源码部署.md",
+                "file": "学习/01 后端开发/基础的 Python/多重继承.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "源码部署"
+              "title": "多重继承"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -140,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/Dify 源码改造/源码部署.md",
+                "file": "学习/01 后端开发/基础的 Python/多重继承.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "源码部署 的大纲"
+              "title": "多重继承 的大纲"
             }
           }
         ],
@@ -154,7 +155,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,6 +172,9 @@
   },
   "active": "3071faed77c0cfde",
   "lastOpenFiles": [
+    "工作/Dify 源码改造/源码部署.md",
+    "学习/01 后端开发/基础的 Python/多重继承.md",
+    "学习/01 后端开发/基础的 Python",
     "工作/Dify 源码改造/Docker.md",
     "学习/05 算法/01 代码随想录/01 回溯算法.md",
     "工作/Dify 源码改造/知识库操作.md",
@@ -184,7 +189,6 @@
     "学习/01 后端开发/流畅的 Python/02 数据部分/02 序列构成的数组.md",
     "学习/00 学习日志/202502.md",
     "工作/工作日志/202502.md",
-    "工作/Dify 源码改造/源码部署.md",
     "工作/Dify 源码改造/工作流.md",
     "工作/Dify 源码改造/pictures/Pasted image 20250226172147.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250226152319.png",
@@ -209,12 +213,10 @@
     "工作/Dify 源码改造",
     "Untitled.md",
     "学习/01 后端开发/网络编程基础/黑马网络编程.md",
-    "学习/01 后端开发/线程安全.md",
     "学习/02 React/REACT学习手册（第二版）.pdf",
     "学习/05 算法/01 代码随想录/pictures",
     "学习/05 算法/01 代码随想录",
     "学习/05 算法",
-    "学习/01 python 后端开发/面试",
-    "学习/02 React/项目实践"
+    "学习/01 python 后端开发/面试"
   ]
 }
