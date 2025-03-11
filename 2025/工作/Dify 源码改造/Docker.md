@@ -65,3 +65,6 @@ grant all privileges on database dify_cdss to dify_cdss;
 GRANT USAGE ON SCHEMA public TO dify_cdss;  
 GRANT CREATE ON SCHEMA public TO dify_cdss;
 ```
+
+64a70a7aab8b
+
