@@ -52,3 +52,10 @@ time="2025-03-10T22:07:28+08:00" level=warning msg="D:\\milvus\\docker-compose.y
 ```
 
 
+```
+
+```
+
+
+[windows下pycharm配置跳板机和多个跳板机连接服务器，全流程（用于python debug） - 知乎](https://zhuanlan.zhihu.com/p/587084175)
+
