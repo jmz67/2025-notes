@@ -55,3 +55,13 @@ time="2025-03-10T22:07:28+08:00" level=warning msg="D:\\milvus\\docker-compose.y
 
 [windows下pycharm配置跳板机和多个跳板机连接服务器，全流程（用于python debug） - 知乎](https://zhuanlan.zhihu.com/p/587084175)
 
+在 postresql 中创建用户，并给予它可以进行数据库迁移的权限
+
+```sql
+create user dify_cdss with password 'dify_cdss';  
+  
+grant all privileges on database dify_cdss to dify_cdss;  
+  
+GRANT USAGE ON SCHEMA public TO dify_cdss;  
+GRANT CREATE ON SCHEMA public TO dify_cdss;
+```
