@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/Dify 源码改造/知识库/知识库外部接口.md",
+                "file": "工作/Dify 源码改造/源码部署.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "知识库外部接口"
+              "title": "源码部署"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/Dify 源码改造/知识库/知识库外部接口.md",
+                "file": "工作/Dify 源码改造/源码部署.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "知识库外部接口 的大纲"
+              "title": "源码部署 的大纲"
             }
           }
         ],
@@ -171,14 +171,15 @@
   },
   "active": "727fbef542133770",
   "lastOpenFiles": [
+    "工作/Dify 源码改造/容器部署和源码改造指南.md",
+    "工作/Dify 源码改造/Docker.md",
+    "工作/Dify 源码改造/知识库/知识库外部接口.md",
     "工作/Dify 源码改造/数据库操作.md",
     "工作/Dify 源码改造/提交代码.md",
     "工作/Dify 源码改造/邀请用户.md",
-    "工作/Dify 源码改造/Docker.md",
     "工作/账号密码&常用信息.md",
     "工作/Dify 源码改造/Celery.md",
     "未命名.md",
-    "工作/Dify 源码改造/知识库/知识库外部接口.md",
     "工作/Dify 源码改造/知识库",
     "学习/01 后端开发/基础的 Python/多重继承.md",
     "工作/Dify 源码改造/源码部署.md",
@@ -201,7 +202,6 @@
     "工作/Dify 源码改造/pictures/Pasted image 20250226152319.png",
     "工作/数字人初诊复诊.md",
     "工作/大模型能力平台.md",
-    "工作/Dify 源码改造/容器部署和源码改造指南.md",
     "工作/Dify 源码改造/pictures/Pasted image 20250221195952.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250221162850.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250221162531.png",
