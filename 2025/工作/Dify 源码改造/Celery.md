@@ -2,6 +2,8 @@
 
 [Pycharm下 debug Celery - ZhuGaochao - 博客园](https://www.cnblogs.com/bigtreei/p/14777178.html)
 
+[在Windows平台上通过PyCharm调试Celery任务_celery 调试-CSDN博客](https://blog.csdn.net/ssw_1990/article/details/140336155)
+
 我们的启动命令是：
 
 ```shell
