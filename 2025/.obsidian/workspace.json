@@ -35,8 +35,7 @@
               "title": "Celery"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -168,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/Dify 源码改造/Celery.md",
+                "file": "工作/Dify 源码改造/知识库/文件上传及切分嵌入.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Celery 的大纲"
+              "title": "文件上传及切分嵌入 的大纲"
             }
           }
         ],
@@ -196,10 +195,10 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "b633c87cdc376fc3",
+  "active": "50ca3b5de3fb5ab8",
   "lastOpenFiles": [
-    "工作/Dify 源码改造/知识库/文件上传及切分嵌入.md",
     "工作/Dify 源码改造/Celery.md",
+    "工作/Dify 源码改造/知识库/文件上传及切分嵌入.md",
     "工作/Dify 源码改造/知识库/知识库外部接口.md",
     "工作/Dify 源码改造/Docker.md",
     "工作/Dify 源码改造/容器部署和源码改造指南.md",
