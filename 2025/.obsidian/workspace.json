@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -182,6 +183,9 @@
   },
   "active": "50ca3b5de3fb5ab8",
   "lastOpenFiles": [
+    "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313111917.png",
+    "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313111839.png",
+    "工作/Dify 源码改造/知识库/pictures",
     "工作/Dify 源码改造/知识库/知识库外部接口.md",
     "工作/Dify 源码改造/知识库/文件上传及切分嵌入.md",
     "工作/Dify 源码改造/Celery.md",
@@ -213,7 +217,6 @@
     "工作/Dify 源码改造/pictures/Pasted image 20250221162417.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250221161931.png",
     "工作/Dify 源码改造/Postre 数据库.md",
-    "工作/Dify 源码改造/pictures/Pasted image 20250220172407.png",
     "工作/Dify 源码改造/pictures",
     "工作/Dify 源码改造/NormalForm 1.jsx",
     "工作/Dify 源码改造/NormalForm.jsx",
@@ -224,9 +227,7 @@
     "学习/02 React/REACT学习手册（第二版）.pdf",
     "学习/02 React/4 React 运行机制.md",
     "学习/02 React/3 Js 函数式编程.md",
-    "学习/02 React/7 使用钩子增强组件.md",
     "学习/05 算法/01 代码随想录/pictures",
-    "学习/05 算法/01 代码随想录",
-    "学习/05 算法"
+    "学习/05 算法/01 代码随想录"
   ]
 }
