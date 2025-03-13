@@ -198,8 +198,9 @@
   },
   "active": "b633c87cdc376fc3",
   "lastOpenFiles": [
-    "工作/Dify 源码改造/知识库/知识库外部接口.md",
     "工作/Dify 源码改造/知识库/文件上传及切分嵌入.md",
+    "工作/Dify 源码改造/Celery.md",
+    "工作/Dify 源码改造/知识库/知识库外部接口.md",
     "工作/Dify 源码改造/Docker.md",
     "工作/Dify 源码改造/容器部署和源码改造指南.md",
     "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313112347.png",
@@ -207,7 +208,6 @@
     "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313111917.png",
     "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313111839.png",
     "工作/Dify 源码改造/知识库/pictures",
-    "工作/Dify 源码改造/Celery.md",
     "未命名.md",
     "工作/Dify 源码改造/登录逻辑.md",
     "工作/Dify 源码改造/工作流.md",
