@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/Dify 源码改造/知识库/知识库外部接口.md",
+                "file": "工作/Dify 源码改造/Minio SDK.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "知识库外部接口"
+              "title": "Minio SDK"
             }
           }
         ],
@@ -168,13 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/Dify 源码改造/知识库/知识库外部接口.md",
+                "file": "工作/Dify 源码改造/Minio SDK.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "知识库外部接口 的大纲"
+              "title": "Minio SDK 的大纲"
             }
           }
         ],
@@ -182,7 +182,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,6 +199,8 @@
   },
   "active": "b633c87cdc376fc3",
   "lastOpenFiles": [
+    "工作/Dify 源码改造/知识库/知识库外部接口.md",
+    "工作/Dify 源码改造/Minio SDK.md",
     "Untitled.md",
     "未命名.md",
     "未命名 1.md",
@@ -207,7 +210,6 @@
     "工作/Dify 源码改造/Docker.md",
     "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313173945.png",
     "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313173915.png",
-    "工作/Dify 源码改造/知识库/知识库外部接口.md",
     "工作/Dify 源码改造/容器部署和源码改造指南.md",
     "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313112347.png",
     "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313112225.png",
@@ -241,7 +243,6 @@
     "学习/01 后端开发/流畅的 Python/02 数据部分/02 序列构成的数组.md",
     "学习/02 React/REACT学习手册（第二版）.pdf",
     "学习/02 React/4 React 运行机制.md",
-    "学习/02 React/3 Js 函数式编程.md",
     "学习/05 算法/01 代码随想录/pictures",
     "学习/05 算法/01 代码随想录"
   ]
