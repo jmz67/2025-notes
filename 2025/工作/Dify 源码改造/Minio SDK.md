@@ -6,3 +6,5 @@ Minio 是一个高性能，开源的对象存储系统。
 [Python Client API Reference — MinIO Object Storage for Linux](https://min.io/docs/minio/linux/developers/python/API.html)
 
 
+#### 如何批量下载指定文件
+
