@@ -35,8 +35,7 @@
               "title": "202505"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -165,13 +164,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202505.md",
+                "file": "58 计划/llm-app/文档嵌入.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "202505 的大纲"
+              "title": "文档嵌入 的大纲"
             }
           }
         ],
@@ -193,8 +192,9 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "b9182010240cb3cd",
+  "active": "48b826e7d8ae516e",
   "lastOpenFiles": [
+    "工作/工作日志/202505.md",
     "58 计划/58 计划.md",
     "58 计划/llm-app/文档嵌入.md",
     "58 计划/llm-app/pictures/Pasted image 20250508163915.png",
@@ -202,7 +202,6 @@
     "58 计划/llm-app/pictures/Pasted image 20250508163710.png",
     "58 计划/llm-app/pictures/Pasted image 20250508163455.png",
     "58 计划/llm-app/pictures",
-    "工作/工作日志/202505.md",
     "58 计划/llm-app",
     "58 计划/redis/Redis Web 应用解析.md",
     "58 计划/redis/pictures/Pasted image 20250508135925.png",
