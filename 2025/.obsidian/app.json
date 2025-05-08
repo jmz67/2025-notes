@@ -6,5 +6,6 @@
   "vimMode": false,
   "showLineNumber": true,
   "propertiesInDocument": "source",
-  "strictLineBreaks": false
+  "strictLineBreaks": false,
+  "showInlineTitle": false
 }
