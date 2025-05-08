@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "58 计划/58 计划.md",
+                "file": "58 计划/proAgent/多智能体数据分析.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "58 计划"
+              "title": "多智能体数据分析"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/58 计划.md",
+                "file": "58 计划/proAgent/多智能体数据分析.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "58 计划 的大纲"
+              "title": "多智能体数据分析 的大纲"
             }
           }
         ],
@@ -180,8 +180,10 @@
   },
   "active": "50ca3b5de3fb5ab8",
   "lastOpenFiles": [
-    "58 计划/模型服务优化.md",
     "58 计划/58 计划.md",
+    "58 计划/proAgent/多智能体数据分析.md",
+    "58 计划/proAgent",
+    "58 计划/模型服务优化.md",
     "工作/账号密码&常用信息.md",
     "58 计划",
     "工作/Dify 源码改造/Minio SDK.md",
@@ -219,12 +221,9 @@
     "工作/Dify 源码改造/pictures/Pasted image 20250226172147.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250226152319.png",
     "工作/Dify 源码改造/pictures/Pasted image 20250220005926.png",
-    "工作/Dify 源码改造/Postre 数据库.md",
     "工作/Dify 源码改造/pictures",
     "工作/Dify 源码改造/NormalForm 1.jsx",
     "工作/Dify 源码改造/NormalForm.jsx",
-    "工作/Dify 源码改造",
-    "学习/00 学习日志/202502.md",
-    "学习/02 React/REACT学习手册（第二版）.pdf"
+    "工作/Dify 源码改造"
   ]
 }
