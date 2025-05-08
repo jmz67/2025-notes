@@ -22,17 +22,13 @@
             }
           },
           {
-            "id": "b9182010240cb3cd",
+            "id": "30ab1a2210e02b46",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/工作日志/202505.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "202505"
+              "title": "新标签页"
             }
           }
         ]
@@ -195,8 +191,8 @@
   },
   "active": "48b826e7d8ae516e",
   "lastOpenFiles": [
-    "58 计划/llm-app/文档嵌入.md",
     "工作/工作日志/202505.md",
+    "58 计划/llm-app/文档嵌入.md",
     "Excalidraw/文档嵌入流程设计.excalidraw.md",
     "Excalidraw/pictures",
     "Excalidraw/Drawing 2025-05-08 17.19.32.excalidraw.md",
