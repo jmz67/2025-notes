@@ -17,3 +17,34 @@ Apache APISIX 是一个 **开源的 API 网关**，它的工作是：
     
 你可以把它想象成一个智能的“交通警察”。
 
+## 配置路由
+---
+
+```json
+curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
+{
+  "id": "getting-started-ip",        // 路由的唯一标识符
+  "uri": "/ip",                      // 匹配的请求路径
+  "upstream": {                      // 上游服务配置
+    "type": "roundrobin",            // 负载均衡策略为轮询（默认策略）
+    "nodes": {
+      "httpbin.org:80": 1            // 指定一个上游节点，权重为 1
+    }
+  }
+}'
+```
+
+这条命令告诉 APISIX：
+
+> “当用户访问 `/ip` 时，把请求转发到 `httpbin.org:80/ip`，并使用轮询策略进行负载均衡。”
+
+虽然只有一个节点（httpbin.org:80），但这个结构支持扩展多个节点，比如：
+
+```json
+"nodes": {
+  "server1:80": 1,
+  "server2:80": 1
+}
+```
+
+这样就能在两个服务器之间轮询请求，实现真正的“负载均衡”。
