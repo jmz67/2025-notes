@@ -79,7 +79,38 @@
 ---
 书里的清理函数一般是写成一个守护进程（daemon），也可以配置成定时任务（cron job）运行，有的甚至可以在每次用户操作时顺手清理一下。你会看到类似 `while not QUIT:` 的写法，就是提示这个函数是要常驻后台运行的。
 
-守护进程是指一种常驻后台运行的程序，它会一直运行
+守护进程是指一种常驻后台运行的程序，它会一直运行，不会主动退出，通常用于持续监听或定时执行某些任务，比如：日志收集器，系统监控工具，清理过期数据的服务（比如下面的代码）
+
+```python
+QUIT = False                 # 控制守护进程是否退出的标志变量，默认不断循环
+LIMIT = 10000000            # 最多允许存在的活跃 session 数（也就是 recent: ZSET 的最大长度）
+
+def clean_sessions(conn):   # 定义清理函数，接收 Redis 连接对象 conn
+    while not QUIT:         # 如果 QUIT 为 False，就一直循环运行，相当于一个后台服务
+        size = conn.zcard('recent:')  # 获取 'recent:' ZSET 的当前大小（有多少 token）
+        
+        if size <= LIMIT:   # 如果还没超过设定的最大值，就不用清理
+            time.sleep(1)   # 等待一秒，再继续检查
+            continue        # 回到循环开头，重新判断
+        
+        end_index = min(size - LIMIT, 100)  
+        # 计算要清理多少个最旧的 token，最多清理 100 个
+        
+        tokens = conn.zrange('recent:', 0, end_index - 1)
+        # 获取需要删除的 token（ZSET 中最早添加的前 N 个）
+        
+        session_keys = ['viewed:' + token for token in tokens]
+        # 构建每个用户对应的“最近浏览商品”的 key，如 viewed:token123
+        
+        conn.delete(*session_keys)
+        # 删除这些“最近浏览商品”的记录（ZSET 类型）
+        
+        conn.hdel('login:', *tokens)
+        # 从 login: 哈希表中删除这些用户的登录 token 映射
+        
+        conn.zrem('recent:', *tokens)
+        # 从 recent: ZSET 中删除这些最老的 token，完成清理
+```
 
 ### 一些技术小贴士
 ---
