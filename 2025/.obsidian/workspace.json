@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
+                "file": "58 计划/58 计划.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "账号密码&常用信息"
+              "title": "58 计划"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
+                "file": "58 计划/58 计划.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "账号密码&常用信息 的大纲"
+              "title": "58 计划 的大纲"
             }
           }
         ],
@@ -184,8 +184,8 @@
   },
   "active": "50ca3b5de3fb5ab8",
   "lastOpenFiles": [
-    "58 计划/58 计划.md",
     "工作/账号密码&常用信息.md",
+    "58 计划/58 计划.md",
     "58 计划",
     "工作/Dify 源码改造/Minio SDK.md",
     "学习/0A 面试题/中初级面试.md",
