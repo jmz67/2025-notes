@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "1babe7b5539bcb0c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-05-08 17.19.32.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-05-08 17.19.32.excalidraw"
+            }
+          },
+          {
             "id": "b9182010240cb3cd",
             "type": "leaf",
             "state": {
@@ -35,7 +47,8 @@
               "title": "202505"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/llm-app/文档嵌入.md",
+                "file": "Excalidraw/Drawing 2025-05-08 17.19.32.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "文档嵌入 的大纲"
+              "title": "Drawing 2025-05-08 17.19.32.excalidraw 的大纲"
             }
           }
         ],
@@ -189,14 +202,17 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "vscode-editor:新建代码文件": false
+      "vscode-editor:新建代码文件": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "48b826e7d8ae516e",
+  "active": "1babe7b5539bcb0c",
   "lastOpenFiles": [
+    "58 计划/llm-app/文档嵌入.md",
+    "Excalidraw/Drawing 2025-05-08 17.19.32.excalidraw.md",
+    "Excalidraw",
     "工作/工作日志/202505.md",
     "58 计划/58 计划.md",
-    "58 计划/llm-app/文档嵌入.md",
     "58 计划/llm-app/pictures/Pasted image 20250508163915.png",
     "58 计划/llm-app/pictures/Pasted image 20250508163750.png",
     "58 计划/llm-app/pictures/Pasted image 20250508163710.png",
@@ -237,7 +253,6 @@
     "工作/Dify 源码改造/登录逻辑.md",
     "工作/Dify 源码改造/工作流.md",
     "工作/Dify 源码改造/数据库操作.md",
-    "工作/Dify 源码改造/知识库",
-    "学习/01 后端开发/基础的 Python"
+    "工作/Dify 源码改造/知识库"
   ]
 }
