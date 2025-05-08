@@ -78,20 +78,17 @@
             "id": "1ee115c976277ba4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "学习/React/REACT学习手册（第二版）.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "REACT学习手册（第二版）"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -182,10 +179,10 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "50ca3b5de3fb5ab8",
+  "active": "cb1e191864876a76",
   "lastOpenFiles": [
-    "工作/账号密码&常用信息.md",
     "58 计划/58 计划.md",
+    "工作/账号密码&常用信息.md",
     "58 计划",
     "工作/Dify 源码改造/Minio SDK.md",
     "学习/0A 面试题/中初级面试.md",
