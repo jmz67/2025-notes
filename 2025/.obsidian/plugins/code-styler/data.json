@@ -299,9 +299,9 @@
   "currentTheme": {
     "settings": {
       "codeblock": {
-        "lineNumbers": false,
+        "lineNumbers": true,
         "unwrapLines": true,
-        "wrapLinesActive": true,
+        "wrapLinesActive": false,
         "curvature": 0
       },
       "gutter": {
@@ -350,7 +350,7 @@
         "gradientHighlights": false,
         "gradientHighlightsColourStop": "70%",
         "languageBorderColour": true,
-        "languageBorderWidth": 2,
+        "languageBorderWidth": 6,
         "iconSize": 28
       }
     },

@@ -96,7 +96,7 @@ def clean_sessions(conn):   # 定义清理函数，接收 Redis 连接对象 con
         end_index = min(size - LIMIT, 100)  
         # 计算要清理多少个最旧的 token，最多清理 100 个
         
-        tokens = conn.zrange('recent:', 0, end_index - 1)
+        tokens = conn.zrange('recent:', 0, end_index - 1)a
         # 获取需要删除的 token（ZSET 中最早添加的前 N 个）
         
         session_keys = ['viewed:' + token for token in tokens]
@@ -121,7 +121,6 @@ def clean_sessions(conn):   # 定义清理函数，接收 Redis 连接对象 con
 我们可以有几种方式来运行这个守护进程：
 1. 作为后台进程进行运行（celery）
 2. 在每次用户访问的时候触发，小项目、流量不大、无后台进程支持
-
 
 ### 一些技术小贴士
 ---
