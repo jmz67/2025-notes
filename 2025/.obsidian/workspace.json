@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "58 计划/llm-app/应用开发-工作流预览.md",
+                "file": "58 计划/llm-app/应用开发-工作流创建.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "应用开发-工作流预览"
+              "title": "应用开发-工作流创建"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/llm-app/应用开发-工作流预览.md",
+                "file": "58 计划/llm-app/应用开发-工作流创建.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "应用开发-工作流预览 的大纲"
+              "title": "应用开发-工作流创建 的大纲"
             }
           }
         ],
@@ -181,16 +181,16 @@
   },
   "active": "f68c9b10d85348ec",
   "lastOpenFiles": [
+    "58 计划/llm-app/应用开发-工作流预览.md",
+    "58 计划/llm-app/知识库-文档嵌入.md",
+    "58 计划/llm-plugin-deamon/Etcd 入门.md",
     "58 计划/llm-app/pictures/image.png",
     "58 计划/llm-app/pictures/Pasted image 20250509150953.png",
     "58 计划/llm-app/pictures/Pasted image 20250509150736.png",
     "58 计划/llm-app/应用开发-工作流创建.md",
-    "58 计划/llm-app/应用开发-工作流预览.md",
-    "58 计划/llm-app/知识库-文档嵌入.md",
     "58 计划/llm-app/pictures/Pasted image 20250509145346.png",
     "58 计划/llm-app/pictures/Pasted image 20250509145233.png",
     "58 计划/llm-app/pictures/Pasted image 20250509145202.png",
-    "58 计划/llm-plugin-deamon/Etcd 入门.md",
     "58 计划/llm-plugin-deamon",
     "58 计划/58 计划.md",
     "工作/工作日志/202505.md",
@@ -212,7 +212,6 @@
     "58 计划/llm-app/pictures",
     "58 计划/llm-app",
     "58 计划/redis/Redis Web 应用解析.md",
-    "58 计划/redis/pictures/Pasted image 20250508135925.png",
     "58 计划/redis/pictures",
     "58 计划/redis",
     "58 计划/proAgent",
