@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "202505"
             }
+          },
+          {
+            "id": "4abc666770817338",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-05-09 09.27.22.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-05-09 09.27.22.excalidraw"
+            }
           }
         ]
       }
@@ -181,11 +193,12 @@
   },
   "active": "48b826e7d8ae516e",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-05-09 09.27.22.excalidraw.md",
+    "工作/工作日志/202505.md",
     "58 计划/redis/2 Redis Web 应用解析.md",
     "58 计划/redis/1 初识 Redis.md",
     "58 计划/proAgent/多智能体数据分析.md",
     "58 计划/模型服务优化.md",
-    "工作/工作日志/202505.md",
     "工作/APISix 简介.md",
     "58 计划/llm-app/文档嵌入.md",
     "Excalidraw/文档嵌入流程设计.excalidraw.md",
@@ -220,7 +233,6 @@
     "工作/Dify 源码改造/知识库/知识库外部接口.md",
     "Untitled.md",
     "未命名 1.md",
-    "工作/Dify 源码改造/提交代码.md",
     "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313173945.png",
     "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313173915.png",
     "工作/Dify 源码改造/知识库/pictures/Pasted image 20250313112347.png",
