@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "58 计划/58 计划.md",
+                "file": "58 计划/llm-app/文档嵌入.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "58 计划"
+              "title": "文档嵌入"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/58 计划.md",
+                "file": "58 计划/llm-app/文档嵌入.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "58 计划 的大纲"
+              "title": "文档嵌入 的大纲"
             }
           }
         ],
@@ -181,6 +181,7 @@
   },
   "active": "48b826e7d8ae516e",
   "lastOpenFiles": [
+    "58 计划/58 计划.md",
     "58 计划/llm-app/文档嵌入.md",
     "工作/工作日志/202505.md",
     "58 计划/llm-stack",
@@ -194,7 +195,6 @@
     "Excalidraw/pictures",
     "Excalidraw/Drawing 2025-05-08 17.19.32.excalidraw.md",
     "Excalidraw",
-    "58 计划/58 计划.md",
     "58 计划/llm-app/pictures/Pasted image 20250508163915.png",
     "58 计划/llm-app/pictures/Pasted image 20250508163750.png",
     "58 计划/llm-app/pictures/Pasted image 20250508163710.png",
