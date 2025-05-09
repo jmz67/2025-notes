@@ -25,15 +25,18 @@
             "id": "4abc666770817338",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2025-05-09 09.27.22.excalidraw.md"
+                "file": "58 计划/llm-app/文档嵌入.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-05-09 09.27.22.excalidraw"
+              "icon": "lucide-file",
+              "title": "文档嵌入"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202505.md",
+                "file": "58 计划/llm-app/文档嵌入.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "202505 的大纲"
+              "title": "文档嵌入 的大纲"
             }
           }
         ],
@@ -191,7 +194,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "48b826e7d8ae516e",
+  "active": "4abc666770817338",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2025-05-09 09.27.22.excalidraw.md",
     "工作/工作日志/202505.md",
