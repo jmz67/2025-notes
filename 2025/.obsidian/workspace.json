@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "727fbef542133770",
+            "id": "979f5390159f29e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
+                "file": "58 计划/llm-stack/部署.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3-Go 语言基础"
+              "title": "部署"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -141,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
+                "file": "58 计划/llm-stack/部署.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "3-Go 语言基础 的大纲"
+              "title": "部署 的大纲"
             }
           }
         ],
@@ -171,10 +170,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "727fbef542133770",
+  "active": "cb1e191864876a76",
   "lastOpenFiles": [
-    "58 计划/llm-plugin-deamon/4-进阶-Go 语言高级特性.md",
+    "58 计划/llm-stack/部署.md",
+    "58 计划/llm-stack",
     "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
+    "58 计划/llm-plugin-deamon/4-进阶-Go 语言高级特性.md",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511143919.png",
     "Excalidraw/文档嵌入流程设计.excalidraw.md",
     "Excalidraw/MPG 线程模型.md",
@@ -214,10 +215,8 @@
     "58 计划/llm-app",
     "58 计划",
     "工作/Dify 源码改造/知识库/知识库外部接口.md",
-    "学习/0A 面试题",
     "Untitled.md",
     "未命名 1.md",
-    "工作/Dify 源码改造/Minio SDK.md",
-    "工作/Dify 源码改造/知识库/文件上传及切分嵌入.md"
+    "工作/Dify 源码改造/Minio SDK.md"
   ]
 }
