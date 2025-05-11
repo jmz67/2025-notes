@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -173,6 +172,8 @@
   },
   "active": "727fbef542133770",
   "lastOpenFiles": [
+    "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141912.png",
+    "58 计划/llm-plugin-deamon/pictures",
     "58 计划/llm-plugin-deamon/Go 语言高并发和微服务实战.md",
     "58 计划/llm-plugin-deamon/4-进阶-Go 语言高级特性.md",
     "工作/工作日志/202505.md",
@@ -216,8 +217,6 @@
     "未命名 1.md",
     "工作/Dify 源码改造/Minio SDK.md",
     "工作/Dify 源码改造/知识库/文件上传及切分嵌入.md",
-    "工作/Dify 源码改造/提交代码.md",
-    "工作/Dify 源码改造/Celery.md",
-    "工作/Dify 源码改造/知识库/pictures"
+    "工作/Dify 源码改造/提交代码.md"
   ]
 }
