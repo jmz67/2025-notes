@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "4-进阶-Go 语言高级特性"
             }
-          },
-          {
-            "id": "ffea2a82bfed398c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-05-11 14.27.13.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-05-11 14.27.13.excalidraw"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2025-05-11 14.27.13.excalidraw.md",
+                "file": "58 计划/llm-plugin-deamon/4-进阶-Go 语言高级特性.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Drawing 2025-05-11 14.27.13.excalidraw 的大纲"
+              "title": "4-进阶-Go 语言高级特性 的大纲"
             }
           }
         ],
@@ -183,10 +170,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "ffea2a82bfed398c",
+  "active": "727fbef542133770",
   "lastOpenFiles": [
+    "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511143919.png",
+    "Excalidraw/文档嵌入流程设计.excalidraw.md",
+    "Excalidraw/MPG 线程模型.md",
     "58 计划/llm-plugin-deamon/4-进阶-Go 语言高级特性.md",
-    "Excalidraw/Drawing 2025-05-11 14.27.13.excalidraw.md",
+    "Excalidraw/Drawing 2025-05-09 09.27.22.excalidraw.md",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141912.png",
@@ -200,7 +190,6 @@
     "58 计划/llm-app/应用开发-工作流预览.md",
     "未命名.md",
     "58 计划/llm-app/知识库-文档嵌入.md",
-    "Excalidraw/Drawing 2025-05-09 09.27.22.excalidraw.md",
     "58 计划/llm-plugin-deamon",
     "58 计划/llm-app/应用开发-工作流创建.md",
     "58 计划/llm-app/pictures/image.png",
@@ -214,7 +203,6 @@
     "58 计划/llm-app/文档嵌入.md",
     "学习/0A 面试题/中初级面试.md",
     "工作/APISix 简介.md",
-    "Excalidraw/文档嵌入流程设计.excalidraw.md",
     "Excalidraw",
     "58 计划/redis/pictures/Pasted image 20250508135925.png",
     "58 计划/redis/pictures",
@@ -229,7 +217,6 @@
     "Untitled.md",
     "未命名 1.md",
     "工作/Dify 源码改造/Minio SDK.md",
-    "工作/Dify 源码改造/知识库/文件上传及切分嵌入.md",
-    "工作/Dify 源码改造/提交代码.md"
+    "工作/Dify 源码改造/知识库/文件上传及切分嵌入.md"
   ]
 }
