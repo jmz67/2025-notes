@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -172,6 +173,8 @@
   },
   "active": "727fbef542133770",
   "lastOpenFiles": [
+    "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
+    "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141912.png",
     "58 计划/llm-plugin-deamon/pictures",
     "58 计划/llm-plugin-deamon/Go 语言高并发和微服务实战.md",
@@ -206,8 +209,6 @@
     "58 计划/proAgent/多智能体数据分析.md",
     "58 计划/proAgent",
     "58 计划/llm-app/pictures/Pasted image 20250508163710.png",
-    "58 计划/llm-app/pictures/Pasted image 20250508163750.png",
-    "58 计划/llm-app/pictures/Pasted image 20250508163915.png",
     "58 计划/llm-app/pictures",
     "58 计划/llm-app",
     "58 计划",
