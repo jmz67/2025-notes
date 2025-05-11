@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "应用开发-工作流预览"
             }
+          },
+          {
+            "id": "d4f7bfe6338e967d",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-05-11 18.39.04.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -140,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/llm-app/应用开发-工作流预览.md",
+                "file": "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "应用开发-工作流预览 的大纲"
+              "title": "Drawing 2025-05-11 18.39.04.excalidraw 的大纲"
             }
           }
         ],
@@ -169,8 +182,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d64bb06317c601fd",
+  "active": "d4f7bfe6338e967d",
   "lastOpenFiles": [
+    "58 计划/llm-app/应用开发-工作流预览.md",
+    "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
     "58 计划/llm-app/应用开发-工作流创建.md",
     "58 计划/llm-stack/部署.md",
     "58 计划/llm-stack",
@@ -190,7 +205,6 @@
     "58 计划/58 计划.md",
     "58 计划/llm-plugin-deamon/Etcd 入门.md",
     "58 计划/llm-plugin-deamon/Go-ETCD-demo.md",
-    "58 计划/llm-app/应用开发-工作流预览.md",
     "未命名.md",
     "58 计划/llm-app/知识库-文档嵌入.md",
     "58 计划/llm-plugin-deamon",
@@ -215,7 +229,6 @@
     "58 计划",
     "工作/Dify 源码改造/知识库/知识库外部接口.md",
     "Untitled.md",
-    "未命名 1.md",
-    "工作/Dify 源码改造/Minio SDK.md"
+    "未命名 1.md"
   ]
 }
