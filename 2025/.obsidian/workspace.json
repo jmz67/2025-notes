@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "4-进阶-Go 语言高级特性"
             }
+          },
+          {
+            "id": "ffea2a82bfed398c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-05-11 14.27.13.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-05-11 14.27.13.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/llm-plugin-deamon/4-进阶-Go 语言高级特性.md",
+                "file": "Excalidraw/Drawing 2025-05-11 14.27.13.excalidraw.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "4-进阶-Go 语言高级特性 的大纲"
+              "title": "Drawing 2025-05-11 14.27.13.excalidraw 的大纲"
             }
           }
         ],
@@ -155,8 +168,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,14 +183,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "727fbef542133770",
+  "active": "ffea2a82bfed398c",
   "lastOpenFiles": [
+    "58 计划/llm-plugin-deamon/4-进阶-Go 语言高级特性.md",
+    "Excalidraw/Drawing 2025-05-11 14.27.13.excalidraw.md",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141912.png",
     "58 计划/llm-plugin-deamon/pictures",
     "58 计划/llm-plugin-deamon/Go 语言高并发和微服务实战.md",
-    "58 计划/llm-plugin-deamon/4-进阶-Go 语言高级特性.md",
     "工作/工作日志/202505.md",
     "58 计划/模型服务优化.md",
     "58 计划/58 计划.md",
@@ -208,7 +221,6 @@
     "58 计划/redis",
     "58 计划/proAgent/多智能体数据分析.md",
     "58 计划/proAgent",
-    "58 计划/llm-app/pictures/Pasted image 20250508163710.png",
     "58 计划/llm-app/pictures",
     "58 计划/llm-app",
     "58 计划",
