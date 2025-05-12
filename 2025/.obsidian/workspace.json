@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "58 计划/Python.md",
+                "file": "工作/工作日志/202505.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python"
+              "title": "202505"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/Python.md",
+                "file": "工作/工作日志/202505.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Python 的大纲"
+              "title": "202505 的大纲"
             }
           }
         ],
@@ -181,8 +181,8 @@
   },
   "active": "f68c9b10d85348ec",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
     "58 计划/Python.md",
+    "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
     "58 计划/llm-app/应用开发-工作流预览.md",
     "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
     "58 计划/llm-plugin-deamon/0-Go 语言高并发和微服务实战.md",
