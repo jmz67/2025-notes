@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "43536ffb084f85bf",
+        "id": "37655dc78754ef4a",
         "type": "tabs",
         "children": [
           {
-            "id": "d64bb06317c601fd",
+            "id": "e7d991d2aa8293c4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "58 计划/llm-app/应用开发-工作流预览.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "应用开发-工作流预览"
-            }
-          },
-          {
-            "id": "d4f7bfe6338e967d",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-05-11 18.39.04.excalidraw"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Drawing 2025-05-11 18.39.04.excalidraw 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -182,7 +164,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "d4f7bfe6338e967d",
+  "active": "e7d991d2aa8293c4",
   "lastOpenFiles": [
     "58 计划/llm-app/应用开发-工作流预览.md",
     "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
