@@ -11,12 +11,14 @@
             "id": "f68c9b10d85348ec",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md"
+                "file": "58 计划/Python.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-05-11 18.39.04.excalidraw"
+              "icon": "lucide-file",
+              "title": "Python"
             }
           }
         ]
@@ -180,13 +182,14 @@
   },
   "active": "f68c9b10d85348ec",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
+    "58 计划/Python.md",
     "58 计划/llm-app/应用开发-工作流预览.md",
     "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
     "58 计划/llm-plugin-deamon/0-Go 语言高并发和微服务实战.md",
     "58 计划/模型服务优化.md",
     "未命名.md",
     "Excalidraw/MPG 线程模型.md",
-    "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
     "58 计划/llm-stack/部署.md",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511143919.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
@@ -224,7 +227,6 @@
     "58 计划/proAgent",
     "工作/账号密码&常用信息.md",
     "工作/Dify 源码改造/Minio SDK.md",
-    "学习/0A 面试题/中初级面试.md",
-    "工作/工作日志/202502.md"
+    "学习/0A 面试题/中初级面试.md"
   ]
 }
