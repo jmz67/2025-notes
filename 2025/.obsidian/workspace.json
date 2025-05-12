@@ -11,10 +11,12 @@
             "id": "e7d991d2aa8293c4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-05-11 18.39.04.excalidraw"
             }
           }
         ]
@@ -136,12 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Drawing 2025-05-11 18.39.04.excalidraw 的大纲"
             }
           }
         ],
