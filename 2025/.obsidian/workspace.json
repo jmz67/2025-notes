@@ -11,12 +11,14 @@
             "id": "410ceda574d53418",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/文档嵌入流程设计.excalidraw.md"
+                "file": "58 计划/llm-stack/未命名.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "文档嵌入流程设计.excalidraw"
+              "icon": "lucide-file",
+              "title": "未命名"
             }
           }
         ]
@@ -138,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/文档嵌入流程设计.excalidraw.md",
+                "file": "58 计划/llm-stack/未命名.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "文档嵌入流程设计.excalidraw 的大纲"
+              "title": "未命名 的大纲"
             }
           }
         ],
@@ -169,10 +171,21 @@
   },
   "active": "410ceda574d53418",
   "lastOpenFiles": [
+    "58 计划/llm-stack/部署.md",
+    "58 计划/llm-stack/未命名.md",
+    "58 计划/llm-app/应用开发-工作流预览.md",
+    "58 计划/llm-app/应用开发-工作流创建.md",
+    "58 计划/llm-plugin-deamon/0-Go 语言高并发和微服务实战.md",
+    "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
+    "工作/工作日志/202505.md",
+    "58 计划/58 计划.md",
+    "58 计划/模型服务优化.md",
+    "58 计划/Python.md",
+    "Excalidraw/MPG 线程模型.md",
+    "Excalidraw/文档嵌入流程设计.excalidraw.md",
     "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
     "工作/人工智能超市/APISix 简介.md",
     "工作/人工智能超市/指标评估.md",
-    "58 计划/58 计划.md",
     "Excalidraw/Drawing 2025-05-12 15.19.19.excalidraw.md",
     "未命名 1.md",
     "未命名.md",
@@ -180,25 +193,15 @@
     "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
     "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
     "Excalidraw/pictures",
-    "58 计划/llm-plugin-deamon/0-Go 语言高并发和微服务实战.md",
-    "58 计划/Python.md",
-    "58 计划/llm-app/应用开发-工作流预览.md",
-    "58 计划/llm-app/应用开发-工作流创建.md",
-    "58 计划/llm-stack/部署.md",
     "58 计划/llm-stack",
-    "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
     "58 计划/llm-plugin-deamon/4-进阶-Go 语言高级特性.md",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511143919.png",
-    "Excalidraw/文档嵌入流程设计.excalidraw.md",
-    "Excalidraw/MPG 线程模型.md",
     "Excalidraw/Drawing 2025-05-09 09.27.22.excalidraw.md",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141912.png",
     "58 计划/llm-plugin-deamon/pictures",
     "58 计划/llm-plugin-deamon/Go 语言高并发和微服务实战.md",
-    "工作/工作日志/202505.md",
-    "58 计划/模型服务优化.md",
     "58 计划/llm-plugin-deamon/Etcd 入门.md",
     "58 计划/llm-plugin-deamon/Go-ETCD-demo.md",
     "58 计划/llm-app/知识库-文档嵌入.md",
@@ -209,7 +212,6 @@
     "58 计划/llm-app/pictures/Pasted image 20250509145346.png",
     "58 计划/redis/2 Redis Web 应用解析.md",
     "58 计划/redis/1 初识 Redis.md",
-    "58 计划/llm-app/文档嵌入.md",
     "Excalidraw",
     "58 计划/redis/pictures",
     "58 计划/redis",
