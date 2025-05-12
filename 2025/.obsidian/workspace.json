@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "58 计划/llm-stack/未命名.md",
+                "file": "58 计划/模型服务优化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "模型服务优化"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/llm-stack/未命名.md",
+                "file": "58 计划/模型服务优化.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "模型服务优化 的大纲"
             }
           }
         ],
@@ -171,15 +171,15 @@
   },
   "active": "410ceda574d53418",
   "lastOpenFiles": [
-    "58 计划/llm-stack/部署.md",
+    "58 计划/58 计划.md",
+    "58 计划/模型服务优化.md",
     "58 计划/llm-stack/未命名.md",
+    "58 计划/llm-stack/部署.md",
     "58 计划/llm-app/应用开发-工作流预览.md",
     "58 计划/llm-app/应用开发-工作流创建.md",
     "58 计划/llm-plugin-deamon/0-Go 语言高并发和微服务实战.md",
     "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
     "工作/工作日志/202505.md",
-    "58 计划/58 计划.md",
-    "58 计划/模型服务优化.md",
     "58 计划/Python.md",
     "Excalidraw/MPG 线程模型.md",
     "Excalidraw/文档嵌入流程设计.excalidraw.md",
