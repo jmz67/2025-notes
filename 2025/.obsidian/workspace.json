@@ -8,17 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f68c9b10d85348ec",
+            "id": "9f16d36561c4c748",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "工作/人工智能超市/指标评估.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2025-05-12 15.19.19.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "指标评估"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-05-12 15.19.19.excalidraw"
             }
           }
         ]
@@ -88,7 +86,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -150,13 +149,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/人工智能超市/指标评估.md",
+                "file": "Excalidraw/Drawing 2025-05-12 15.19.19.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "指标评估 的大纲"
+              "title": "Drawing 2025-05-12 15.19.19.excalidraw 的大纲"
             }
           }
         ],
@@ -179,10 +178,12 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "f68c9b10d85348ec",
+  "active": "9f16d36561c4c748",
   "lastOpenFiles": [
-    "工作/人工智能超市/APISix 简介.md",
+    "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
+    "Excalidraw/Drawing 2025-05-12 15.19.19.excalidraw.md",
     "工作/人工智能超市/指标评估.md",
+    "工作/人工智能超市/APISix 简介.md",
     "工作/人工智能超市",
     "工作/账号密码&常用信息.md",
     "工作/Dify 源码改造/Celery.md",
@@ -193,7 +194,6 @@
     "58 计划/APISIX.md",
     "工作/工作日志/202505.md",
     "58 计划/Python.md",
-    "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
     "58 计划/llm-app/应用开发-工作流预览.md",
     "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
     "58 计划/llm-plugin-deamon/0-Go 语言高并发和微服务实战.md",
@@ -220,7 +220,6 @@
     "58 计划/58 计划.md",
     "58 计划/llm-stack",
     "Excalidraw/Drawing 2025-05-09 09.27.22.excalidraw.md",
-    "58 计划/redis/2 Redis Web 应用解析.md",
     "Excalidraw/pictures",
     "Excalidraw",
     "58 计划/llm-app/pictures",
