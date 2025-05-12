@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/llm-app/应用开发-工作流预览.md",
+                "file": "58 计划/Python.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "应用开发-工作流预览 的大纲"
+              "title": "Python 的大纲"
             }
           }
         ],
@@ -164,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "left-ribbon": {
     "hiddenItems": {
