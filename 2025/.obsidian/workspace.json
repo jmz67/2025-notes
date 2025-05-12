@@ -11,12 +11,14 @@
             "id": "9f16d36561c4c748",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2025-05-12 15.19.19.excalidraw.md"
+                "file": "工作/人工智能超市/APISix 简介.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-05-12 15.19.19.excalidraw"
+              "icon": "lucide-file",
+              "title": "APISix 简介"
             }
           }
         ]
@@ -149,12 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "工作/人工智能超市/APISix 简介.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "APISix 简介 的大纲"
             }
           }
         ],
@@ -177,11 +180,11 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "e6d05cb0d8022fc3",
+  "active": "9f16d36561c4c748",
   "lastOpenFiles": [
     "工作/人工智能超市/指标评估.md",
-    "工作/人工智能超市/APISix 简介.md",
     "Excalidraw/Drawing 2025-05-12 15.19.19.excalidraw.md",
+    "工作/人工智能超市/APISix 简介.md",
     "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
     "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
     "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
