@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "58 计划/llm-app/应用开发-工作流预览.md",
+                "file": "58 计划/模型服务优化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "应用开发-工作流预览"
+              "title": "模型服务优化"
             }
           }
         ]
@@ -182,10 +182,10 @@
   },
   "active": "f68c9b10d85348ec",
   "lastOpenFiles": [
-    "58 计划/llm-app/知识库-文档嵌入.md",
-    "58 计划/llm-app/应用开发-工作流预览.md",
-    "工作/工作日志/202505.md",
     "58 计划/llm-app/应用开发-工作流创建.md",
+    "58 计划/llm-app/应用开发-工作流预览.md",
+    "58 计划/llm-app/知识库-文档嵌入.md",
+    "工作/工作日志/202505.md",
     "58 计划/llm-plugin-deamon/Etcd 入门.md",
     "58 计划/llm-app/pictures/image.png",
     "58 计划/llm-app/pictures/Pasted image 20250509150953.png",
