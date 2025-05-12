@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "fd9210448acc2fb5",
+        "id": "bc35c4d1eae25432",
         "type": "tabs",
         "children": [
           {
-            "id": "ae57f1421c669fd9",
+            "id": "410ceda574d53418",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "58 计划/58 计划.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/文档嵌入流程设计.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "58 计划"
+              "icon": "excalidraw-icon",
+              "title": "文档嵌入流程设计.excalidraw"
             }
           }
         ]
@@ -140,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/58 计划.md",
+                "file": "Excalidraw/文档嵌入流程设计.excalidraw.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "58 计划 的大纲"
+              "title": "文档嵌入流程设计.excalidraw 的大纲"
             }
           }
         ],
@@ -169,14 +167,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "ae57f1421c669fd9",
+  "active": "410ceda574d53418",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
+    "工作/人工智能超市/APISix 简介.md",
+    "工作/人工智能超市/指标评估.md",
+    "58 计划/58 计划.md",
     "Excalidraw/Drawing 2025-05-12 15.19.19.excalidraw.md",
     "未命名 1.md",
     "未命名.md",
-    "工作/人工智能超市/指标评估.md",
-    "工作/人工智能超市/APISix 简介.md",
     "工作/人工智能超市",
     "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
     "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
@@ -200,7 +199,6 @@
     "58 计划/llm-plugin-deamon/Go 语言高并发和微服务实战.md",
     "工作/工作日志/202505.md",
     "58 计划/模型服务优化.md",
-    "58 计划/58 计划.md",
     "58 计划/llm-plugin-deamon/Etcd 入门.md",
     "58 计划/llm-plugin-deamon/Go-ETCD-demo.md",
     "58 计划/llm-app/知识库-文档嵌入.md",
