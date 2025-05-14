@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/人工智能超市/指标评估.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "指标评估"
+              "title": "RagFlow ARM 部署"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -151,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/人工智能超市/指标评估.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "指标评估 的大纲"
+              "title": "RagFlow ARM 部署 的大纲"
             }
           }
         ],
@@ -182,12 +181,12 @@
   },
   "active": "3d518f0f0142d166",
   "lastOpenFiles": [
+    "工作/人工智能超市/指标评估.md",
+    "工作/人工智能超市/APISix 简介.md",
     "工作/RagFlow ARM 部署.md",
     "工作/人工智能超市/未命名.md",
     "工作/数字人初诊复诊.md",
-    "工作/人工智能超市/APISix 简介.md",
     "工作/大模型能力平台.md",
-    "工作/人工智能超市/指标评估.md",
     "58 计划/模型服务优化.md",
     "58 计划/58 计划.md",
     "未命名.md",
