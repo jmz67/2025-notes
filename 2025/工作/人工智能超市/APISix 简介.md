@@ -51,3 +51,67 @@ curl -i "http://127.0.0.1:9180/apisix/admin/routes" \
 
 这样就能在两个服务器之间轮询请求，实现真正的“负载均衡”。
 
+## Forward-Auth
+---
+
+```shell
+curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/auth' \
+    -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+    -H 'Content-Type: application/json' \
+    -d '{
+        "uri": "/auth",
+        "plugins": {
+            "serverless-pre-function": {
+                "phase": "rewrite",
+                "functions": [
+                    "return function (conf, ctx)
+                        local core = require(\"apisix.core\");
+                        local authorization = core.request.header(ctx, \"Authorization\");
+
+                        -- 情况 1：Authorization 为 '123'，通过认证
+                        if authorization == \"123\" then
+                            core.response.exit(200);
+                        
+                        -- 情况 2：Authorization 为 '321'，通过认证 + 设置 header
+                        elseif authorization == \"321\" then
+                            core.response.set_header(\"X-User-ID\", \"i-am-user\");
+                            core.response.exit(200);
+
+                        -- 情况 3：无效认证，跳转至登录页
+                        else
+                            core.response.set_header(\"Location\", \"http://example.com/auth\");
+                            core.response.exit(403);
+                        end
+                    end"
+                ]
+            }
+        }
+    }'
+```
+
+```shell
+curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/1' \
+    -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+    -d '{
+        "uri": "/headers",
+        "plugins": {
+            "forward-auth": {
+                "uri": "http://127.0.0.1:9080/auth",     
+                "request_headers": ["Authorization"],     
+                "upstream_headers": ["X-User-ID"],        
+                "client_headers": ["Location"]            
+            }
+        },
+        "upstream": {
+            "nodes": {
+                "httpbin.org:80": 1                       
+            },
+            "type": "roundrobin"
+        }
+    }'
+```
+
+```shell
+curl http://127.0.0.1:9080/headers -H 'Authorization: 123'
+```
+
