@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "指标评估"
             }
+          },
+          {
+            "id": "a2f3220ecd50db39",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "58 计划/模型服务优化.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "模型服务优化"
+            }
           }
         ]
       }
@@ -182,14 +196,15 @@
   },
   "active": "3d518f0f0142d166",
   "lastOpenFiles": [
-    "工作/人工智能超市/未命名.md",
+    "58 计划/模型服务优化.md",
+    "58 计划/58 计划.md",
     "工作/人工智能超市/指标评估.md",
+    "工作/人工智能超市/未命名.md",
     "未命名.md",
     "58 计划/llm-plugin-deamon/5-.md",
     "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
     "工作/人工智能超市/pictures",
     "工作/人工智能超市/APISix 简介.md",
-    "58 计划/58 计划.md",
     "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
     "58 计划/llm-stack/未命名.md",
     "58 计划/llm-stack/部署.md",
@@ -212,7 +227,6 @@
     "58 计划/llm-app/应用开发-工作流预览.md",
     "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
     "58 计划/llm-plugin-deamon/0-Go 语言高并发和微服务实战.md",
-    "58 计划/模型服务优化.md",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511143919.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",
