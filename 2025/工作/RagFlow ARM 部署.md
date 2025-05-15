@@ -101,4 +101,10 @@ scp -r root@47.99.172.64:/root/docker_file/docker D:\DevProject\temp\
 ```
 
 
+查看服务器的真实 ip 
 
+```
+ifconfig | grep -v 'br-'
+```
+
+10.9.0.44 dify 服务器 ip
