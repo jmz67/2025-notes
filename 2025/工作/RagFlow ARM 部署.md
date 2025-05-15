@@ -64,4 +64,9 @@ SHOW VARIABLES LIKE 'max_connections';
 
 infiniflow/ragflow:nightly-slim
 
+```
+(base) [root@bms-ntjk-0001 docker]# docker network create rf-external
+a11f40e5aebbeef8322f80f9a4c2d9b14d6eea04a05b183885640d4f0fcf458b
+```
+
 
