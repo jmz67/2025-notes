@@ -62,6 +62,6 @@ SHOW VARIABLES LIKE 'max_connections';
 
 
 
-
+infiniflow/ragflow:nightly-slim
 
 
