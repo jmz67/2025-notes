@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "58 计划/Python.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python"
+              "title": "RagFlow ARM 部署"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/Python.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Python 的大纲"
+              "title": "RagFlow ARM 部署 的大纲"
             }
           }
         ],
@@ -181,6 +181,7 @@
   },
   "active": "3d518f0f0142d166",
   "lastOpenFiles": [
+    "58 计划/Python.md",
     "工作/RagFlow ARM 部署.md",
     "工作/人工智能超市/未命名.md",
     "工作/人工智能超市/指标评估.md",
@@ -211,7 +212,6 @@
     "工作/Dify 源码改造/提交代码.md",
     "58 计划/APISIX.md",
     "工作/工作日志/202505.md",
-    "58 计划/Python.md",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511143919.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
     "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",
