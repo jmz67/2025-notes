@@ -74,5 +74,10 @@ a11f40e5aebbeef8322f80f9a4c2d9b14d6eea04a05b183885640d4f0fcf458b
 需要查看源码，看看在哪里修改 redis 用户名
 
 ```
-docker save -o ragflow_ my_image:tag
+docker save -o ragflow_0180.tar infiniflow/ragflow:nightly-slim
+```
+
+
+```
+docker load -i ragflow_0180.tar
 ```
