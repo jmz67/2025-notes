@@ -83,6 +83,7 @@ docker load -i ragflow_0180.tar
 ```
 
 ```
-scp ragflow_0180.tar root@60.12.208.135:/data4/ragflow/ragflow-0.18.0/docker
+scp root@60.12.208.135:/data4/ragflow/ragflow-0.18.0/docker/ragflow_0180.tar D:\DevProject\temp\
 ```
+
 
