@@ -81,3 +81,8 @@ docker save -o ragflow_0180.tar infiniflow/ragflow:nightly-slim
 ```
 docker load -i ragflow_0180.tar
 ```
+
+```
+scp ragflow_0180.tar root@60.12.208.135:/data4/ragflow/ragflow-0.18.0/docker
+```
+
