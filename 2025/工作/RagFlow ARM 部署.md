@@ -16,3 +16,52 @@ DOCKER_BUILDKIT=1 docker build --build-arg LIGHTEN=1 -f Dockerfile -t infiniflow
 ```
 # syntax=docker/dockerfile:1.6
 ```
+
+## 如何重启 mysql 容器服务
+---
+遇到连接池数量崩掉的情况，最火速的方法先重启
+
+```
+docker-compose restart mysql
+```
+
+```
+vi /etc/mysql/conf.d/my.cnf
+
+[mysqld] max_connections = 500
+
+mysqladmin -u root -p shutdown 
+mysqld_safe &
+```
+
+```
+mysql:
+  container_name: mysql
+  image: mysql:8.2.0
+  restart: always
+  environment:
+    MYSQL_ROOT_PASSWORD: 1234qwer
+    MYSQLD_OPTS: "--max-connections=500"  # 添加此行
+  volumes:
+    - ./volumes/mysql/conf/:/etc/mysql/conf.d/
+    - ./volumes/mysql/data/:/var/lib/mysql/
+    - ./volumes/mysql/log/:/var/log/mysql/
+  ports:
+    - 30005:3306
+  networks:
+    - ai-base
+```
+
+验证是否成功：
+
+```
+docker exec -it mysql mysql -u root -p
+
+SHOW VARIABLES LIKE 'max_connections';
+```
+
+
+
+
+
+
