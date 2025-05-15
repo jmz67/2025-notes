@@ -96,6 +96,9 @@ scp root@47.99.172.64:/root/docker_file/ragflow_0180.tar D:\DevProject\temp\
 scp -r root@60.12.208.135:/data4/ragflow/ragflow-0.18.0/docker .
 ```
 
+```
+scp -r root@47.99.172.64:/root/docker_file/docker D:\DevProject\temp\
+```
 
 
 
