@@ -71,3 +71,4 @@ a11f40e5aebbeef8322f80f9a4c2d9b14d6eea04a05b183885640d4f0fcf458b
 
 /ragflow/conf/service_conf.yaml
 
+需要查看源码，看看在哪里修改 redis 用户名
