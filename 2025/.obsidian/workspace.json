@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习/FastAPI/Dependencies.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Dependencies 的反向链接列表"
+              "title": "RagFlow ARM 部署 的反向链接列表"
             }
           },
           {
@@ -195,7 +195,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "3bfd5b027c4f5282",
+  "active": "2ad6e507df75cf0f",
   "lastOpenFiles": [
     "58 计划/Python.md",
     "58 计划/llm-app/应用开发-工作流预览.md",
