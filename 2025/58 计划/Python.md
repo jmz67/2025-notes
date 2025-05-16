@@ -22,5 +22,30 @@ async：像一个员工兼职多个工作，每个工作互不干扰，他在不
 
 示例代码：
 
+```python
+# 假设 doc_id 是文档的唯一标识
+lock_key = f"embedding_task_lock:{doc_id}"
+
+# 尝试获取锁，设置过期时间 10 分钟
+success = redis_client.set(lock_key, "1", nx=True, ex=600)
+
+if not success:
+    raise AlreadyExistsException("任务已存在，拒绝重复分发")
+
+# 成功获得锁，分发 Celery 任务
+embedding_task.delay(doc_id)
 ```
+
+在 `embedding_task` 的最后：
+
+```python
+@celery_app.task
+def embedding_task(doc_id):
+    try:
+        # 执行嵌入逻辑
+        ...
+    finally:
+        # 删除锁
+        redis_client.delete(f"embedding_task_lock:{doc_id}")
 ```
+
