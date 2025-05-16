@@ -15,7 +15,7 @@
               "state": {
                 "file": "58 计划/Python.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Python"
@@ -29,7 +29,7 @@
               "state": {
                 "file": "工作/RagFlow ARM 部署.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "RagFlow ARM 部署"

@@ -160,8 +160,78 @@ for index in indices:
 批量开启切分的脚本：
 
 ```python
+import requests
+import time
 
+API_KEY = "ragflow-g5ODAyODcyMzE1NjExZjA5ZDRmZWVkY2"
+BASE_URL = "http://47.99.172.64:23038"
+
+HEADERS = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+}
+
+def list_datasets():
+    url = f"{BASE_URL}/api/v1/datasets?page=1&page_size=100"
+    response = requests.get(url, headers=HEADERS)
+    response.raise_for_status()
+    result = response.json()
+    if result["code"] != 0:
+        raise Exception("获取知识库失败：" + result.get("message", ""))
+    return result["data"]
+
+def list_documents(dataset_id):
+    url = f"{BASE_URL}/api/v1/datasets/{dataset_id}/documents?page=1&page_size=500"
+    response = requests.get(url, headers=HEADERS)
+    response.raise_for_status()
+    result = response.json()
+    if result["code"] != 0:
+        raise Exception(f"获取知识库 {dataset_id} 的文档失败：" + result.get("message", ""))
+    return result["data"]["docs"]
+
+def parse_single_document(dataset_id, document_id):
+    url = f"{BASE_URL}/api/v1/datasets/{dataset_id}/chunks"
+    payload = {"document_ids": [document_id]}
+    response = requests.post(url, headers=HEADERS, json=payload)
+    return response.json()
+
+def main():
+    datasets = list_datasets()
+    for dataset in datasets:
+        dataset_id = dataset["id"]
+        dataset_name = dataset["name"]
+        print(f"\n📁 正在处理知识库：{dataset_name}（ID: {dataset_id}）")
+
+        docs = list_documents(dataset_id)
+        if not docs:
+            print("⚠️ 该知识库中没有文档，跳过。")
+            continue
+
+        print(f"🔍 共找到 {len(docs)} 个文档，准备依次解析...")
+
+        for doc in docs:
+            doc_id = doc["id"]
+            doc_name = doc["name"]
+            doc_status = doc["status"]
+
+            print(f"📄 正在解析文档：{doc_name}（ID: {doc_id}）")
+
+            if doc_status == "2":
+                print("⏩ 文档正在处理中，跳过。")
+                continue
+
+            result = parse_single_document(dataset_id, doc_id)
+            print(f"✅ 解析结果：{result}")
+
+            if result.get("code", 1) != 0:
+                print(f"❌ 文档解析失败，错误信息：{result.get('message', '无')}")
+            time.sleep(0.2)  # 可选：防止请求过快
+
+if __name__ == "__main__":
+    main()
 ```
+
+
 
 
 
