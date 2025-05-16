@@ -114,5 +114,30 @@ ifconfig | grep -v 'br-'
 
 对于 Mysql 的迁移来讲直接走 dump 那套东西就可以了
 
-minio 的迁移：
+elasticsearch 中的数据库的概念是索引，然后在 ragflow 中所有的向量都存在一个索引里面，我们通过这样的方式去查看索引中的文档数量：
+
+```python
+from elasticsearch import Elasticsearch
+
+es = Elasticsearch("http://localhost:1200", basic_auth=("elastic", "infini_rag_flow"))
+
+indices = es.indices.get_alias().keys()
+
+for index in indices:
+    count = es.count(index=index)['count']
+    print(f"索引 {index} 中的文档数量为：{count}")
+
+```
+
+elasticsearch 中的文档 document 是基本的数据单元，每一条文档是一个 json 对象，类似于数据库中的一行数据。
+
+每个文档包括：
+
+| 组成        | 含义                     |
+| --------- | ---------------------- |
+| `_index`  | 属于哪个索引（相当于“表”）         |
+| `_id`     | 文档唯一标识符（默认自动生成，也可以自定义） |
+| `_source` | 实际内容（你的 JSON 数据）       |
+
+
 
