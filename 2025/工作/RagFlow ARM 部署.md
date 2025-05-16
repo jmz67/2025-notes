@@ -131,13 +131,37 @@ for index in indices:
 
 elasticsearch 中的文档 document 是基本的数据单元，每一条文档是一个 json 对象，类似于数据库中的一行数据。
 
-每个文档包括：
+使用下面的脚本可以看更多的细节：
 
-| 组成        | 含义                     |
-| --------- | ---------------------- |
-| `_index`  | 属于哪个索引（相当于“表”）         |
-| `_id`     | 文档唯一标识符（默认自动生成，也可以自定义） |
-| `_source` | 实际内容（你的 JSON 数据）       |
+```python
+from elasticsearch import Elasticsearch
+
+es = Elasticsearch("http://localhost:1200", basic_auth=("elastic", "infini_rag_flow"))
+
+indices = es.indices.get_alias().keys()
+
+for index in indices:
+    # 获取文档数量
+    count = es.count(index=index)['count']
+    print(f"\n索引 {index} 中的文档数量为：{count}")
+
+    if count > 0:
+        # 随机查询一条文档（或者你可以用 sort）
+        try:
+            result = es.search(index=index, size=1)
+            doc = result["hits"]["hits"][0]["_source"]
+            print(f"示例文档内容：\n{doc}")
+        except Exception as e:
+            print(f"获取样本文档时出错：{e}")
+    else:
+        print("该索引为空，无文档可显示。")
+```
+
+批量开启切分的脚本：
+
+```python
+
+```
 
 
 
