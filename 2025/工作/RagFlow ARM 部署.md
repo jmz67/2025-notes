@@ -122,6 +122,10 @@ ifconfig | grep -v 'br-'
 
 后续的迁移可以走快照的方式。
 
+```
+/data3/var/lib/docker/volumes/docker_esdata01/_data
+```
+
 #### 一些细节
 
 elasticsearch 中的数据库的概念是索引，然后在 ragflow 中所有的向量都存在一个索引里面，我们通过这样的方式去查看索引中的文档数量：
