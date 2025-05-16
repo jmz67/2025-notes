@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/RagFlow ARM 部署.md",
+                "file": "其他/58 计划/llm-plugin-deamon/5-.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "RagFlow ARM 部署"
+              "title": "5-"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -140,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/RagFlow ARM 部署.md",
+                "file": "其他/58 计划/llm-plugin-deamon/5-.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RagFlow ARM 部署 的大纲"
+              "title": "5- 的大纲"
             }
           }
         ],
@@ -154,7 +155,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,12 +173,12 @@
   },
   "active": "a35a206f27bc482d",
   "lastOpenFiles": [
+    "工作/RagFlow ARM 部署.md",
     "工作/工作日志/202505.md",
     "工作/工作日志/202502.md",
     "未命名.md",
     "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
     "工作/人工智能超市/pictures",
-    "工作/RagFlow ARM 部署.md",
     "其他/常规/05 算法/01 代码随想录/pictures/Pasted image 20250217010018.png",
     "其他/常规/05 算法/01 代码随想录/pictures",
     "其他/常规/05 算法/01 代码随想录/未命名.md",
