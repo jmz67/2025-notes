@@ -49,3 +49,4 @@ def embedding_task(doc_id):
         redis_client.delete(f"embedding_task_lock:{doc_id}")
 ```
 
+但是这样还是存在问题，当我们的服务尤其是 celery down 掉之后，我们的任务就丢失了，如果**没有开启持久化**（比如 RDB 或 AOF），Redis 重启后任务锁会丢失，那你就会以为这个任务可以重新提交，导致重复执行。
