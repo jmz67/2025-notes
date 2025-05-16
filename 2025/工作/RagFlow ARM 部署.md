@@ -116,7 +116,7 @@ ifconfig | grep -v 'br-'
 
 对于 Mysql 的迁移来讲直接走 dump 那套东西就可以了
 
-### elas 迁移
+### elasticsearch 迁移
 
 #### 一些细节
 
@@ -238,7 +238,9 @@ if __name__ == "__main__":
 ```
 
 
+### minio 迁移
 
+直接拿 pro 的数据 v
 
 ---
 
