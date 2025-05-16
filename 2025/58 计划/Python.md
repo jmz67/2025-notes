@@ -50,3 +50,61 @@ def embedding_task(doc_id):
 ```
 
 但是这样还是存在问题，当我们的服务尤其是 celery down 掉之后，我们的任务就丢失了，如果**没有开启持久化**（比如 RDB 或 AOF），Redis 重启后任务锁会丢失，那你就会以为这个任务可以重新提交，导致重复执行。
+
+更稳健的做法：
+
+建立一个数据库任务表：
+
+```sql
+CREATE TABLE document_embedding_tasks (
+    doc_id VARCHAR PRIMARY KEY,
+    status VARCHAR,          -- pending, running, done, failed
+    created_at TIMESTAMP,
+    updated_at TIMESTAMP,
+    error_msg TEXT
+);
+```
+
+提交任务时候，双检查机制
+
+```python
+doc_id = "xxx"
+lock_key = f"embedding_task_lock:{doc_id}"
+
+# 先看数据库是否已有任务记录
+task = db.get_task_by_doc_id(doc_id)
+if task and task.status in ["pending", "running"]:
+    raise AlreadyExistsError("任务已经存在")
+
+# 再使用 Redis 做分布式锁，防止并发冲突
+if not redis_client.set(lock_key, "1", nx=True, ex=600):
+    raise AlreadyExistsError("任务锁存在，可能并发提交")
+
+# 写入数据库
+db.insert_or_update_task(doc_id, status="pending")
+
+# 提交任务
+embedding_task.delay(doc_id)
+```
+
+任务执行过程中
+
+```python
+@celery_app.task
+def embedding_task(doc_id):
+    db.update_task_status(doc_id, "running")
+    try:
+        # 嵌入逻辑
+        ...
+        db.update_task_status(doc_id, "done")
+    except Exception as e:
+        db.update_task_status(doc_id, "failed", error_msg=str(e))
+        raise
+    finally:
+        redis_client.delete(f"embedding_task_lock:{doc_id}")
+```
+
+- **Redis** 用于快速、临时的“幂等性锁”，防止并发重复提交。
+- **数据库** 是你的任务状态“单一可信源”（Single Source of Truth），即使 Redis 崩溃也不会丢状态。
+- 支持失败恢复、错误追踪、人工干预，**更适合关键业务场景**（如订单、扣费、合同等）。
+
