@@ -103,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -195,7 +194,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "2ad6e507df75cf0f",
+  "active": "3bfd5b027c4f5282",
   "lastOpenFiles": [
     "58 计划/Python.md",
     "58 计划/llm-app/应用开发-工作流预览.md",
