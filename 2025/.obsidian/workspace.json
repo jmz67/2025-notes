@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bc35c4d1eae25432",
+        "id": "0079f338ab706717",
         "type": "tabs",
         "children": [
           {
-            "id": "410ceda574d53418",
+            "id": "a35a206f27bc482d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "58 计划/llm-plugin-deamon/5-.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "5-"
+              "title": "RagFlow ARM 部署"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/llm-plugin-deamon/5-.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "5- 的大纲"
+              "title": "RagFlow ARM 部署 的大纲"
             }
           }
         ],
@@ -169,53 +169,53 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "410ceda574d53418",
+  "active": "a35a206f27bc482d",
   "lastOpenFiles": [
-    "58 计划/模型服务优化.md",
-    "58 计划/Python.md",
-    "58 计划/58 计划.md",
-    "58 计划/llm-plugin-deamon/5-.md",
-    "58 计划/llm-stack/未命名.md",
-    "58 计划/llm-stack/部署.md",
-    "58 计划/llm-app/应用开发-工作流预览.md",
-    "58 计划/llm-app/应用开发-工作流创建.md",
-    "58 计划/llm-plugin-deamon/0-Go 语言高并发和微服务实战.md",
-    "58 计划/llm-plugin-deamon/3-Go 语言基础.md",
     "工作/工作日志/202505.md",
-    "Excalidraw/MPG 线程模型.md",
-    "Excalidraw/文档嵌入流程设计.excalidraw.md",
-    "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
-    "工作/人工智能超市/APISix 简介.md",
-    "工作/人工智能超市/指标评估.md",
-    "Excalidraw/Drawing 2025-05-12 15.19.19.excalidraw.md",
-    "未命名 1.md",
+    "工作/工作日志/202502.md",
     "未命名.md",
-    "工作/人工智能超市",
-    "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
-    "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
-    "Excalidraw/pictures",
-    "58 计划/llm-stack",
-    "58 计划/llm-plugin-deamon/4-进阶-Go 语言高级特性.md",
-    "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511143919.png",
-    "Excalidraw/Drawing 2025-05-09 09.27.22.excalidraw.md",
-    "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
-    "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",
-    "58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141912.png",
-    "58 计划/llm-plugin-deamon/pictures",
-    "58 计划/llm-plugin-deamon/Go 语言高并发和微服务实战.md",
-    "58 计划/llm-plugin-deamon/Etcd 入门.md",
-    "58 计划/llm-plugin-deamon/Go-ETCD-demo.md",
-    "58 计划/llm-app/知识库-文档嵌入.md",
-    "58 计划/llm-plugin-deamon",
-    "58 计划/llm-app/pictures/image.png",
-    "58 计划/llm-app/pictures/Pasted image 20250509150953.png",
-    "58 计划/llm-app/pictures/Pasted image 20250509150736.png",
-    "58 计划/llm-app/pictures/Pasted image 20250509145346.png",
-    "58 计划/redis/2 Redis Web 应用解析.md",
-    "Excalidraw",
-    "58 计划/redis/pictures",
-    "58 计划/redis",
-    "58 计划/proAgent",
-    "58 计划/llm-app/pictures"
+    "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
+    "工作/人工智能超市/pictures",
+    "工作/RagFlow ARM 部署.md",
+    "其他/常规/05 算法/01 代码随想录/pictures/Pasted image 20250217010018.png",
+    "其他/常规/05 算法/01 代码随想录/pictures",
+    "其他/常规/05 算法/01 代码随想录/未命名.md",
+    "其他/常规/05 算法/01 代码随想录/01 回溯算法.md",
+    "其他/常规/05 算法/vector 常用用法.md",
+    "其他/常规/05 算法/01 代码随想录",
+    "其他/常规/05 算法",
+    "其他/常规/04 Go/pictures/Pasted image 20250212001121.png",
+    "其他/常规/04 Go/pictures/Pasted image 20250212001014.png",
+    "其他/常规/04 Go/pictures/Pasted image 20250211233631.png",
+    "其他/常规/04 Go/pictures",
+    "其他/常规/04 Go/Go语言圣经.pdf",
+    "其他/常规/04 Go/00 入门/pictures/Pasted image 20250215003355.png",
+    "其他/常规/04 Go/00 入门/pictures/Pasted image 20250214003907.png",
+    "其他/常规/04 Go/01 程序结构/02 声明.md",
+    "其他/常规/04 Go/01 程序结构/01 命名.md",
+    "其他/常规/04 Go/00 入门/pictures",
+    "其他/常规/04 Go/00 入门/09 Web 服务.md",
+    "其他/常规/04 Go/00 入门/08 并发获取多个 URL.md",
+    "其他/常规/04 Go/00 入门/07 获取 URL.md",
+    "其他/常规/04 Go/00 入门/05 查找重复的行.md",
+    "其他/常规/04 Go/00 入门/06 GIF 动画.md",
+    "其他/常规/04 Go/00 入门/04 命令行参数.md",
+    "其他/常规/04 Go/00 入门/03 Hello World.md",
+    "其他/常规/04 Go/00 入门/02 Golang 的概述.md",
+    "其他/常规/04 Go/00 入门/01 如何学习新技术.md",
+    "其他/常规/04 Go/01 程序结构",
+    "其他/常规/04 Go/00 入门",
+    "其他/常规/04 Go",
+    "其他/常规/03 Vue/6 组件进阶.md",
+    "其他/常规/03 Vue/0 Vue 深入浅出.md",
+    "其他/常规/02 React/项目实践/TailWindCSS & React & NikeWebDemo.md",
+    "58 计划/llm-plugin-deamon/5-.md",
+    "其他/常规/01 后端开发/Flask/pictures/Pasted image 20250214194655.png",
+    "其他/常规/01 后端开发/Flask/pictures/Pasted image 20250214184735.png",
+    "其他/常规/01 后端开发/Flask/Flask-restful/04 Intermediate Usage.md",
+    "其他/常规/01 后端开发/Flask/Flask-restful/02 Output fields.md",
+    "其他/常规/01 后端开发/Flask/Flask-restful/03 Extending Flask-RESTful.md",
+    "其他/常规/01 后端开发/Flask/Flask-restful/01 Request Parsing.md",
+    "其他/58 计划/redis/pictures/Pasted image 20250508135925.png"
   ]
 }

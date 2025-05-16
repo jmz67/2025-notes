@@ -7,5 +7,6 @@
   "showLineNumber": true,
   "propertiesInDocument": "source",
   "strictLineBreaks": false,
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "livePreview": false
 }

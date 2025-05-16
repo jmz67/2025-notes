@@ -1,0 +1,114 @@
+
+### Threading 和 async 
+
+threading：像一个公司里雇了多个员工，靠操作系统调度，大家都有工资（线程开销大）。 
+async：像一个员工兼职多个工作，每个工作互不干扰，他在不同时间处理不同的任务（协程超高效率）。
+
+但是有个很坑的地方，无论是哪个都不是真正的两个人同时干活，因为公司只有一台电脑！（Python 的 GIL（全局解释器锁）限制了**同一时间只能有一个线程执行 Python 字节码**，从而阻碍了**多线程在多核 CPU 上实现真正的并行计算**。）
+
+虽然说我们的 async 是开了很多协程这样，但实际上也是假并发，一个协程在执行 python 字节码的时候，其他协程必须等他 await 才能被调度。GIL 是针对解释器的，协程执行也是占用线程吗，所以一时间也只能运行一个协程。
+
+那实际上协程和新开一个线程没什么区别啊感觉，区别实际在于协程的切换在用户态，不需系统调度，开销就好很多啦。协程的协程栈只有几 kb 而线程栈有好几 mb 创建和销毁的开销不小。协程在 IO 的时候会自动让出控制权，而线程 IO 时仍可能占住 GIL 。
+
+> **协程在遇到 IO 操作时会主动 `await`，立即让出控制权；而线程在执行 IO 操作时**，**只有某些情况下才会释放 GIL，否则可能“白白占着 GIL 等 IO”，导致其他线程饿死。**
+
+---
+
+### 分布式锁初体验 
+
+实际的场景是这样的，我们有大量文档需要进行嵌入处理，当然不可能在一次请求中等待他去做完，我们会把这个任务放到后台 celery 中去做。那么就面对一个问题，如何分发任务，任务如何进行合理的处理（不会多个 celery 处理同一个任务这样）。实际上  **celery 和 redis 的机制**（有待补充）确定了任务只要放到 redis 上去了就不会出现任务被重复消费的情况。问题主要在于我们不要重复的分发一个任务（这里是文档嵌入倒是还好，如果是扣钱或者订单什么的，就有点恶心了）。
+
+如何确保我们不重复的分发任务呢？我们还是使用 redis ，在创建任务之前给每个任务使用文档的 id 来个命名（键值）。然后从 redis 中读取是否已经存在这样一个键了，如果有说明已经有这样一个任务了，那就报错好了，如果没有，那么就使用 setex 方法创建这样一个键值对存起来，然后将任务分发 delay 下去。
+
+在我的任务逻辑里面，同样的拿到这个键值之后，在耗时任务（这里的耗时是文档嵌入的耗时）完成之后，我们直接 `redis_client.delete(indexing_cache_key)` 将这个任务清空就好。这样一顿操作下来，我们就实现了一个分布式锁，保证了任务的不重复运行。
+
+示例代码：
+
+```python
+# 假设 doc_id 是文档的唯一标识
+lock_key = f"embedding_task_lock:{doc_id}"
+
+# 尝试获取锁，设置过期时间 10 分钟
+success = redis_client.set(lock_key, "1", nx=True, ex=600)
+
+if not success:
+    raise AlreadyExistsException("任务已存在，拒绝重复分发")
+
+# 成功获得锁，分发 Celery 任务
+embedding_task.delay(doc_id)
+```
+
+在 `embedding_task` 的最后：
+
+```python
+@celery_app.task
+def embedding_task(doc_id):
+    try:
+        # 执行嵌入逻辑
+        ...
+    finally:
+        # 删除锁
+        redis_client.delete(f"embedding_task_lock:{doc_id}")
+```
+
+但是这样还是存在问题，当我们的服务尤其是 celery down 掉之后，我们的任务就丢失了，如果**没有开启持久化**（比如 RDB 或 AOF），Redis 重启后任务锁会丢失，那你就会以为这个任务可以重新提交，导致重复执行。
+
+更稳健的做法：
+
+建立一个数据库任务表：
+
+```sql
+CREATE TABLE document_embedding_tasks (
+    doc_id VARCHAR PRIMARY KEY,
+    status VARCHAR,          -- pending, running, done, failed
+    created_at TIMESTAMP,
+    updated_at TIMESTAMP,
+    error_msg TEXT
+);
+```
+
+提交任务时候，双检查机制
+
+```python
+doc_id = "xxx"
+lock_key = f"embedding_task_lock:{doc_id}"
+
+# 先看数据库是否已有任务记录
+task = db.get_task_by_doc_id(doc_id)
+if task and task.status in ["pending", "running"]:
+    raise AlreadyExistsError("任务已经存在")
+
+# 再使用 Redis 做分布式锁，防止并发冲突
+if not redis_client.set(lock_key, "1", nx=True, ex=600):
+    raise AlreadyExistsError("任务锁存在，可能并发提交")
+
+# 写入数据库
+db.insert_or_update_task(doc_id, status="pending")
+
+# 提交任务
+embedding_task.delay(doc_id)
+```
+
+任务执行过程中
+
+```python
+@celery_app.task
+def embedding_task(doc_id):
+    db.update_task_status(doc_id, "running")
+    try:
+        # 嵌入逻辑
+        ...
+        db.update_task_status(doc_id, "done")
+    except Exception as e:
+        db.update_task_status(doc_id, "failed", error_msg=str(e))
+        raise
+    finally:
+        redis_client.delete(f"embedding_task_lock:{doc_id}")
+```
+
+- **Redis** 用于快速、临时的“幂等性锁”，防止并发重复提交。
+- **数据库** 是你的任务状态“单一可信源”（Single Source of Truth），即使 Redis 崩溃也不会丢状态。
+- 支持失败恢复、错误追踪、人工干预，**更适合关键业务场景**（如订单、扣费、合同等）。
+
+---
+

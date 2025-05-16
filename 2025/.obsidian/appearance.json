@@ -1,9 +1,10 @@
 {
   "cssTheme": "Obsidianotion",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "baseFontSize": 15,
   "textFontFamily": "",
   "baseFontSizeAction": true,
   "showViewHeader": true,
-  "showRibbon": true
+  "showRibbon": true,
+  "nativeMenus": false
 }
