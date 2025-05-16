@@ -5,5 +5,6 @@
   "textFontFamily": "",
   "baseFontSizeAction": true,
   "showViewHeader": true,
-  "showRibbon": true
+  "showRibbon": true,
+  "nativeMenus": false
 }

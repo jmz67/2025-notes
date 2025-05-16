@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "Python"
             }
-          },
-          {
-            "id": "3bfd5b027c4f5282",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/RagFlow ARM 部署.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "RagFlow ARM 部署"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -103,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -119,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作/RagFlow ARM 部署.md",
+                "file": "58 计划/Python.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +115,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "RagFlow ARM 部署 的反向链接列表"
+              "title": "Python 的反向链接列表"
             }
           },
           {
@@ -165,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/RagFlow ARM 部署.md",
+                "file": "58 计划/Python.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RagFlow ARM 部署 的大纲"
+              "title": "Python 的大纲"
             }
           }
         ],
@@ -194,11 +180,11 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "3bfd5b027c4f5282",
+  "active": "3d518f0f0142d166",
   "lastOpenFiles": [
+    "工作/RagFlow ARM 部署.md",
     "58 计划/Python.md",
     "58 计划/llm-app/应用开发-工作流预览.md",
-    "工作/RagFlow ARM 部署.md",
     "工作/人工智能超市/未命名.md",
     "工作/人工智能超市/指标评估.md",
     "工作/人工智能超市/APISix 简介.md",
