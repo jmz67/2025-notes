@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "58 计划/Python.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Python"
+              "title": "RagFlow ARM 部署"
             }
           }
         ]
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "58 计划/Python.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Python 的反向链接列表"
+              "title": "RagFlow ARM 部署 的反向链接列表"
             }
           },
           {
@@ -151,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "58 计划/Python.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Python 的大纲"
+              "title": "RagFlow ARM 部署 的大纲"
             }
           }
         ],
@@ -182,8 +182,8 @@
   },
   "active": "3d518f0f0142d166",
   "lastOpenFiles": [
-    "工作/RagFlow ARM 部署.md",
     "58 计划/Python.md",
+    "工作/RagFlow ARM 部署.md",
     "58 计划/llm-app/应用开发-工作流预览.md",
     "工作/人工智能超市/未命名.md",
     "工作/人工智能超市/指标评估.md",
