@@ -109,4 +109,7 @@ ifconfig | grep -v 'br-'
 
 10.9.0.44 dify 服务器 ip
 
+---
+## 开发和生产环境迁移
 
+对于 Mysql 的迁移来讲
