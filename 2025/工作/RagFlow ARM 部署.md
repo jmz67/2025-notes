@@ -112,4 +112,7 @@ ifconfig | grep -v 'br-'
 ---
 ## 开发和生产环境迁移
 
-对于 Mysql 的迁移来讲
+对于 Mysql 的迁移来讲直接走 dump 那套东西就可以了
+
+minio 的迁移：
+
