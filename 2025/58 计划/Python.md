@@ -13,3 +13,20 @@ async：像一个员工兼职多个工作，每个工作互不干扰，他在不
 
 
 
+```code
+indexing_cache_key = "document_{}_indexing".format(document.id)
+cache_result = redis_client.get(indexing_cache_key)
+if cache_result is not None:
+    raise InvalidActionError(f"Document:{document.name} is being indexed, please try again later")
+
+# Set cache to prevent indexing the same document multiple times
+redis_client.setex(indexing_cache_key, 600, 1)
+
+add_document_to_index_task.delay(document_id)
+
+
+@shared_task(queue="dataset")
+def add_document_to_index_task(dataset_document_id: str):
+    redis_client.delete(indexing_cache_key)
+
+```
