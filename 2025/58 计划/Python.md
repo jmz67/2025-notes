@@ -20,20 +20,7 @@ async：像一个员工兼职多个工作，每个工作互不干扰，他在不
 
 在我的任务逻辑里面，同样的拿到这个键值之后，在耗时任务（这里的耗时是文档嵌入的耗时）完成之后，我们直接 `redis_client.delete(indexing_cache_key)` 将这个任务清空就好。这样一顿操作下来，我们就实现了一个分布式锁，保证了任务的不重复运行。
 
-```code
-indexing_cache_key = "document_{}_indexing".format(document.id)
-cache_result = redis_client.get(indexing_cache_key)
-if cache_result is not None:
-    raise InvalidActionError(f"Document:{document.name} is being indexed, please try again later")
+示例代码：
 
-# Set cache to prevent indexing the same document multiple times
-redis_client.setex(indexing_cache_key, 600, 1)
-
-add_document_to_index_task.delay(document_id)
-
-
-@shared_task(queue="dataset")
-def add_document_to_index_task(dataset_document_id: str):
-    redis_client.delete(indexing_cache_key)
-
+```
 ```
