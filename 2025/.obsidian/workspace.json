@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其他/58 计划/llm-plugin-deamon/5-.md",
+                "file": "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "5-"
+              "title": "6-服务注册和发现"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/58 计划/llm-plugin-deamon/5-.md",
+                "file": "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "5- 的大纲"
+              "title": "6-服务注册和发现 的大纲"
             }
           }
         ],
@@ -173,8 +173,9 @@
   },
   "active": "a35a206f27bc482d",
   "lastOpenFiles": [
-    "工作/工作日志/202505.md",
     "其他/58 计划/llm-plugin-deamon/5-.md",
+    "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
+    "工作/工作日志/202505.md",
     "工作/RagFlow ARM 部署.md",
     "工作/工作日志/202502.md",
     "未命名.md",
@@ -217,7 +218,6 @@
     "其他/常规/01 后端开发/Flask/pictures/Pasted image 20250214184735.png",
     "其他/常规/01 后端开发/Flask/Flask-restful/04 Intermediate Usage.md",
     "其他/常规/01 后端开发/Flask/Flask-restful/02 Output fields.md",
-    "其他/常规/01 后端开发/Flask/Flask-restful/03 Extending Flask-RESTful.md",
     "其他/58 计划/redis/pictures/Pasted image 20250508135925.png"
   ]
 }
