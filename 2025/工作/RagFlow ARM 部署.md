@@ -243,6 +243,69 @@ if __name__ == "__main__":
     main()
 ```
 
+#### 文件权限
+
+权限信息显示：
+
+```
+drwxr-xr-x 2 root root 4096 May 17 17:46 /volumes/esdata01/_data
+```
+
+说明：
+
+- 该目录属主是 `root:root`
+    
+- 权限是 `755`，只有属主 root 有写权限，其他用户没有写权限
+    
+
+---
+
+而你的 Elasticsearch 容器内用户是 `elasticsearch` (UID 1000)，不是 root，所以它 **没有权限写入该目录**。
+
+---
+
+
+你需要把宿主机该目录属主改成 UID 1000，组改成 root，命令：
+
+```bash
+chown -R 1000:0 /volumes/esdata01/_data
+```
+
+或者如果你只想改目录本身：
+
+```bash
+chown 1000:0 /volumes/esdata01/_data
+```
+
+之后再确认权限：
+
+```bash
+ls -ld /volumes/esdata01/_data
+```
+
+应该显示类似：
+
+```
+drwxr-xr-x 2 elasticsearch root 4096 May 17 17:46 /volumes/esdata01/_data
+```
+
+或者
+
+```
+drwxr-xr-x 2 1000 root 4096 May 17 17:46 /volumes/esdata01/_data
+```
+
+---
+
+完成后，重启容器试试：
+
+```bash
+docker restart ragflow-es-01-test
+```
+
+---
+
+这样就能确保 Elasticsearch 有权限写入数据目录了。你要不要我帮你写一个完整步骤？
 
 ### minio 迁移
 
