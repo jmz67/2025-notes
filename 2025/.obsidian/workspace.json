@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/RagFlow ARM 部署.md",
+                "file": "工作/人工智能超市/指标评估.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "RagFlow ARM 部署"
+              "title": "指标评估"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -141,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/RagFlow ARM 部署.md",
+                "file": "工作/人工智能超市/指标评估.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RagFlow ARM 部署 的大纲"
+              "title": "指标评估 的大纲"
             }
           }
         ],
@@ -173,6 +172,10 @@
   },
   "active": "68ab9c93af2f74e0",
   "lastOpenFiles": [
+    "工作/人工智能超市/APISix 简介.md",
+    "工作/数字人初诊复诊.md",
+    "工作/账号密码&常用信息.md",
+    "工作/RagFlow ARM 部署.md",
     "其他/58 计划/proAgent/多智能体数据分析.md",
     "其他/58 计划/58 计划.md",
     "其他/58 计划/模型服务优化.md",
@@ -181,7 +184,6 @@
     "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
     "其他/58 计划/llm-plugin-deamon/7-远程过程调用 RPC.md",
     "工作/工作日志/202505.md",
-    "工作/RagFlow ARM 部署.md",
     "工作/工作日志/202502.md",
     "未命名.md",
     "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
@@ -210,12 +212,9 @@
     "其他/常规/04 Go/00 入门/06 GIF 动画.md",
     "其他/常规/04 Go/00 入门/04 命令行参数.md",
     "其他/常规/04 Go/00 入门/03 Hello World.md",
-    "其他/常规/04 Go/00 入门/02 Golang 的概述.md",
-    "其他/常规/04 Go/00 入门/01 如何学习新技术.md",
     "其他/常规/04 Go/01 程序结构",
     "其他/常规/04 Go/00 入门",
     "其他/常规/04 Go",
-    "其他/常规/03 Vue/6 组件进阶.md",
     "其他/常规/01 后端开发/Flask/pictures/Pasted image 20250214194655.png",
     "其他/常规/01 后端开发/Flask/pictures/Pasted image 20250214184735.png",
     "其他/58 计划/redis/pictures/Pasted image 20250508135925.png"
