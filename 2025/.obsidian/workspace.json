@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/人工智能超市/指标评估.md",
+                "file": "其他/58 计划/proAgent/多智能体数据分析.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "指标评估"
+              "title": "多智能体数据分析"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -140,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/人工智能超市/指标评估.md",
+                "file": "其他/58 计划/proAgent/多智能体数据分析.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "指标评估 的大纲"
+              "title": "多智能体数据分析 的大纲"
             }
           }
         ],
@@ -172,6 +173,7 @@
   },
   "active": "68ab9c93af2f74e0",
   "lastOpenFiles": [
+    "工作/人工智能超市/指标评估.md",
     "工作/人工智能超市/APISix 简介.md",
     "工作/数字人初诊复诊.md",
     "工作/账号密码&常用信息.md",
@@ -211,7 +213,6 @@
     "其他/常规/04 Go/00 入门/05 查找重复的行.md",
     "其他/常规/04 Go/00 入门/06 GIF 动画.md",
     "其他/常规/04 Go/00 入门/04 命令行参数.md",
-    "其他/常规/04 Go/00 入门/03 Hello World.md",
     "其他/常规/04 Go/01 程序结构",
     "其他/常规/04 Go/00 入门",
     "其他/常规/04 Go",
