@@ -336,6 +336,14 @@ curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backu
 curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup/snapshot_20240518?wait_for_completion=true"
 ```
 
+```
+(base) [root@bms-ntjk-0001 docker]# curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup/snapshot_20240518?wait_for_completion=true"
+
+{"snapshot":{"snapshot":"snapshot_20240518","uuid":"IVM05EZ2TsKJ3ZP-0-osPQ","repository":"my_backup","version_id":8500003,"version":"8500003","indices":["ragflow_f418dbce313e11f08f3ede01ef7f6e39"],"data_streams":[],"include_global_state":true,"state":"SUCCESS","start_time":"2025-05-18T18:09:31.203Z","start_time_in_millis":1747591771203,"end_time":"2025-05-18T18:10:16.218Z","end_time_in_millis":1747591816218,"duration_in_millis":45015,"failures":[],"shards":{"total":2,"failed":0,"successful":2},"feature_states":[]}}
+```
+
+
+
 ### minio 迁移
 
 直接拿 dev 的数据 volumes 挂到 pro 的环境上去。
