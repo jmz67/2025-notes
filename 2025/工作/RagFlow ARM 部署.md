@@ -320,6 +320,22 @@ curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backu
 }'
 ```
 
+```
+(base) [root@bms-ntjk-0001 docker]# curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup" -H 'Content-Type: application/json' -d'
+{
+  "type": "fs",
+  "settings": {
+    "location": "/usr/share/elasticsearch/snapshots",
+    "compress": true
+  }
+}'
+{"acknowledged":true}
+```
+
+```
+curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup/snapshot_20240518?wait_for_completion=true"
+```
+
 ### minio 迁移
 
 直接拿 dev 的数据 volumes 挂到 pro 的环境上去。
