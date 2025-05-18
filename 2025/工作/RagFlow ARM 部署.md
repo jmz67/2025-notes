@@ -307,6 +307,19 @@ docker restart ragflow-es-01-test
 
 这样就能确保 Elasticsearch 有权限写入数据目录了。你要不要我帮你写一个完整步骤？
 
+#### 快照迁移
+
+```
+curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup" -H 'Content-Type: application/json' -d'
+{
+  "type": "fs",
+  "settings": {
+    "location": "/usr/share/elasticsearch/snapshots",
+    "compress": true
+  }
+}'
+```
+
 ### minio 迁移
 
 直接拿 dev 的数据 volumes 挂到 pro 的环境上去。
