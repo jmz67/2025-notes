@@ -312,7 +312,7 @@ docker restart ragflow-es-01-test
 
 这样就能确保 Elasticsearch 有权限写入数据目录了。你要不要我帮你写一个完整步骤？
 
-#### 快照迁移
+#### 快照迁移（推荐）
 
 ```
 curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup" -H 'Content-Type: application/json' -d'
