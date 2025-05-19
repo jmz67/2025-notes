@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
+                "file": "工作/健康云迁移.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "账号密码&常用信息"
+              "title": "健康云迁移"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
+                "file": "工作/健康云迁移.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "账号密码&常用信息 的大纲"
+              "title": "健康云迁移 的大纲"
             }
           }
         ],
@@ -181,6 +181,8 @@
   },
   "active": "3d518f0f0142d166",
   "lastOpenFiles": [
+    "工作/账号密码&常用信息.md",
+    "工作/健康云迁移.md",
     "工作/RagFlow ARM 部署.md",
     "工作/康宁数字人.md",
     "其他/58 计划/proAgent/多智能体数据分析.md",
@@ -189,7 +191,6 @@
     "工作/工作日志/202505.md",
     "工作/工作日志/202502.md",
     "其他/58 计划/Python.md",
-    "工作/账号密码&常用信息.md",
     "工作/数字人初诊复诊.md",
     "其他/58 计划/llm-app/应用开发-工作流预览.md",
     "未命名.md",
@@ -212,7 +213,6 @@
     "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
     "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
     "工作/人工智能超市",
-    "工作/Dify 源码改造/Celery.md",
     "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511143919.png",
     "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
     "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",
