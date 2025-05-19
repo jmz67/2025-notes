@@ -122,7 +122,12 @@ ifconfig | grep -v 'br-'
 
 后续的迁移可以走快照的方式。
 
+```
+/data3/var/lib/docker/volumes/docker_esdata01/_data
+```
+
 /data3/var/lib/docker/volumes/docker_esdata01
+
 
 #### 一些细节
 
@@ -307,7 +312,7 @@ docker restart ragflow-es-01-test
 
 这样就能确保 Elasticsearch 有权限写入数据目录了。你要不要我帮你写一个完整步骤？
 
-#### 快照迁移
+#### 快照迁移（推荐）
 
 ```
 curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup" -H 'Content-Type: application/json' -d'
@@ -347,6 +352,7 @@ curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backu
 {"snapshot":{"snapshot":"snapshot_20240518","indices":["ragflow_f418dbce313e11f08f3ede01ef7f6e39"],"shards":{"total":2,"failed":0,"successful":2}}}
 ```
 
+[【最佳实践】Elasticsearch Snapshot 备份的使用方法-阿里云开发者社区](https://developer.aliyun.com/article/767043)
 
 
 ### minio 迁移
@@ -367,5 +373,8 @@ nohup ssh -CNg -L 23040:60.12.208.135:30040 root@60.12.208.135 > /var/log/23040.
 [Ragflow技术栈分析及二次开发指南 - 53AI-AI知识库|大模型知识库|大模型训练|智能体开发](https://www.53ai.com/news/RAG/2025032823615.html)
 
 
+遇到 pdf 嵌入太慢怎么办？
 
+1. 使用 gpu 打包的镜像版本（暂不支持华为显卡，不考虑）
+2. 添加 task worker 的数量，在 entrypoint.sh 文件中修改 worker 的数量
 
