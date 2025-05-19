@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/RagFlow ARM 部署.md",
+                "file": "工作/工作日志/202505.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "RagFlow ARM 部署"
+              "title": "202505"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/RagFlow ARM 部署.md",
+                "file": "工作/工作日志/202505.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RagFlow ARM 部署 的大纲"
+              "title": "202505 的大纲"
             }
           }
         ],
@@ -181,8 +181,11 @@
   },
   "active": "3d518f0f0142d166",
   "lastOpenFiles": [
-    "工作/人工智能超市/指标评估.md",
     "工作/RagFlow ARM 部署.md",
+    "未命名.md",
+    "其他/58 计划/llm-plugin-deamon/7-远程过程调用 RPC.md",
+    "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
+    "工作/人工智能超市/指标评估.md",
     "其他/常规",
     "其他/58 计划/Python.md",
     "其他/58 计划/llm-app/应用开发-工作流预览.md",
@@ -192,7 +195,6 @@
     "工作/大模型能力平台.md",
     "其他/58 计划/模型服务优化.md",
     "其他/58 计划/58 计划.md",
-    "未命名.md",
     "其他/58 计划/llm-plugin-deamon/5-.md",
     "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
     "工作/人工智能超市/pictures",
@@ -211,7 +213,6 @@
     "工作/Dify 源码改造/知识库操作.md",
     "工作/Dify 源码改造/源码部署.md",
     "工作/Dify 源码改造/邀请用户.md",
-    "工作/Dify 源码改造/提交代码.md",
     "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511143919.png",
     "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
     "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",

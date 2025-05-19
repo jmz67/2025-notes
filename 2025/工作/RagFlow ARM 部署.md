@@ -126,6 +126,9 @@ ifconfig | grep -v 'br-'
 /data3/var/lib/docker/volumes/docker_esdata01/_data
 ```
 
+/data3/var/lib/docker/volumes/docker_esdata01
+
+
 #### 一些细节
 
 elasticsearch 中的数据库的概念是索引，然后在 ragflow 中所有的向量都存在一个索引里面，我们通过这样的方式去查看索引中的文档数量：
@@ -245,12 +248,124 @@ if __name__ == "__main__":
     main()
 ```
 
+#### 文件权限
+
+权限信息显示：
+
+```
+drwxr-xr-x 2 root root 4096 May 17 17:46 /volumes/esdata01/_data
+```
+
+说明：
+
+- 该目录属主是 `root:root`
+    
+- 权限是 `755`，只有属主 root 有写权限，其他用户没有写权限
+    
+
+---
+
+而你的 Elasticsearch 容器内用户是 `elasticsearch` (UID 1000)，不是 root，所以它 **没有权限写入该目录**。
+
+---
+
+
+你需要把宿主机该目录属主改成 UID 1000，组改成 root，命令：
+
+```bash
+chown -R 1000:0 /volumes/esdata01/_data
+```
+
+或者如果你只想改目录本身：
+
+```bash
+chown 1000:0 /volumes/esdata01/_data
+```
+
+之后再确认权限：
+
+```bash
+ls -ld /volumes/esdata01/_data
+```
+
+应该显示类似：
+
+```
+drwxr-xr-x 2 elasticsearch root 4096 May 17 17:46 /volumes/esdata01/_data
+```
+
+或者
+
+```
+drwxr-xr-x 2 1000 root 4096 May 17 17:46 /volumes/esdata01/_data
+```
+
+---
+
+完成后，重启容器试试：
+
+```bash
+docker restart ragflow-es-01-test
+```
+
+---
+
+这样就能确保 Elasticsearch 有权限写入数据目录了。你要不要我帮你写一个完整步骤？
+
+#### 快照迁移
+
+```
+curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup" -H 'Content-Type: application/json' -d'
+{
+  "type": "fs",
+  "settings": {
+    "location": "/usr/share/elasticsearch/snapshots",
+    "compress": true
+  }
+}'
+```
+
+```
+(base) [root@bms-ntjk-0001 docker]# curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup" -H 'Content-Type: application/json' -d'
+{
+  "type": "fs",
+  "settings": {
+    "location": "/usr/share/elasticsearch/snapshots",
+    "compress": true
+  }
+}'
+{"acknowledged":true}
+```
+
+```
+curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup/snapshot_20240518?wait_for_completion=true"
+```
+
+```
+(base) [root@bms-ntjk-0001 docker]# curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup/snapshot_20240518?wait_for_completion=true"
+
+{"snapshot":{"snapshot":"snapshot_20240518","uuid":"IVM05EZ2TsKJ3ZP-0-osPQ","repository":"my_backup","version_id":8500003,"version":"8500003","indices":["ragflow_f418dbce313e11f08f3ede01ef7f6e39"],"data_streams":[],"include_global_state":true,"state":"SUCCESS","start_time":"2025-05-18T18:09:31.203Z","start_time_in_millis":1747591771203,"end_time":"2025-05-18T18:10:16.218Z","end_time_in_millis":1747591816218,"duration_in_millis":45015,"failures":[],"shards":{"total":2,"failed":0,"successful":2},"feature_states":[]}}
+```
+
+```
+(base) [root@bms-ntjk-0001 ragflow-bak-docker]# curl -u elastic:infini_rag_flow -X POST "http://localhost:30043/_snapshot/my_backup/snapshot_20240518/_restore?wait_for_completion=true"
+{"snapshot":{"snapshot":"snapshot_20240518","indices":["ragflow_f418dbce313e11f08f3ede01ef7f6e39"],"shards":{"total":2,"failed":0,"successful":2}}}
+```
+
+
 
 ### minio 迁移
 
 直接拿 dev 的数据 volumes 挂到 pro 的环境上去。
 
 ---
+
+### 端口映射
+---
+
+nohup ssh -CNg -L 23040:60.12.208.135:30040 root@60.12.208.135 > /var/log/23040.log 2>&1 &
+
+
 
 ## 扩展阅读
 
