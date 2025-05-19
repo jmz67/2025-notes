@@ -373,5 +373,8 @@ nohup ssh -CNg -L 23040:60.12.208.135:30040 root@60.12.208.135 > /var/log/23040.
 [Ragflow技术栈分析及二次开发指南 - 53AI-AI知识库|大模型知识库|大模型训练|智能体开发](https://www.53ai.com/news/RAG/2025032823615.html)
 
 
+遇到 pdf 嵌入太慢怎么办？
 
+1. 使用 gpu 打包的镜像版本（暂不支持华为显卡，不考虑）
+2. 添加 task worker 的数量，在 entrypoint.sh 文件中修改 worker 的数量
 

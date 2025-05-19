@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "RagFlow ARM 部署"
             }
-          },
-          {
-            "id": "bb0e38dd02e9e560",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "其他/58 计划/llm-app/应用开发-工作流预览.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "应用开发-工作流预览"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -166,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/58 计划/llm-app/应用开发-工作流预览.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "应用开发-工作流预览 的大纲"
+              "title": "RagFlow ARM 部署 的大纲"
             }
           }
         ],
@@ -195,8 +180,9 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "bb0e38dd02e9e560",
+  "active": "3d518f0f0142d166",
   "lastOpenFiles": [
+    "其他/58 计划/llm-app/应用开发-工作流预览.md",
     "工作/RagFlow ARM 部署.md",
     "工作/工作日志/202505.md",
     "未命名.md",
@@ -205,7 +191,6 @@
     "工作/人工智能超市/指标评估.md",
     "其他/常规",
     "其他/58 计划/Python.md",
-    "其他/58 计划/llm-app/应用开发-工作流预览.md",
     "工作/人工智能超市/未命名.md",
     "工作/人工智能超市/APISix 简介.md",
     "工作/数字人初诊复诊.md",
