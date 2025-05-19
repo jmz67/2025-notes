@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/康宁数字人.md",
-                "mode": "source",
+                "file": "工作/账号密码&常用信息.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "康宁数字人"
+              "title": "账号密码&常用信息"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -151,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/康宁数字人.md",
+                "file": "工作/账号密码&常用信息.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "康宁数字人 的大纲"
+              "title": "账号密码&常用信息 的大纲"
             }
           }
         ],
@@ -182,8 +181,9 @@
   },
   "active": "3d518f0f0142d166",
   "lastOpenFiles": [
-    "其他/58 计划/proAgent/多智能体数据分析.md",
+    "工作/RagFlow ARM 部署.md",
     "工作/康宁数字人.md",
+    "其他/58 计划/proAgent/多智能体数据分析.md",
     "其他/58 计划/58 计划.md",
     "其他/58 计划/模型服务优化.md",
     "工作/工作日志/202505.md",
@@ -191,7 +191,6 @@
     "其他/58 计划/Python.md",
     "工作/账号密码&常用信息.md",
     "工作/数字人初诊复诊.md",
-    "工作/RagFlow ARM 部署.md",
     "其他/58 计划/llm-app/应用开发-工作流预览.md",
     "未命名.md",
     "其他/58 计划/llm-plugin-deamon/7-远程过程调用 RPC.md",
