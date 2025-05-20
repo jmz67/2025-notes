@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "202505"
             }
+          },
+          {
+            "id": "7c5f216a8ca4ce3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工作/账号密码&常用信息.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "账号密码&常用信息"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -150,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202505.md",
+                "file": "工作/账号密码&常用信息.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "202505 的大纲"
+              "title": "账号密码&常用信息 的大纲"
             }
           }
         ],
@@ -179,8 +194,9 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "3d518f0f0142d166",
+  "active": "7c5f216a8ca4ce3d",
   "lastOpenFiles": [
+    "工作/工作日志/202505.md",
     "工作/工作日志/202502.md",
     "工作/账号密码&常用信息.md",
     "工作/健康云迁移.md",
@@ -190,7 +206,6 @@
     "其他/58 计划/proAgent/多智能体数据分析.md",
     "其他/58 计划/58 计划.md",
     "其他/58 计划/模型服务优化.md",
-    "工作/工作日志/202505.md",
     "其他/58 计划/Python.md",
     "工作/数字人初诊复诊.md",
     "其他/58 计划/llm-app/应用开发-工作流预览.md",
