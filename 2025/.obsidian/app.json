@@ -2,7 +2,7 @@
   "attachmentFolderPath": "./pictures",
   "spellcheck": false,
   "alwaysUpdateLinks": true,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "vimMode": false,
   "showLineNumber": true,
   "propertiesInDocument": "source",
