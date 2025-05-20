@@ -35,8 +35,7 @@
               "title": "账号密码&常用信息"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -165,13 +164,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
+                "file": "工作/工作日志/202505.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "账号密码&常用信息 的大纲"
+              "title": "202505 的大纲"
             }
           }
         ],
@@ -194,10 +193,10 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "7c5f216a8ca4ce3d",
+  "active": "3d518f0f0142d166",
   "lastOpenFiles": [
-    "工作/工作日志/202505.md",
     "工作/账号密码&常用信息.md",
+    "工作/工作日志/202505.md",
     "工作/RagFlow ARM 部署.md",
     "工作/工作日志/202502.md",
     "工作/健康云迁移.md",
