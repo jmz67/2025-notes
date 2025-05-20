@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其他/58 计划/llm-app/Dify 的后台管理系统.md",
+                "file": "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Dify 的后台管理系统"
+              "title": "6-服务注册和发现"
             }
           }
         ]
@@ -173,8 +173,8 @@
   },
   "active": "68ab9c93af2f74e0",
   "lastOpenFiles": [
-    "未命名.md",
     "其他/58 计划/llm-app/Dify 的后台管理系统.md",
+    "未命名.md",
     "工作/康宁数字人.md",
     "工作/健康云迁移.md",
     "工作/工作日志/202505.md",
