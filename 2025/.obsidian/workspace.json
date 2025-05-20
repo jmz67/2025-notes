@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
-                "mode": "preview",
+                "file": "其他/58 计划/llm-app/应用开发-工作流预览.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "账号密码&常用信息"
+              "title": "应用开发-工作流预览"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -165,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202505.md",
+                "file": "其他/58 计划/llm-app/应用开发-工作流预览.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "202505 的大纲"
+              "title": "应用开发-工作流预览 的大纲"
             }
           }
         ],
@@ -179,8 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,7 +195,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "3d518f0f0142d166",
+  "active": "7c5f216a8ca4ce3d",
   "lastOpenFiles": [
     "工作/账号密码&常用信息.md",
     "工作/工作日志/202505.md",
