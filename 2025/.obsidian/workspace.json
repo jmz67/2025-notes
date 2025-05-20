@@ -35,8 +35,7 @@
               "title": "应用开发-工作流预览"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -166,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/58 计划/llm-app/应用开发-工作流预览.md",
+                "file": "工作/工作日志/202505.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "应用开发-工作流预览 的大纲"
+              "title": "202505 的大纲"
             }
           }
         ],
@@ -195,8 +194,9 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "7c5f216a8ca4ce3d",
+  "active": "3d518f0f0142d166",
   "lastOpenFiles": [
+    "其他/58 计划/llm-app/应用开发-工作流预览.md",
     "工作/账号密码&常用信息.md",
     "工作/工作日志/202505.md",
     "工作/RagFlow ARM 部署.md",
@@ -209,7 +209,6 @@
     "其他/58 计划/模型服务优化.md",
     "其他/58 计划/Python.md",
     "工作/数字人初诊复诊.md",
-    "其他/58 计划/llm-app/应用开发-工作流预览.md",
     "未命名.md",
     "其他/58 计划/llm-plugin-deamon/7-远程过程调用 RPC.md",
     "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
