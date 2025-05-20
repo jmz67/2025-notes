@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/健康云迁移.md",
-                "mode": "preview",
+                "file": "工作/账号密码&常用信息.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "健康云迁移"
+              "title": "账号密码&常用信息"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/健康云迁移.md",
+                "file": "工作/账号密码&常用信息.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "健康云迁移 的大纲"
+              "title": "账号密码&常用信息 的大纲"
             }
           }
         ],
@@ -181,9 +181,9 @@
   },
   "active": "3d518f0f0142d166",
   "lastOpenFiles": [
-    "其他/58 计划/llm-app/Dify 的后台管理系统.md",
-    "工作/账号密码&常用信息.md",
     "工作/健康云迁移.md",
+    "工作/账号密码&常用信息.md",
+    "其他/58 计划/llm-app/Dify 的后台管理系统.md",
     "工作/RagFlow ARM 部署.md",
     "工作/康宁数字人.md",
     "其他/58 计划/proAgent/多智能体数据分析.md",
