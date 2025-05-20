@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其他/58 计划/llm-app/应用开发-工作流预览.md",
+                "file": "其他/58 计划/llm-app/节点之间如何进行数据的交互？.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "应用开发-工作流预览"
+              "title": "节点之间如何进行数据的交互？"
             }
           }
         ],
@@ -103,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -166,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/58 计划/llm-app/应用开发-工作流预览.md",
+                "file": "其他/58 计划/llm-app/节点之间如何进行数据的交互？.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "应用开发-工作流预览 的大纲"
+              "title": "节点之间如何进行数据的交互？ 的大纲"
             }
           }
         ],
@@ -197,8 +196,10 @@
   },
   "active": "7c5f216a8ca4ce3d",
   "lastOpenFiles": [
-    "工作/工作日志/202505.md",
     "其他/58 计划/llm-app/应用开发-工作流预览.md",
+    "其他/58 计划/llm-app/节点之间如何进行数据的交互？.md",
+    "其他/58 计划/llm-app/应用开发-工作流创建.md",
+    "工作/工作日志/202505.md",
     "工作/账号密码&常用信息.md",
     "工作/RagFlow ARM 部署.md",
     "工作/工作日志/202502.md",
@@ -224,8 +225,6 @@
     "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
     "其他/58 计划/llm-stack/未命名.md",
     "其他/58 计划/llm-stack/部署.md",
-    "其他/58 计划/redis/2 Redis Web 应用解析.md",
-    "其他/58 计划/redis/1 初识 Redis.md",
     "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
     "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
     "工作/人工智能超市",
