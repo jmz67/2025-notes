@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c4ce73f7c415fc95",
+        "id": "348c297334187263",
         "type": "tabs",
         "children": [
           {
-            "id": "68ab9c93af2f74e0",
+            "id": "3d518f0f0142d166",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其他/58 计划/llm-app/Dify 的后台管理系统.md",
-                "mode": "source",
+                "file": "工作/健康云迁移.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Dify 的后台管理系统"
+              "title": "健康云迁移"
             }
           }
         ]
@@ -61,7 +61,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜索"
             }
           },
           {
@@ -73,13 +73,22 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "1ee115c976277ba4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -95,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习/FastAPI/Dependencies.md",
+                "file": "工作/人工智能超市/指标评估.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Dependencies 的反向链接列表"
+              "title": "指标评估 的反向链接列表"
             }
           },
           {
@@ -141,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/58 计划/58 计划.md",
-                "followCursor": true,
+                "file": "工作/健康云迁移.md",
+                "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "58 计划 的大纲"
+              "title": "健康云迁移 的大纲"
             }
           }
         ],
@@ -155,12 +164,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 276.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "github-sync:Sync with Remote": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -168,56 +176,56 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "vscode-editor:新建代码文件": false,
-      "github-sync:Sync with Remote": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "68ab9c93af2f74e0",
+  "active": "3d518f0f0142d166",
   "lastOpenFiles": [
-    "未命名.md",
     "其他/58 计划/llm-app/Dify 的后台管理系统.md",
-    "工作/康宁数字人.md",
-    "工作/健康云迁移.md",
-    "工作/工作日志/202505.md",
-    "其他/58 计划/模型服务优化.md",
-    "其他/58 计划/Python.md",
-    "其他/58 计划/58 计划.md",
-    "其他/常规/05 算法/01 代码随想录/01 回溯算法.md",
-    "工作/RagFlow ARM 部署.md",
-    "其他/58 计划/proAgent/多智能体数据分析.md",
-    "工作/人工智能超市/指标评估.md",
-    "工作/人工智能超市/APISix 简介.md",
-    "工作/数字人初诊复诊.md",
     "工作/账号密码&常用信息.md",
-    "其他/58 计划/llm-plugin-deamon/5-.md",
-    "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
-    "其他/58 计划/llm-plugin-deamon/7-远程过程调用 RPC.md",
+    "工作/健康云迁移.md",
+    "工作/RagFlow ARM 部署.md",
+    "工作/康宁数字人.md",
+    "其他/58 计划/proAgent/多智能体数据分析.md",
+    "其他/58 计划/58 计划.md",
+    "其他/58 计划/模型服务优化.md",
+    "工作/工作日志/202505.md",
     "工作/工作日志/202502.md",
+    "其他/58 计划/Python.md",
+    "工作/数字人初诊复诊.md",
+    "其他/58 计划/llm-app/应用开发-工作流预览.md",
+    "未命名.md",
+    "其他/58 计划/llm-plugin-deamon/7-远程过程调用 RPC.md",
+    "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
+    "工作/人工智能超市/指标评估.md",
+    "其他/常规",
+    "工作/人工智能超市/未命名.md",
+    "工作/人工智能超市/APISix 简介.md",
+    "工作/大模型能力平台.md",
+    "其他/58 计划/llm-plugin-deamon/5-.md",
     "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
     "工作/人工智能超市/pictures",
-    "其他/常规/05 算法/01 代码随想录/pictures/Pasted image 20250217010018.png",
-    "其他/常规/05 算法/01 代码随想录/pictures",
-    "其他/常规/05 算法/01 代码随想录/未命名.md",
-    "其他/常规/05 算法/vector 常用用法.md",
-    "其他/常规/05 算法/01 代码随想录",
-    "其他/常规/05 算法",
-    "其他/常规/04 Go/pictures/Pasted image 20250212001121.png",
-    "其他/常规/04 Go/pictures/Pasted image 20250212001014.png",
-    "其他/常规/04 Go/pictures/Pasted image 20250211233631.png",
-    "其他/常规/04 Go/pictures",
-    "其他/常规/04 Go/Go语言圣经.pdf",
-    "其他/常规/04 Go/00 入门/pictures/Pasted image 20250215003355.png",
-    "其他/常规/04 Go/00 入门/pictures/Pasted image 20250214003907.png",
-    "其他/常规/04 Go/01 程序结构/02 声明.md",
-    "其他/常规/04 Go/01 程序结构/01 命名.md",
-    "其他/常规/04 Go/00 入门/pictures",
-    "其他/常规/04 Go/00 入门/09 Web 服务.md",
-    "其他/常规/04 Go/00 入门/08 并发获取多个 URL.md",
-    "其他/常规/04 Go/00 入门/07 获取 URL.md",
-    "其他/常规/04 Go/01 程序结构",
-    "其他/常规/04 Go/00 入门",
-    "其他/常规/04 Go",
-    "其他/常规/01 后端开发/Flask/pictures/Pasted image 20250214194655.png",
-    "其他/常规/01 后端开发/Flask/pictures/Pasted image 20250214184735.png",
-    "其他/58 计划/redis/pictures/Pasted image 20250508135925.png"
+    "Excalidraw/Drawing 2025-05-11 18.39.04.excalidraw.md",
+    "其他/58 计划/llm-stack/未命名.md",
+    "其他/58 计划/llm-stack/部署.md",
+    "其他/58 计划/redis/2 Redis Web 应用解析.md",
+    "其他/58 计划/redis/1 初识 Redis.md",
+    "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
+    "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
+    "工作/人工智能超市",
+    "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511143919.png",
+    "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511142022.png",
+    "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",
+    "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141912.png",
+    "其他/58 计划/llm-plugin-deamon/pictures",
+    "其他/58 计划/llm-app/pictures/image.png",
+    "其他/58 计划/llm-app/pictures/Pasted image 20250509150953.png",
+    "其他/58 计划/llm-app/pictures/Pasted image 20250509150736.png",
+    "其他/58 计划/llm-plugin-deamon",
+    "其他/58 计划/llm-stack",
+    "Excalidraw/pictures",
+    "Excalidraw",
+    "其他/58 计划/llm-app/pictures",
+    "其他/58 计划/llm-app"
   ]
 }
