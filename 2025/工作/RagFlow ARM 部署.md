@@ -376,7 +376,9 @@ nohup ssh -CNg -L 23040:60.12.208.135:30040 root@60.12.208.135 > /var/log/23040.
 nohup tar -zcvf move2zy.tar.gz move2zy > compress.log 2>&1 &
 ```
 
-
+```
+nohup tar -zxvf move2zy.tar.gz -C move2zy-bak/ > move2zy_unpack.log 2>&1 &
+```
 
 
 
