@@ -373,8 +373,10 @@ nohup ssh -CNg -L 23040:60.12.208.135:30040 root@60.12.208.135 > /var/log/23040.
 ## 迁移
 
 ```
-nohup tar --create --verbose --file=- --preserve-permissions move2zy/ | pigz --best > move2zy.tar.gz 2>backup.log &
+nohup tar -zcvf move2zy.tar.gz move2zy > compress.log 2>&1 &
 ```
+
+
 
 
 
