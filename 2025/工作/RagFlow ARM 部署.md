@@ -353,7 +353,7 @@ curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backu
 ```
 
 ```
-
+curl -u "elastic:infini_rag_flow" -X GET "localhost:1200/_snapshot/my_backup/_all?pretty"
 ```
 
 [【最佳实践】Elasticsearch Snapshot 备份的使用方法-阿里云开发者社区](https://developer.aliyun.com/article/767043)
