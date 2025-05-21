@@ -370,6 +370,12 @@ curl -u "elastic:infini_rag_flow" -X GET "localhost:1200/_snapshot/my_backup/_al
 
 nohup ssh -CNg -L 23040:60.12.208.135:30040 root@60.12.208.135 > /var/log/23040.log 2>&1 &
 
+## 迁移
+
+```
+nohup tar --create --verbose --file=- --preserve-permissions move2zy/ | pigz --best > move2zy.tar.gz 2>backup.log &
+```
+
 
 
 ## 扩展阅读
