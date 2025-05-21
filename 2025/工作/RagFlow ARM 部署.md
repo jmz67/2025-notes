@@ -338,7 +338,7 @@ curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backu
 ```
 
 ```
-curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup/snapshot_20240518?wait_for_completion=true"
+curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup/snapshot_20240521?wait_for_completion=true"
 ```
 
 ```
