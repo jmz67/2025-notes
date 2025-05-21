@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5cb534bd03988edc",
+            "id": "cd2b7ce122672306",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "未命名"
             }
-          },
-          {
-            "id": "cd2b7ce122672306",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-05-21 22.27.32.excalidraw"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,11 +172,11 @@
   },
   "active": "cd2b7ce122672306",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
+    "其他/常规/node-wf/未命名.md",
     "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",
     "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
     "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
-    "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
-    "其他/常规/node-wf/未命名.md",
     "工作/智能治疗开发.md",
     "其他/常规/node-wf",
     "未命名.md",
@@ -227,7 +214,6 @@
     "其他/常规/04 Go/pictures",
     "其他/常规/04 Go/Go语言圣经.pdf",
     "其他/常规/04 Go/00 入门/pictures/Pasted image 20250215003355.png",
-    "其他/常规/04 Go/00 入门/pictures/Pasted image 20250214003907.png",
     "其他/常规/04 Go/00 入门/pictures",
     "其他/常规/04 Go/01 程序结构",
     "其他/常规/04 Go/00 入门"
