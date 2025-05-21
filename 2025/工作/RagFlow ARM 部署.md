@@ -352,6 +352,10 @@ curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backu
 {"snapshot":{"snapshot":"snapshot_20240518","indices":["ragflow_f418dbce313e11f08f3ede01ef7f6e39"],"shards":{"total":2,"failed":0,"successful":2}}}
 ```
 
+```
+
+```
+
 [【最佳实践】Elasticsearch Snapshot 备份的使用方法-阿里云开发者社区](https://developer.aliyun.com/article/767043)
 
 
