@@ -338,7 +338,7 @@ curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backu
 ```
 
 ```
-curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup/snapshot_20240518?wait_for_completion=true"
+curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backup/snapshot_20240521?wait_for_completion=true"
 ```
 
 ```
@@ -350,6 +350,10 @@ curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backu
 ```
 (base) [root@bms-ntjk-0001 ragflow-bak-docker]# curl -u elastic:infini_rag_flow -X POST "http://localhost:30043/_snapshot/my_backup/snapshot_20240518/_restore?wait_for_completion=true"
 {"snapshot":{"snapshot":"snapshot_20240518","indices":["ragflow_f418dbce313e11f08f3ede01ef7f6e39"],"shards":{"total":2,"failed":0,"successful":2}}}
+```
+
+```
+curl -u "elastic:infini_rag_flow" -X GET "localhost:1200/_snapshot/my_backup/_all?pretty"
 ```
 
 [【最佳实践】Elasticsearch Snapshot 备份的使用方法-阿里云开发者社区](https://developer.aliyun.com/article/767043)
@@ -365,6 +369,16 @@ curl -u elastic:infini_rag_flow -X PUT "http://localhost:1200/_snapshot/my_backu
 ---
 
 nohup ssh -CNg -L 23040:60.12.208.135:30040 root@60.12.208.135 > /var/log/23040.log 2>&1 &
+
+## 迁移
+
+```
+nohup tar -zcvf move2zy.tar.gz move2zy > compress.log 2>&1 &
+```
+
+```
+nohup tar -zxvf move2zy.tar.gz -C move2zy-bak/ > move2zy_unpack.log 2>&1 &
+```
 
 
 

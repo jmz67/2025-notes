@@ -8,5 +8,5 @@
   "propertiesInDocument": "source",
   "strictLineBreaks": false,
   "showInlineTitle": true,
-  "livePreview": false
+  "livePreview": true
 }
