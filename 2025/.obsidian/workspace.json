@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "应用开发-工作流预览"
             }
+          },
+          {
+            "id": "73aa06dff411c3f4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -150,13 +161,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/58 计划/llm-app/应用开发-工作流预览.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "应用开发-工作流预览 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -179,11 +189,11 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "35e23f900343af96",
+  "active": "73aa06dff411c3f4",
   "lastOpenFiles": [
+    "其他/58 计划/llm-app/应用开发-工作流预览.md",
     "工作/工作日志/202505.md",
     "其他/58 计划/llm-app/节点之间如何进行数据的交互？.md",
-    "其他/58 计划/llm-app/应用开发-工作流预览.md",
     "其他/58 计划/llm-app/应用开发-工作流创建.md",
     "工作/账号密码&常用信息.md",
     "工作/RagFlow ARM 部署.md",
