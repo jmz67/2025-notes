@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/工作日志/202505.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "202505"
+              "title": "RagFlow ARM 部署"
             }
           }
         ],
@@ -165,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202505.md",
+                "file": "工作/RagFlow ARM 部署.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "202505 的大纲"
+              "title": "RagFlow ARM 部署 的大纲"
             }
           }
         ],
@@ -196,9 +196,9 @@
   },
   "active": "73aa06dff411c3f4",
   "lastOpenFiles": [
+    "工作/工作日志/202505.md",
     "工作/工作日志/202502.md",
     "其他/58 计划/llm-app/应用开发-工作流预览.md",
-    "工作/工作日志/202505.md",
     "其他/58 计划/llm-app/节点之间如何进行数据的交互？.md",
     "其他/58 计划/llm-app/应用开发-工作流创建.md",
     "工作/账号密码&常用信息.md",
