@@ -380,6 +380,10 @@ nohup tar -zcvf move2zy.tar.gz move2zy > compress.log 2>&1 &
 nohup tar -zxvf move2zy.tar.gz -C move2zy-bak/ > move2zy_unpack.log 2>&1 &
 ```
 
+```
+scp root@47.99.172.64:/root/move2zy.tar.gz .
+```
+
 
 
 ## 扩展阅读
