@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -179,13 +179,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/RagFlow ARM 部署.md",
+                "file": "工作/智能治疗开发.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RagFlow ARM 部署 的大纲"
+              "title": "智能治疗开发 的大纲"
             }
           }
         ],
@@ -208,10 +208,10 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "4ae63b629bdc9cd6",
+  "active": "702150f7b8249e9a",
   "lastOpenFiles": [
-    "工作/智能治疗开发.md",
     "工作/RagFlow ARM 部署.md",
+    "工作/智能治疗开发.md",
     "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
     "工作/健康云迁移.md",
     "工作/账号密码&常用信息.md",
