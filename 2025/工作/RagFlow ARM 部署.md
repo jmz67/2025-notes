@@ -380,6 +380,104 @@ nohup tar -zcvf move2zy.tar.gz move2zy > compress.log 2>&1 &
 nohup tar -zxvf move2zy.tar.gz -C move2zy-bak/ > move2zy_unpack.log 2>&1 &
 ```
 
+```
+scp root@47.99.172.64:/root/move2zy.tar.gz .
+```
+
+空间不足，看来需要使用 Minio 进行迁移了
+
+```python
+from minio import Minio
+from minio.error import S3Error
+import os
+import time
+
+def upload_large_file_to_minio(
+    endpoint: str,
+    access_key: str,
+    secret_key: str,
+    bucket_name: str,
+    file_path: str,
+    object_name: str = None,
+    part_size: int = 100 * 1024 * 1024,  # 100MB 分块大小
+    secure: bool = False
+):
+    """
+    上传大文件到 MinIO 服务器，支持断点续传和进度显示
+    
+    参数:
+    - endpoint: MinIO 服务器地址，例如 "211.90.240.240:30002"
+    - access_key: 访问密钥
+    - secret_key: 秘密密钥
+    - bucket_name: 存储桶名称
+    - file_path: 本地文件路径
+    - object_name: 上传后的对象名称，默认为文件名
+    - part_size: 分块上传的大小（字节），默认为 100MB
+    - secure: 是否使用 HTTPS，默认为 False
+    """
+
+    client = Minio(endpoint, access_key, secret_key, secure=secure)
+    
+    try:
+        if not client.bucket_exists(bucket_name):
+            client.make_bucket(bucket_name)
+            print(f"创建存储桶: {bucket_name}")
+    except S3Error as e:
+        print(f"检查/创建存储桶失败: {e}")
+        return False
+    
+    if object_name is None:
+        object_name = os.path.basename(file_path)
+    
+    file_size = os.path.getsize(file_path)
+    
+    try:
+        print(f"开始上传文件: {file_path}")
+        print(f"文件大小: {file_size / (1024*1024):.2f} MB")
+        print(f"分块大小: {part_size / (1024*1024):.2f} MB")
+        
+        start_time = time.time()
+        
+        client.fput_object(
+            bucket_name,
+            object_name,
+            file_path,
+            part_size=part_size
+        )
+        
+        end_time = time.time()
+        duration = end_time - start_time
+        speed = file_size / duration / (1024*1024)  # MB/s
+        
+        print(f"上传成功! 对象: {bucket_name}/{object_name}")
+        print(f"耗时: {duration:.2f} 秒")
+        print(f"平均速度: {speed:.2f} MB/秒")
+        return True
+        
+    except S3Error as e:
+        print(f"上传失败: {e}")
+        return False
+    except Exception as e:
+        print(f"发生未知错误: {e}")
+        return False
+
+if __name__ == "__main__":
+
+    MINIO_ENDPOINT = "211.90.240.240:30002"
+    MINIO_ACCESS_KEY = "e3LS0p0XQp9AirkUbYmE"
+    MINIO_SECRET_KEY = "lJ3ynZPdVl2ie7mEfIsWwTMoThg7WZITfk5CpvUj"
+    BUCKET_NAME = "move2zy"
+    FILE_PATH = "move2zy.tar.gz" 
+    
+    upload_large_file_to_minio(
+        MINIO_ENDPOINT,
+        MINIO_ACCESS_KEY,
+        MINIO_SECRET_KEY,
+        BUCKET_NAME,
+        FILE_PATH
+    )    
+```
+
 
 
 ## 扩展阅读
