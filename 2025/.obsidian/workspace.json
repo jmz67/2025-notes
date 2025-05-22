@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e293f39f3ac3ecc4",
+        "id": "6d398fa89c393585",
         "type": "tabs",
         "children": [
           {
-            "id": "5e8c2cd08235e4c6",
+            "id": "acec3a86debdedb8",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-05-21 22.27.32.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -76,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -169,11 +166,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "5e8c2cd08235e4c6",
+  "active": "acec3a86debdedb8",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
     "其他/58 计划/redis/1 初识 Redis.md",
     "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
-    "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
     "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
     "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
     "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",
