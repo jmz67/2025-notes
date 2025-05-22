@@ -384,6 +384,11 @@ nohup tar -zxvf move2zy.tar.gz -C move2zy-bak/ > move2zy_unpack.log 2>&1 &
 scp root@47.99.172.64:/root/move2zy.tar.gz .
 ```
 
+空间不足，看来需要使用 Minio 进行迁移了
+
+```python
+
+```
 
 
 ## 扩展阅读
