@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6899774f4bcc9ade",
+        "id": "077153fa9d1d7845",
         "type": "tabs",
         "children": [
           {
-            "id": "73aa06dff411c3f4",
+            "id": "e0899ee0901a54ef",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/RagFlow ARM 部署.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "RagFlow ARM 部署"
+              "title": "新标签页"
             }
           }
         ]
@@ -150,13 +146,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/RagFlow ARM 部署.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RagFlow ARM 部署 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -179,13 +174,13 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "73aa06dff411c3f4",
+  "active": "e0899ee0901a54ef",
   "lastOpenFiles": [
+    "工作/RagFlow ARM 部署.md",
     "工作/智能治疗开发.md",
     "工作/pictures/image.png",
     "工作/工作日志/202505.md",
     "工作/健康云迁移.md",
-    "工作/RagFlow ARM 部署.md",
     "其他/58 计划/proAgent/多智能体数据分析.md",
     "其他/58 计划/58 计划.md",
     "工作/账号密码&常用信息.md",
