@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "64e46a8346a4d449",
+        "id": "035847b40be48673",
         "type": "tabs",
         "children": [
           {
-            "id": "74d5bb2db291994a",
+            "id": "31a297cf6a9b67c6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/人工智能超市/指标评估.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "指标评估"
+              "title": "新标签页"
             }
           }
         ]
@@ -150,13 +146,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/人工智能超市/指标评估.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "指标评估 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -179,15 +174,16 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "74d5bb2db291994a",
+  "active": "31a297cf6a9b67c6",
   "lastOpenFiles": [
-    "工作/人工智能超市/APISix 简介.md",
+    "工作/工作日志/202505/0522.md",
     "工作/工作日志/202505/202505.md",
+    "工作/工作日志/202505/0523.md",
+    "工作/人工智能超市/指标评估.md",
+    "工作/人工智能超市/APISix 简介.md",
     "工作/健康云迁移.md",
     "工作/RagFlow ARM 部署.md",
     "工作/智能治疗开发.md",
-    "工作/工作日志/202505/0522.md",
-    "工作/工作日志/202505/0523.md",
     "工作/工作日志/202505",
     "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
     "工作/账号密码&常用信息.md",
@@ -210,7 +206,6 @@
     "其他/58 计划/模型服务优化.md",
     "其他/58 计划/Python.md",
     "其他/58 计划/llm-plugin-deamon/7-远程过程调用 RPC.md",
-    "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
     "其他/常规",
     "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
     "工作/人工智能超市/pictures",
