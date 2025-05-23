@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/工作日志/202505/0523.md",
+                "file": "工作/工作日志/202505/202505.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0523"
+              "title": "202505"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202505/0523.md",
+                "file": "工作/工作日志/202505/202505.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "0523 的大纲"
+              "title": "202505 的大纲"
             }
           }
         ],
