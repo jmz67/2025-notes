@@ -114,7 +114,9 @@ def embedding_task(doc_id):
 
 ### python 中有哪些可变元素和不可变元素
 
+python 中的对象分为两类：
 
+不可变类型
 
 https://www.cnblogs.com/hechengQAQ/p/17315387.html
 
