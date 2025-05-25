@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "232db5f84dae8d46",
+        "id": "77112f58017bf3f1",
         "type": "tabs",
         "children": [
           {
-            "id": "29927283f4a29754",
+            "id": "18547653b7e74446",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "其他/58 计划/Python.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Python"
+              "title": "新标签页"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -141,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/58 计划/Python.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Python 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -171,13 +165,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "29927283f4a29754",
+  "active": "18547653b7e74446",
   "lastOpenFiles": [
+    "其他/58 计划/Python.md",
     "其他/58 计划/模型服务优化.md",
     "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",
     "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
     "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
-    "其他/58 计划/Python.md",
     "工作/工作日志/202505/0526-0602.md",
     "工作/工作日志/202505/202505.md",
     "工作/工作日志/202505/0523.md",
