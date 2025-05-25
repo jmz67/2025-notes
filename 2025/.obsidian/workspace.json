@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "709204b39d9c4b62",
+        "id": "232db5f84dae8d46",
         "type": "tabs",
         "children": [
           {
-            "id": "0178e13c7d1d0247",
+            "id": "29927283f4a29754",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png"
+                "file": "其他/58 计划/Python.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Drawing 2025-05-21 22.27.32.excalidraw"
+              "icon": "lucide-file",
+              "title": "Python"
             }
           }
         ]
@@ -76,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -139,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",
+                "file": "其他/58 计划/Python.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Drawing 2025-05-21 22.27.32.excalidraw 的大纲"
+              "title": "Python 的大纲"
             }
           }
         ],
@@ -153,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,8 +169,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "0178e13c7d1d0247",
+  "active": "29927283f4a29754",
   "lastOpenFiles": [
+    "其他/58 计划/模型服务优化.md",
+    "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",
     "Excalidraw/pictures/Pasted Image 20250512152640_554.png",
     "Excalidraw/pictures/Pasted Image 20250512152520_319.png",
     "其他/58 计划/Python.md",
@@ -187,7 +189,6 @@
     "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
     "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
     "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
-    "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",
     "其他/常规/node-wf/未命名.md",
     "工作/智能治疗开发.md",
     "其他/常规/node-wf",
@@ -197,7 +198,6 @@
     "工作/康宁数字人.md",
     "工作/健康云迁移.md",
     "工作/工作日志/202505.md",
-    "其他/58 计划/模型服务优化.md",
     "其他/58 计划/58 计划.md",
     "其他/常规/05 算法/01 代码随想录/01 回溯算法.md",
     "工作/RagFlow ARM 部署.md",
