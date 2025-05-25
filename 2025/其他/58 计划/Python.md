@@ -116,7 +116,71 @@ def embedding_task(doc_id):
 
 python 中的对象分为两类：
 
-不可变类型
+不可变类型：int float bool str tuple frozenset NoneType 
+可变类型：list dict set bytearray user-defined-class 
+
+不可变对象一旦创建，其值无法更改
+可变对象可以在原地修改其内容，id() 不变
+
+#### 函数参数默认值的陷阱
+
+```python
+def append_to_list(value, lst=[]):
+    lst.append(value)
+    return lst
+```
+
+- 这里的 `lst=[]` 是一个**可变默认参数**。
+- 在 Python 中，默认参数的值只会在**函数定义时计算一次**，而不是每次调用都重新计算。
+- 所以 `lst` 在多次调用之间其实是**共享同一个列表对象**。
+
+#### 可变对象在函数中是原地修改
+
+如果传入的是一个可变对象，函数内部对其操作会影响外部变量，因为传入的是引用
+
+```python
+def f(x):
+    x.append(1)
+
+a = []
+f(a)
+print(a)  # 👉 [1]
+```
+
+但是不可变对象会新建引用
+
+```python
+def f(x):
+    x += 1
+
+a = 10
+f(a)
+print(a)  # 👉 10（没变）
+```
+
+#### += 和 + 的区别
+
+很多候选人混淆 `lst += [x]` 与 `lst = lst + [x]`：
+
+- `lst += [x]` 是原地修改（调用 `__iadd__()`），会影响原始对象。
+- `lst = lst + [x]` 是生成新对象（调用 `__add__()`），不会影响原始对象。
+
+```
+def test(lst):
+    lst += [1]  # 原地修改
+
+def test2(lst):
+    lst = lst + [1]  # 新建对象赋值
+
+a = [0]
+test(a)
+print(a)   # 👉 [0, 1]
+
+b = [0]
+test2(b)
+print(b)   # 👉 [0] ✅ 没被修改
+```
+
 
 https://www.cnblogs.com/hechengQAQ/p/17315387.html
 
