@@ -165,7 +165,7 @@ print(a)  # 👉 10（没变）
 - `lst += [x]` 是原地修改（调用 `__iadd__()`），会影响原始对象。
 - `lst = lst + [x]` 是生成新对象（调用 `__add__()`），不会影响原始对象。
 
-```
+```python
 def test(lst):
     lst += [1]  # 原地修改
 
@@ -181,6 +181,48 @@ test2(b)
 print(b)   # 👉 [0] ✅ 没被修改
 ```
 
+#### 如何避免默认可变参数陷阱？（务必提！）
+
+```python
+def append_to_list(value, lst=None):
+    if lst is None:
+        lst = []
+    lst.append(value)
+    return lst
+```
+
+#### 是否是 Python 的设计缺陷？
+
+不是。Python 的设计者 Guido van Rossum 明确表示这是一个**有意为之的设计**，并非 Bug。因为默认参数本身是对象引用，设计目标是让高级用户可以用对象持久化状态（比如缓存），只不过初学者容易踩坑。
+
+Guido 的原话在 Python 邮件列表中大意如下：
+
+> "This behavior is intentional and sometimes useful — mutable default arguments can serve as an efficient way to accumulate state across function calls."
+
+场景一：缓存函数内部的计算结果（memoization）
+
+```python
+def fib(n, cache={}):
+    if n in cache:
+        return cache[n]
+    if n < 2:
+        cache[n] = n
+    else:
+        cache[n] = fib(n-1) + fib(n-2)
+    return cache[n]
+```
+
+- 这个函数中的 `cache` 是一个默认参数，但因为它只在定义时创建一次，所以在多次递归调用之间共享同一个字典。
+- 这就实现了“原地缓存”（memoization）效果，极大地提高效率。
+- 这在 C 或 Java 中要手动维护，但在 Python 中几行就能搞定。
+
+这个题在以下大厂中都有被问过或变体出现过：
+
+- 🟦 **字节跳动（ByteDance）**：常问函数参数传递与默认值问题。
+- 🟥 **美团**：常考默认参数与 list 的副作用。
+- 🟨 **滴滴**：强调内存 id 变化与对象行为。
+- 🟧 **阿里/蚂蚁金服**：经常追问 `id()`、引用和作用域。
+- 🟩 **腾讯**：喜欢考察 `+` 与 `+=` 的区别，尤其是在列表或字符串上。
 
 https://www.cnblogs.com/hechengQAQ/p/17315387.html
 
