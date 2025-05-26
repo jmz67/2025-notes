@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "035847b40be48673",
+        "id": "05deecb8ba0228e1",
         "type": "tabs",
         "children": [
           {
-            "id": "31a297cf6a9b67c6",
+            "id": "c1daba92dcb287ca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/工作日志/202505/0523.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "0523"
+              "title": "新标签页"
             }
           }
         ]
@@ -150,13 +146,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202505/0523.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "0523 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -179,10 +174,12 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "31a297cf6a9b67c6",
+  "active": "c1daba92dcb287ca",
   "lastOpenFiles": [
-    "工作/工作日志/202505/202505.md",
+    "工作/工作日志/202505/0526.md",
     "工作/工作日志/202505/0526-0602.md",
+    "工作/工作日志/202505/0523.md",
+    "工作/工作日志/202505/202505.md",
     "工作/工作日志/202502.md",
     "其他/58 计划/Python.md",
     "工作/健康云迁移.md",
@@ -192,7 +189,6 @@
     "工作/人工智能超市/指标评估.md",
     "工作/人工智能超市/APISix 简介.md",
     "工作/工作日志/202505/0522.md",
-    "工作/工作日志/202505/0523.md",
     "工作/RagFlow ARM 部署.md",
     "工作/智能治疗开发.md",
     "工作/工作日志/202505",
@@ -210,7 +206,6 @@
     "其他/58 计划/llm-app/节点之间如何进行数据的交互？.md",
     "其他/58 计划/llm-app/应用开发-工作流创建.md",
     "其他/58 计划/llm-app/Dify 的后台管理系统.md",
-    "其他/58 计划/模型服务优化.md",
     "其他/常规",
     "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
     "工作/人工智能超市/pictures",
