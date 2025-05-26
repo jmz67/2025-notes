@@ -244,20 +244,21 @@ plugins:
 绑定需要统计的 ai 路由到插件
 
 ```
-curl -X PUT http://127.0.0.1:9180/apisix/admin/routes/ai-token-log \
-  -H "X-API-KEY: <your-key>" \
+curl -X PUT http://127.0.0.1:9180/apisix/admin/routes/gpustack-chat \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
   -H "Content-Type: application/json" \
   -d '{
-    "uri": "/v1/chat/completions",
+    "uri": "/v1-openai/chat/completions",
+    "methods": ["POST"],
     "plugins": {
       "token_metrics": {}
     },
     "upstream": {
-      "nodes": {
-        "your-ai-server.com:443": 1
-      },
       "type": "roundrobin",
-      "scheme": "https"
+      "scheme": "http",
+      "nodes": {
+        "211.90.240.240:30001": 1
+      }
     }
   }'
 ```
