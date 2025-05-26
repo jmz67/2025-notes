@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a5749473038c3ad8",
+        "id": "8aec7b350aaf6108",
         "type": "tabs",
         "children": [
           {
-            "id": "fa304b648ed33d0c",
+            "id": "f12a0148b5157cb6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/人工智能超市/APISix 简介.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "APISix 简介"
+              "title": "新标签页"
             }
           }
         ]
@@ -150,13 +146,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/人工智能超市/APISix 简介.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "APISix 简介 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -179,12 +174,12 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "fa304b648ed33d0c",
+  "active": "f12a0148b5157cb6",
   "lastOpenFiles": [
+    "工作/人工智能超市/APISix 简介.md",
     "工作/人工智能超市/指标评估.md",
     "工作/RagFlow ARM 部署.md",
     "工作/智能治疗开发.md",
-    "工作/人工智能超市/APISix 简介.md",
     "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
     "Excalidraw/Drawing 2025-05-26 13.37.49.excalidraw.md",
     "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
