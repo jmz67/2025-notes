@@ -139,5 +139,29 @@ curl http://127.0.0.1:9080/headers -H 'Authorization: 123'
 
 > 如何通过 apisix 统计 gpustack 接口的返回的 token 值，就是说我 apisix 转发了一个 ai 接口，这个 ai 接口的返回体中是有 token 的消耗量的，请问如何进行一个统计？
 
+其中响应的 json 中包含以下信息
+
+```
+"usage": {
+  "prompt_tokens": 30,
+  "completion_tokens": 8,
+  "total_tokens": 38
+}
+```
+
+我们希望通过 apisix 拦截这些数据，并将 token 的使用情况以 prometheus 指标进行上报。
+
+### 步骤一：启用 prometheus 插件
+
+确保 apisix 全局启用了 prometheus 插件
+
+```
+curl -X PUT http://127.0.0.1:9180/apisix/admin/plugin_metadata/prometheus \
+  -H "X-API-KEY: <your-key>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "export_addr": "0.0.0.0:9091"
+  }'
+```
 
 
