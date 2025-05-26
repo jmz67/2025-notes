@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "83f2fe229bd1d5b0",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-05-26 13.37.49.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-05-26 13.37.49.excalidraw"
+            }
+          },
+          {
             "id": "ffc4deb77ab120f3",
             "type": "leaf",
             "state": {
@@ -163,13 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
+                "file": "Excalidraw/Drawing 2025-05-26 13.37.49.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "账号密码&常用信息 的大纲"
+              "title": "Drawing 2025-05-26 13.37.49.excalidraw 的大纲"
             }
           }
         ],
@@ -192,13 +204,14 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "ffc4deb77ab120f3",
+  "active": "83f2fe229bd1d5b0",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
+    "Excalidraw/Drawing 2025-05-26 13.37.49.excalidraw.md",
+    "工作/账号密码&常用信息.md",
     "工作/智能治疗开发.md",
     "工作/工作日志/202505/0526.md",
     "工作/工作日志/202505/0526-0602.md",
-    "工作/账号密码&常用信息.md",
-    "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
     "工作/工作日志/202505/202505.md",
     "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
     "其他/58 计划/llm-stack/未命名.md",
@@ -223,7 +236,6 @@
     "其他/常规/node-wf",
     "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",
     "工作/pictures/image.png",
-    "其他/58 计划/proAgent/多智能体数据分析.md",
     "其他/常规",
     "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
     "工作/人工智能超市/pictures",
