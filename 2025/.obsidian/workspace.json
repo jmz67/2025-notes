@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "05deecb8ba0228e1",
+        "id": "1edeeece7d9009e9",
         "type": "tabs",
         "children": [
           {
-            "id": "c1daba92dcb287ca",
+            "id": "1911235e86e64599",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "其他/58 计划/llm-stack/未命名.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "未命名"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-05-21 22.27.32.excalidraw"
             }
           }
         ]
@@ -150,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/58 计划/llm-stack/未命名.md",
+                "file": "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "Drawing 2025-05-21 22.27.32.excalidraw 的大纲"
             }
           }
         ],
@@ -179,8 +177,11 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "c1daba92dcb287ca",
+  "active": "1911235e86e64599",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
+    "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
+    "其他/58 计划/llm-stack/未命名.md",
     "其他/58 计划/llm-stack/部署.md",
     "其他/58 计划/llm-app/应用开发-工作流预览.md",
     "其他/58 计划/llm-app/知识库-文档嵌入.md",
@@ -201,8 +202,6 @@
     "工作/RagFlow ARM 部署.md",
     "工作/智能治疗开发.md",
     "工作/工作日志/202505",
-    "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
-    "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
     "未命名 1.md",
     "未命名.md",
     "其他/常规/node-wf/未命名.md",
@@ -210,7 +209,6 @@
     "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",
     "工作/pictures/image.png",
     "其他/58 计划/proAgent/多智能体数据分析.md",
-    "其他/58 计划/58 计划.md",
     "其他/常规",
     "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
     "工作/人工智能超市/pictures",
