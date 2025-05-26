@@ -25,16 +25,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/工作日志/202505/0526-0602.md",
+                "file": "工作/工作日志/202505/0526.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0526-0602"
+              "title": "0526"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202505/0526-0602.md",
+                "file": "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "0526-0602 的大纲"
+              "title": "Drawing 2025-05-21 22.27.32.excalidraw 的大纲"
             }
           }
         ],
@@ -192,18 +191,18 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "ffc4deb77ab120f3",
+  "active": "1911235e86e64599",
   "lastOpenFiles": [
-    "工作/工作日志/202505/202505.md",
+    "工作/工作日志/202505/0526.md",
+    "工作/工作日志/202505/0526-0602.md",
     "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
+    "工作/工作日志/202505/202505.md",
     "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
     "其他/58 计划/llm-stack/未命名.md",
     "其他/58 计划/llm-stack/部署.md",
     "其他/58 计划/llm-app/应用开发-工作流预览.md",
     "其他/58 计划/llm-app/知识库-文档嵌入.md",
     "其他/58 计划/llm-app/Dify 的后台管理系统.md",
-    "工作/工作日志/202505/0526.md",
-    "工作/工作日志/202505/0526-0602.md",
     "工作/工作日志/202505/0523.md",
     "工作/工作日志/202502.md",
     "其他/58 计划/Python.md",
