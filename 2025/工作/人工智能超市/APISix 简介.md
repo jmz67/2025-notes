@@ -54,6 +54,10 @@ curl -i "http://127.0.0.1:9180/apisix/admin/routes" \
 ## Forward-Auth
 ---
 
+我们希望对 `/headers` 路由请求做认证，认证逻辑不写在主服务里，而是代理到一个独立的认证服务（即 Forward Auth 方式），根据返回结果判断是否允许访问主服务。
+
+我们首先创建一个认证服务：
+
 ```shell
 curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/auth' \
     -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
@@ -89,6 +93,8 @@ curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/auth' \
     }'
 ```
 
+
+
 ```shell
 curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/1' \
     -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
@@ -115,3 +121,5 @@ curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/1' \
 curl http://127.0.0.1:9080/headers -H 'Authorization: 123'
 ```
 
+## 如何通过 apisix 统计 gpustack 接口的 token 
+---
