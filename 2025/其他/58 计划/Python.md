@@ -236,3 +236,5 @@ def fib(n, cache={}):
 
 https://www.cnblogs.com/hechengQAQ/p/17315387.html
 
+### 栈和堆
+
