@@ -11,10 +11,12 @@
             "id": "739087022979020d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-05-21 22.27.32.excalidraw"
             }
           }
         ]
@@ -146,12 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Drawing 2025-05-21 22.27.32.excalidraw 的大纲"
             }
           }
         ],
@@ -176,14 +179,14 @@
   },
   "active": "739087022979020d",
   "lastOpenFiles": [
-    "工作/账号密码&常用信息.md",
-    "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
     "Excalidraw/Drawing 2025-05-26 13.37.49.excalidraw.md",
+    "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
+    "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
+    "工作/账号密码&常用信息.md",
     "工作/智能治疗开发.md",
     "工作/工作日志/202505/0526.md",
     "工作/工作日志/202505/0526-0602.md",
     "工作/工作日志/202505/202505.md",
-    "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
     "其他/58 计划/llm-stack/未命名.md",
     "其他/58 计划/llm-stack/部署.md",
     "其他/58 计划/llm-app/应用开发-工作流预览.md",
