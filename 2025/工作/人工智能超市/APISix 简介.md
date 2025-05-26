@@ -244,7 +244,7 @@ plugins:
 绑定需要统计的 ai 路由到插件
 
 ```
-curl -X PUT http://127.0.0.1:9180/apisix/admin/routes/gpustack-chat \
+curl -X PUT http://127.0.0.1:30015/apisix/admin/routes/gpustack-chat \
   -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
   -H "Content-Type: application/json" \
   -d '{
