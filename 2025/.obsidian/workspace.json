@@ -47,8 +47,7 @@
               "title": "账号密码&常用信息"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
+                "file": "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "账号密码&常用信息 的大纲"
+              "title": "Drawing 2025-05-21 22.27.32.excalidraw 的大纲"
             }
           }
         ],
@@ -206,8 +205,9 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "dd8ef2bcfe844235",
+  "active": "1911235e86e64599",
   "lastOpenFiles": [
+    "工作/账号密码&常用信息.md",
     "工作/工作日志/202505/0526.md",
     "Excalidraw/Drawing 2025-05-21 22.27.32.excalidraw.md",
     "工作/工作日志/202505/0526-0602.md",
@@ -222,7 +222,6 @@
     "工作/工作日志/202502.md",
     "其他/58 计划/Python.md",
     "工作/健康云迁移.md",
-    "工作/账号密码&常用信息.md",
     "工作/数字人初诊复诊.md",
     "工作/康宁数字人.md",
     "工作/人工智能超市/指标评估.md",
