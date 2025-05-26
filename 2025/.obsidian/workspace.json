@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ccc15ac4b605177f",
+        "id": "b8a4afda2447b524",
         "type": "tabs",
         "children": [
           {
-            "id": "815a442726df5443",
+            "id": "962839bc20d2a843",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/工作日志/202505/0526-0602.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "0526-0602"
+              "title": "新标签页"
             }
           }
         ]
@@ -169,10 +165,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "815a442726df5443",
+  "active": "962839bc20d2a843",
   "lastOpenFiles": [
-    "工作/工作日志/202505/0526.md",
     "工作/工作日志/202505/0526-0602.md",
+    "工作/工作日志/202505/0526.md",
     "工作/工作日志/202505/0523.md",
     "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
     "其他/58 计划/llm-plugin-deamon/pictures/image.png",
