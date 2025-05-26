@@ -54,6 +54,10 @@ curl -i "http://127.0.0.1:9180/apisix/admin/routes" \
 ## Forward-Auth
 ---
 
+我们希望对 `/headers` 路由请求做认证，认证逻辑不写在主服务里，而是代理到一个独立的认证服务（即 Forward Auth 方式），根据返回结果判断是否允许访问主服务。
+
+我们首先创建一个认证服务：
+
 ```shell
 curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/auth' \
     -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
@@ -89,6 +93,14 @@ curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/auth' \
     }'
 ```
 
+| Authorization 值 | 认证结果 | 行为                        |
+| --------------- | ---- | ------------------------- |
+| `123`           | ✅ 成功 | 直接通过，返回 200               |
+| `321`           | ✅ 成功 | 返回 200，并设置响应头 `X-User-ID` |
+| 其他或空            | ❌ 失败 | 返回 403，并设置 `Location` 跳转  |
+
+创建 Forward Auth 路由 `/headers`
+
 ```shell
 curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/1' \
     -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
@@ -111,7 +123,158 @@ curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/1' \
     }'
 ```
 
+|参数|说明|
+|---|---|
+|`uri`|指向认证服务的完整 URL|
+|`request_headers`|从客户端请求中提取哪些 header 发送给认证服务|
+|`upstream_headers`|从认证服务响应中提取哪些 header 设置给上游服务|
+|`client_headers`|从认证服务响应中提取哪些 header 回传给客户端（如跳转用）|
+
 ```shell
 curl http://127.0.0.1:9080/headers -H 'Authorization: 123'
 ```
+
+## 如何通过 apisix 统计 gpustack 接口的 token 
+---
+
+> 如何通过 apisix 统计 gpustack 接口的返回的 token 值，就是说我 apisix 转发了一个 ai 接口，这个 ai 接口的返回体中是有 token 的消耗量的，请问如何进行一个统计？
+
+其中响应的 json 中包含以下信息
+
+```
+"usage": {
+  "prompt_tokens": 30,
+  "completion_tokens": 8,
+  "total_tokens": 38
+}
+```
+
+我们希望通过 apisix 拦截这些数据，并将 token 的使用情况以 prometheus 指标进行上报。
+
+### 步骤一：启用 prometheus 插件
+
+确保 apisix 全局启用了 prometheus 插件
+
+```
+curl -X PUT http://127.0.0.1:9180/apisix/admin/plugin_metadata/prometheus \
+  -H "X-API-KEY: <your-key>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "export_addr": "0.0.0.0:9091"
+  }'
+```
+
+我们可以通过以下地址访问这些指标：
+
+```
+http://<apisix-host>:9091/apisix/prometheus/metrics
+```
+
+### 步骤二：创建自定义插件 token_metrics 
+
+1. 将以下 Lua 文件保存为 `/usr/local/apisix/apisix/plugins/token_metrics.lua`：
+
+```lua
+local core = require("apisix.core")
+local prometheus = require("apisix.plugins.prometheus")
+local cjson = require("cjson.safe")
+
+local plugin_name = "token_metrics"
+local _M = {
+    version = 0.1,
+    priority = 12,
+    name = plugin_name,
+}
+
+local token_total
+local token_prompt
+local token_completion
+
+function _M.init()
+    local prom = prometheus.get_prometheus()
+    if not prom then
+        return nil, "Prometheus plugin is not initialized"
+    end
+
+    token_total = prom:counter("ai_total_tokens", "Total tokens used", {"model", "route"})
+    token_prompt = prom:counter("ai_prompt_tokens", "Prompt tokens used", {"model", "route"})
+    token_completion = prom:counter("ai_completion_tokens", "Completion tokens used", {"model", "route"})
+end
+
+function _M.body_filter(conf, ctx)
+    local chunk, eof = core.response.get_body()
+    if not eof or not chunk then
+        return
+    end
+
+    local body = cjson.decode(chunk)
+    if not body or not body.usage then
+        return
+    end
+
+    local model = body.model or "unknown"
+    local route_id = ctx.conf.id or "unknown"
+
+    local prompt = tonumber(body.usage.prompt_tokens) or 0
+    local completion = tonumber(body.usage.completion_tokens) or 0
+    local total = tonumber(body.usage.total_tokens) or (prompt + completion)
+
+    token_total:inc({model, route_id}, total)
+    token_prompt:inc({model, route_id}, prompt)
+    token_completion:inc({model, route_id}, completion)
+end
+
+return _M
+```
+
+2. 编辑 apisix 以启用该插件
+
+修改 `/usr/local/apisix/conf/config.yaml` 中的插件列表：
+
+```
+plugins:
+  - prometheus
+  - token_metrics
+```
+
+3. 重启 apisix 
+
+### 步骤三：创建路由绑定插件
+
+绑定需要统计的 ai 路由到插件
+
+```
+curl -X PUT http://127.0.0.1:30015/apisix/admin/routes/gpustack-chat \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "uri": "/v1-openai/chat/completions",
+    "methods": ["POST"],
+    "plugins": {
+      "token_metrics": {}
+    },
+    "upstream": {
+      "type": "roundrobin",
+      "scheme": "http",
+      "nodes": {
+        "211.90.240.240:30001": 1
+      }
+    }
+  }'
+```
+
+### 步骤四：验证统计数据
+
+向接口发起请求
+
+```
+curl -X POST http://127.0.0.1:9080/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{"model": "Qwen2.5-32B-Instruct", ... }'
+```
+
+```
+http://127.0.0.1:9091/apisix/prometheus/metrics
+```
+
 
