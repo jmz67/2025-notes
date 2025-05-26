@@ -93,7 +93,13 @@ curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/auth' \
     }'
 ```
 
+| Authorization 值 | 认证结果 | 行为                        |
+| --------------- | ---- | ------------------------- |
+| `123`           | ✅ 成功 | 直接通过，返回 200               |
+| `321`           | ✅ 成功 | 返回 200，并设置响应头 `X-User-ID` |
+| 其他或空            | ❌ 失败 | 返回 403，并设置 `Location` 跳转  |
 
+创建 Forward Auth 路由 `/headers`
 
 ```shell
 curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/1' \
@@ -117,9 +123,21 @@ curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/1' \
     }'
 ```
 
+|参数|说明|
+|---|---|
+|`uri`|指向认证服务的完整 URL|
+|`request_headers`|从客户端请求中提取哪些 header 发送给认证服务|
+|`upstream_headers`|从认证服务响应中提取哪些 header 设置给上游服务|
+|`client_headers`|从认证服务响应中提取哪些 header 回传给客户端（如跳转用）|
+
 ```shell
 curl http://127.0.0.1:9080/headers -H 'Authorization: 123'
 ```
 
 ## 如何通过 apisix 统计 gpustack 接口的 token 
 ---
+
+> 如何通过 apisix 统计 gpustack 接口的返回的 token 值，就是说我 apisix 转发了一个 ai 接口，这个 ai 接口的返回体中是有 token 的消耗量的，请问如何进行一个统计？
+
+
+
