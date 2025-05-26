@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "77112f58017bf3f1",
+        "id": "ccc15ac4b605177f",
         "type": "tabs",
         "children": [
           {
-            "id": "18547653b7e74446",
+            "id": "815a442726df5443",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "6-服务注册和发现"
             }
           }
         ]
@@ -170,7 +170,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "18547653b7e74446",
+  "active": "815a442726df5443",
   "lastOpenFiles": [
     "未命名.md",
     "工作/工作日志/202505/0526.md",
