@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其他/58 计划/TS.md",
+                "file": "工作/账号密码&常用信息.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TS"
+              "title": "账号密码&常用信息"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/58 计划/TS.md",
+                "file": "工作/账号密码&常用信息.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "TS 的大纲"
+              "title": "账号密码&常用信息 的大纲"
             }
           }
         ],
@@ -181,8 +181,8 @@
   },
   "active": "f12a0148b5157cb6",
   "lastOpenFiles": [
-    "其他/58 计划/Python.md",
     "其他/58 计划/TS.md",
+    "其他/58 计划/Python.md",
     "工作/工作日志/202505/0526-0602.md",
     "工作/工作日志/202505/202505.md",
     "工作/工作日志/202505/0526.md",
