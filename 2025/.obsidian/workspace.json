@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/工作日志/202505/0526.md",
+                "file": "工作/工作日志/202505/0526-0602.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0526"
+              "title": "0526-0602"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202505/0526.md",
+                "file": "工作/工作日志/202505/0526-0602.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "0526 的大纲"
+              "title": "0526-0602 的大纲"
             }
           }
         ],
@@ -181,7 +181,9 @@
   },
   "active": "f12a0148b5157cb6",
   "lastOpenFiles": [
+    "工作/工作日志/202505/202505.md",
     "工作/工作日志/202505/0526-0602.md",
+    "工作/工作日志/202505/0526.md",
     "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
     "未命名.md",
     "其他/58 计划/llm-plugin-deamon/pictures/image.png",
@@ -193,8 +195,6 @@
     "Excalidraw/Drawing 2025-05-26 13.37.49.excalidraw.md",
     "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
     "工作/账号密码&常用信息.md",
-    "工作/工作日志/202505/0526.md",
-    "工作/工作日志/202505/202505.md",
     "其他/58 计划/llm-stack/未命名.md",
     "其他/58 计划/llm-stack/部署.md",
     "其他/58 计划/llm-app/应用开发-工作流预览.md",
