@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作/工作日志/202505/0526-0602.md",
+                "file": "其他/58 计划/TS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0526-0602"
+              "title": "TS"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/工作日志/202505/0526-0602.md",
+                "file": "其他/58 计划/TS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "0526-0602 的大纲"
+              "title": "TS 的大纲"
             }
           }
         ],
@@ -181,8 +181,9 @@
   },
   "active": "f12a0148b5157cb6",
   "lastOpenFiles": [
-    "工作/工作日志/202505/202505.md",
     "工作/工作日志/202505/0526-0602.md",
+    "其他/58 计划/TS.md",
+    "工作/工作日志/202505/202505.md",
     "工作/工作日志/202505/0526.md",
     "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
     "未命名.md",
@@ -208,7 +209,6 @@
     "工作/康宁数字人.md",
     "工作/工作日志/202505/0522.md",
     "工作/工作日志/202505",
-    "未命名 1.md",
     "其他/常规/node-wf",
     "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",
     "工作/pictures/image.png",
