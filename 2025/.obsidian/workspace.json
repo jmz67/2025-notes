@@ -11,10 +11,14 @@
             "id": "f12a0148b5157cb6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "工作/工作日志/202505/0526.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "0526"
             }
           }
         ]
@@ -146,12 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "工作/工作日志/202505/0526.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "0526 的大纲"
             }
           }
         ],
@@ -176,6 +181,10 @@
   },
   "active": "f12a0148b5157cb6",
   "lastOpenFiles": [
+    "工作/工作日志/202505/0526-0602.md",
+    "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
+    "未命名.md",
+    "其他/58 计划/llm-plugin-deamon/pictures/image.png",
     "工作/人工智能超市/APISix 简介.md",
     "工作/人工智能超市/指标评估.md",
     "工作/RagFlow ARM 部署.md",
@@ -185,7 +194,6 @@
     "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
     "工作/账号密码&常用信息.md",
     "工作/工作日志/202505/0526.md",
-    "工作/工作日志/202505/0526-0602.md",
     "工作/工作日志/202505/202505.md",
     "其他/58 计划/llm-stack/未命名.md",
     "其他/58 计划/llm-stack/部署.md",
@@ -201,8 +209,6 @@
     "工作/工作日志/202505/0522.md",
     "工作/工作日志/202505",
     "未命名 1.md",
-    "未命名.md",
-    "其他/常规/node-wf/未命名.md",
     "其他/常规/node-wf",
     "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",
     "工作/pictures/image.png",
@@ -217,7 +223,6 @@
     "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141959.png",
     "其他/58 计划/llm-plugin-deamon/pictures/Pasted image 20250511141912.png",
     "其他/58 计划/llm-plugin-deamon/pictures",
-    "其他/58 计划/llm-app/pictures/image.png",
     "其他/58 计划/llm-plugin-deamon",
     "其他/58 计划/llm-stack",
     "Excalidraw/pictures",
