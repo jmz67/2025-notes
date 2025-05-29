@@ -278,3 +278,88 @@ http://127.0.0.1:9091/apisix/prometheus/metrics
 ```
 
 
+## apisix 实操
+---
+
+联通健康云服务器 apisix 密钥：
+
+```
+edd1c9f034335f136f87ad84b625c8f1
+```
+
+```shell
+curl http://127.0.0.1:9180/apisix/admin/upstreams/10001 \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+  -X PUT \
+  -d '{
+    "type": "roundrobin",
+    "nodes": {
+        "192.168.120.210:8081": 1
+    }
+}'
+```
+
+```
+{"key":"/apisix/upstreams/10001","value":{"type":"roundrobin","scheme":"http","pass_host":"pass","nodes":{"192.168.120.210:8081":1},"update_time":1748505929,"hash_on":"vars","create_time":1748505888,"id":"10001"}}
+```
+
+```shell
+curl http://127.0.0.1:9180/apisix/admin/routes/10001 \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+  -X PUT \
+  -d '{
+    "uri": "/chat/*",
+    "upstream_id": "10001"
+}'
+```
+
+```
+{"key":"/apisix/routes/10001","value":{"upstream_id":"10001","create_time":1748505955,"status":1,"update_time":1748505955,"uri":"/chat/*","priority":0,"id":"10001"}}
+```
+
+查看所有上游
+
+```shell
+curl http://127.0.0.1:9180/apisix/admin/upstreams \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1"
+```
+
+```shell
+curl http://127.0.0.1:9180/apisix/admin/upstreams/10001 \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1"
+```
+
+查看所有路由
+
+```shell
+curl http://127.0.0.1:9180/apisix/admin/routes \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" 
+```
+
+```shell
+curl http://127.0.0.1:9180/apisix/admin/routes/10001 \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1"
+```
+
+
+访问这个路由
+
+```
+http://192.168.120.44:9080/chat
+```
+
+```shell
+curl http://127.0.0.1:9180/apisix/admin/routes/10001 \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+  -X PUT \
+  -d '{
+    "uri": "/chat/*",
+    "plugins": {
+      "proxy-rewrite": {
+        "regex_uri": ["^/chat/(.*)", "/$1"]
+      }
+    },
+    "upstream_id": "10001"
+}'
+```
+
