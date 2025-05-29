@@ -348,3 +348,18 @@ curl http://127.0.0.1:9180/apisix/admin/routes/10001 \
 http://192.168.120.44:9080/chat
 ```
 
+```shell
+curl http://127.0.0.1:9180/apisix/admin/routes/10001 \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+  -X PUT \
+  -d '{
+    "uri": "/chat/*",
+    "plugins": {
+      "proxy-rewrite": {
+        "regex_uri": ["^/chat/(.*)", "/$1"]
+      }
+    },
+    "upstream_id": "10001"
+}'
+```
+
