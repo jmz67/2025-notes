@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8aec7b350aaf6108",
+        "id": "8483598a3f3eb127",
         "type": "tabs",
         "children": [
           {
-            "id": "f12a0148b5157cb6",
+            "id": "ba98b8e0ed7cf3cf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/账号密码&常用信息.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "账号密码&常用信息"
+              "title": "新标签页"
             }
           }
         ]
@@ -150,13 +146,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/账号密码&常用信息.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "账号密码&常用信息 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -179,10 +174,10 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "f12a0148b5157cb6",
+  "active": "ba98b8e0ed7cf3cf",
   "lastOpenFiles": [
-    "其他/58 计划/TS.md",
     "工作/账号密码&常用信息.md",
+    "其他/58 计划/TS.md",
     "其他/58 计划/Python.md",
     "工作/工作日志/202505/0526-0602.md",
     "工作/工作日志/202505/202505.md",
