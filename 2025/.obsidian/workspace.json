@@ -11,10 +11,14 @@
             "id": "962839bc20d2a843",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "6-服务注册和发现"
             }
           }
         ]
@@ -137,12 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "6-服务注册和发现 的大纲"
             }
           }
         ],
@@ -150,8 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,6 +172,7 @@
   },
   "active": "962839bc20d2a843",
   "lastOpenFiles": [
+    "工作/RagFlow ARM 部署.md",
     "未命名.md",
     "工作/Dify 源码改造/如何使用 nginx 代理 dify 前端.md",
     "其他/58 计划/TS.md",
@@ -200,7 +205,6 @@
     "工作/康宁数字人.md",
     "工作/健康云迁移.md",
     "工作/工作日志/202505.md",
-    "其他/58 计划/58 计划.md",
     "工作/人工智能超市/pictures/大模型超市流程图-流程图.jpg",
     "工作/人工智能超市/pictures",
     "其他/常规/05 算法/01 代码随想录/pictures/Pasted image 20250217010018.png",
