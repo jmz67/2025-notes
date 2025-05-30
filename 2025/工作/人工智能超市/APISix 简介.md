@@ -185,13 +185,20 @@ curl -X PATCH http://211.90.240.240:30015/apisix/admin/routes/1748598600021 \
   "plugins": {
     "forward-auth": {
       "uri": "http://101.71.97.95:86/prod-api/massAuthentication",
-      "request_method": "GET,POST",
-      "request_headers": ["Authorization"],
+      "request_method": "POST",
+      "request_headers": ["Authorization", "x-ak", "x-sk", "x-service-url"],
+      "upstream_headers": {
+        "ak": "x-ak",
+        "sk": "x-sk",
+        "serviceURL": "x-service-url"
+      },
       "timeout": 3000
     }
   }
 }'
 ```
+
+
 
 ## 如何通过 apisix 统计 gpustack 接口的 token 
 ---
