@@ -54,6 +54,8 @@ curl -i "http://127.0.0.1:9180/apisix/admin/routes" \
 ## Forward-Auth
 ---
 
+好好看看接口文档： https://apisix.apache.org/zh/docs/apisix/plugins/forward-auth/
+
 我们希望对 `/headers` 路由请求做认证，认证逻辑不写在主服务里，而是代理到一个独立的认证服务（即 Forward Auth 方式），根据返回结果判断是否允许访问主服务。
 
 我们首先创建一个认证服务：
