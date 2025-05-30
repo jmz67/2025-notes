@@ -624,4 +624,4 @@ apisix_ai_prompt_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 31
 apisix_ai_total_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 39
 ```
 
-现在的问题是
+现在的问题是只能收集到所有安插过这个插件的接口返回的 token 消耗数量总和，如何区分，更多的指标还需要确定。但好歹这条路是走通了。
