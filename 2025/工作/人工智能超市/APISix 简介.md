@@ -134,6 +134,44 @@ curl -X PUT 'http://127.0.0.1:9180/apisix/admin/routes/1' \
 curl http://127.0.0.1:9080/headers -H 'Authorization: 123'
 ```
 
+### 实操
+
+```shell
+curl -X PATCH http://211.90.240.240:30015/apisix/admin/routes/1748598600021 \
+-H "Content-Type: application/json" \
+-H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+-d '{
+  "plugins": {
+    "forward-auth": {
+      "uri": "http://101.71.97.95:86/prod-api/massAuthentication",
+      "request_method": "POST",
+      "request_headers": ["Authorization"],
+      "timeout": 3000
+    }
+  }
+}'
+```
+
+结果：
+
+```shell
+(base) root@11110000:/data/workspaces/zhujunmiao/apisix/example# curl -X PATCH http://211.90.240.240:30015/apisix/admin/routes/1748598600021 \
+-H "Content-Type: application/json" \
+-H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+-d '{
+  "plugins": {
+    "forward-auth": {
+      "uri": "http://101.71.97.95:86/prod-api/massAuthentication",
+      "request_method": "POST",
+      "request_headers": ["Authorization"],
+      "timeout": 3000
+    }
+  }
+}'
+
+{"key":"/apisix/routes/1748598600021","value":{"uri":"/portal/listShopResource","create_time":1748598709,"upstream_id":"1748598600021","id":"1748598600021","update_time":1748600804,"plugins":{"forward-auth":{"status_on_error":403,"upstream_headers":{},"uri":"http://101.71.97.95:86/prod-api/massAuthentication","client_headers":{},"request_headers":["Authorization"],"ssl_verify":true,"request_method":"POST","keepalive":true,"keepalive_timeout":60000,"keepalive_pool":5,"timeout":3000,"allow_degradation":false}},"upstream":{"scheme":"http","type":"roundrobin","nodes":{},"hash_on":"vars","pass_host":"pass"},"priority":0,"status":1}}
+```
+
 ## 如何通过 apisix 统计 gpustack 接口的 token 
 ---
 
