@@ -172,6 +172,27 @@ curl -X PATCH http://211.90.240.240:30015/apisix/admin/routes/1748598600021 \
 {"key":"/apisix/routes/1748598600021","value":{"uri":"/portal/listShopResource","create_time":1748598709,"upstream_id":"1748598600021","id":"1748598600021","update_time":1748600804,"plugins":{"forward-auth":{"status_on_error":403,"upstream_headers":{},"uri":"http://101.71.97.95:86/prod-api/massAuthentication","client_headers":{},"request_headers":["Authorization"],"ssl_verify":true,"request_method":"POST","keepalive":true,"keepalive_timeout":60000,"keepalive_pool":5,"timeout":3000,"allow_degradation":false}},"upstream":{"scheme":"http","type":"roundrobin","nodes":{},"hash_on":"vars","pass_host":"pass"},"priority":0,"status":1}}
 ```
 
+```
+curl -X GET http://211.90.240.240:30016/portal/listShopResource \
+-H "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImQ0YjdkYzQ3LTUxNzMtNGY1My1hODcxLWE0ZTM0ZmE1MzI2MSJ9.emxzCTqNhY_zzJU4xwrAJp8_ZdD5UElClvg-IxyPG-4VmEbMAoo3uY83Vom5H5seZNxMwKHTYh6gNb5V457DPA" 
+```
+
+```
+curl -X PATCH http://211.90.240.240:30015/apisix/admin/routes/1748598600021 \
+-H "Content-Type: application/json" \
+-H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+-d '{
+  "plugins": {
+    "forward-auth": {
+      "uri": "http://101.71.97.95:86/prod-api/massAuthentication",
+      "request_method": "GET,POST",
+      "request_headers": ["Authorization"],
+      "timeout": 3000
+    }
+  }
+}'
+```
+
 ## 如何通过 apisix 统计 gpustack 接口的 token 
 ---
 
