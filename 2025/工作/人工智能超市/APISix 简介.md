@@ -399,7 +399,7 @@ curl http://127.0.0.1:30015/apisix/admin/routes/10002 \
 
 出现错误
 
-```
+```shell
 (base) root@11110000:/data/workspaces/zhujunmiao/apisix/example# curl http://127.0.0.1:30015/apisix/admin/routes/10002 \
   -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
   -X PUT \
@@ -413,6 +413,18 @@ curl http://127.0.0.1:30015/apisix/admin/routes/10002 \
     "upstream_id": "10002"
 }'
 {"error_msg":"unknown plugin [proxy-rewrite]"}
+```
+
+需要在 conf 文件里面加
+
+```shell
+plugins:
+  - proxy-rewrite  # 确保这一行存在
+  # 其他已启用的插件...
+```
+
+```shell
+docker-compose restart apisix
 ```
 
 ```shell
