@@ -103,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee63b1de70cd5880",
@@ -197,6 +196,7 @@
   },
   "active": "a03d069f8ccf185c",
   "lastOpenFiles": [
+    "其他/011 LLMApp.md",
     "其他/58 计划/llm-stack/未命名.md",
     "其他/01 LLM.md",
     "其他/58 计划/llm-stack/部署.md",
@@ -224,7 +224,6 @@
     "Excalidraw/Drawing 2025-05-26 13.37.49.excalidraw.md",
     "Excalidraw/Drawing 2025-05-22 09.47.05.excalidraw.md",
     "其他/58 计划/llm-app/Dify 的后台管理系统.md",
-    "工作/工作日志/202505/0523.md",
     "工作/工作日志/202505",
     "其他/常规/node-wf",
     "Excalidraw/pictures/Drawing 2025-05-21 22.27.32.excalidraw.png",

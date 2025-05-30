@@ -837,7 +837,7 @@ Example entry:
 
 指令微调，也叫监督指令微调，涉及到在数据集上训练模型，其中显式的提供输入输出对，如我们从 JSON 文件中提取的那些。有多种方法可以格式化这些数据实体。下图展示了两种不同的示例格式，often referred to as prompt styles，used in the training of notable LLMs such as Alpaca and Phi-3. Alpaca was one of the early LLMs to publicly detail its instruction finetuning process. Phi-3, developed by Microsoft, is included to demonstrate the diversity in prompt styles.
 
-![[Pasted image 20241109222405.png]]
+
 
 本章的其余部分使用 Alpaca 提示风格。
 
@@ -1029,7 +1029,6 @@ h_{l}& =\text{transformer block}(h_{l-1})\forall i\in[1,n] \\
 P(u)& =\mathrm{softmax}(h_nW_e^T) 
 \end{aligned}$$
 where $U=(u_{-k},...,u_{-1})$ is the context vector of tokens, $n$ is the number of layers, $W_e$ is the token embedding matrix, and $W_p$ is the position embedding matrix.
-
 
 
 
