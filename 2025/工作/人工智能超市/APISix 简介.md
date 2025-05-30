@@ -363,6 +363,24 @@ curl http://127.0.0.1:9180/apisix/admin/routes/10001 \
 }'
 ```
 
+---
+
+```shell
+curl http://127.0.0.1:9180/apisix/admin/upstreams/10002 \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+  -X PUT \
+  -d '{
+    "type": "roundrobin",
+    "nodes": {
+        "211.90.240.240:30001": 1
+    }
+}'
+```
+
+```shell
+
+```
+
 ```shell
 curl http://127.0.0.1:30015/apisix/admin/plugins/list \
   -H 'X-API-KEY: edd1c9f034335f136f87ad84b625c8f1'
