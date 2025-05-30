@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "89c7abc8018e431b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "其他/58 计划/llm-plugin-deamon/13 综合实战：秒杀系统的设计和实现.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "13 综合实战：秒杀系统的设计和实现"
-            }
-          },
-          {
             "id": "aedba0cd1417e951",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "APISix 简介"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
