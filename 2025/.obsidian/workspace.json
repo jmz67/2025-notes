@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "aedba0cd1417e951",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工作/人工智能超市/APISix 简介.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "APISix 简介"
-            }
-          },
-          {
             "id": "a03d069f8ccf185c",
             "type": "leaf",
             "state": {
@@ -49,7 +35,8 @@
               "title": "账号密码&常用信息"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/人工智能超市/APISix 简介.md",
+                "file": "工作/账号密码&常用信息.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "APISix 简介 的大纲"
+              "title": "账号密码&常用信息 的大纲"
             }
           }
         ],
@@ -207,14 +194,14 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "aedba0cd1417e951",
+  "active": "6774dec58b6623e8",
   "lastOpenFiles": [
+    "其他/011 LLMApp.md",
+    "工作/人工智能超市/APISix 简介.md",
     "工作/账号密码&常用信息.md",
     "工作/智能治疗开发.md",
     "工作/健康云迁移.md",
     "工作/RagFlow ARM 部署.md",
-    "其他/011 LLMApp.md",
-    "工作/人工智能超市/APISix 简介.md",
     "其他/01 LLM.md",
     "其他/src/pitures/上传切分嵌入文档-流程图.jpg",
     "其他/src/pitures/无标题文档-流程图.jpg",
