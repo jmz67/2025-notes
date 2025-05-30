@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其他/01 LLM.md",
+                "file": "其他/011 LLMApp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 LLM"
+              "title": "011 LLMApp"
             }
           }
         ],
@@ -165,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/01 LLM.md",
+                "file": "其他/011 LLMApp.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "01 LLM 的大纲"
+              "title": "011 LLMApp 的大纲"
             }
           }
         ],
@@ -179,7 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 372.5
+    "width": 408.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,8 +196,8 @@
   },
   "active": "a03d069f8ccf185c",
   "lastOpenFiles": [
-    "其他/011 LLMApp.md",
     "其他/01 LLM.md",
+    "其他/011 LLMApp.md",
     "其他/src/pitures/上传切分嵌入文档-流程图.jpg",
     "其他/src/pitures/无标题文档-流程图.jpg",
     "其他/src/pitures/Pasted image 20241212110652.webp",
