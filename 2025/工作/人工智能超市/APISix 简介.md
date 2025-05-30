@@ -366,7 +366,12 @@ curl http://127.0.0.1:9180/apisix/admin/routes/10001 \
 ---
 
 ```shell
-curl http://127.0.0.1:9180/apisix/admin/upstreams/10002 \
+curl http://127.0.0.1:30015/apisix/admin/plugins/list \
+  -H 'X-API-KEY: edd1c9f034335f136f87ad84b625c8f1'
+```
+
+```shell
+curl http://127.0.0.1:30015/apisix/admin/upstreams/10002 \
   -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
   -X PUT \
   -d '{
@@ -378,11 +383,45 @@ curl http://127.0.0.1:9180/apisix/admin/upstreams/10002 \
 ```
 
 ```shell
+curl http://127.0.0.1:30015/apisix/admin/routes/10002 \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+  -X PUT \
+  -d '{
+    "uri": "/chat/*",
+    "plugins": {
+      "proxy-rewrite": {
+        "regex_uri": ["^/chat/(.*)", "/$1"]
+      }
+    },
+    "upstream_id": "10002"
+}'
+```
 
+出现错误
+
+```
+(base) root@11110000:/data/workspaces/zhujunmiao/apisix/example# curl http://127.0.0.1:30015/apisix/admin/routes/10002 \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+  -X PUT \
+  -d '{
+    "uri": "/chat/*",
+    "plugins": {
+      "proxy-rewrite": {
+        "regex_uri": ["^/chat/(.*)", "/$1"]
+      }
+    },
+    "upstream_id": "10002"
+}'
+{"error_msg":"unknown plugin [proxy-rewrite]"}
 ```
 
 ```shell
-curl http://127.0.0.1:30015/apisix/admin/plugins/list \
-  -H 'X-API-KEY: edd1c9f034335f136f87ad84b625c8f1'
+curl -X POST "http://127.0.0.1:30016/chat/v1/chat/completions" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer gpustack_910b75220f3749a4_02defc61fa8e96f651f292a2d70014fa" \
+  -d '{"model": "Qwen2.5-32B-Instruct", "messages": [{"role": "user", "content": "你好！"}]}'
 ```
+
+
+
 
