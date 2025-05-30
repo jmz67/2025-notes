@@ -457,4 +457,171 @@ curl http://127.0.0.1:30015/apisix/admin/routes/10002 \
 
 ```
 
+### 实操结果
 
+```shell
+(base) root@11110000:/data/workspaces/zhujunmiao/apisix/example# curl -X POST "http://127.0.0.1:30016/chat/v1/chat/completions" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer gpustack_910b75220f3749a4_02defc61fa8e96f651f292a2d70014fa" \
+  -d '{"model": "Qwen2.5-32B-Instruct", "messages": [{"role": "user", "content": "你好！"}]}'
+{"id":"chatcmpl-159f9d17b1664bd196df9e4d37797dd4","object":"chat.completion","created":1748574038,"model":"Qwen2.5-32B-Instruct","choices":[{"index":0,"message":{"role":"assistant","reasoning_content":null,"content":"你好！有什么可以帮助你的吗？","tool_calls":[]},"logprobs":null,"finish_reason":"stop","stop_reason":null}],"usage":{"prompt_tokens":31,"total_tokens":39,"completion_tokens":8,"prompt_tokens_details":null},"prompt_logprobs":null}
+
+(base) root@11110000:/data/workspaces/zhujunmiao/apisix/example# curl http://127.0.0.1:curl http://127.0.0.1:9094/apisix/prometheus/metrics
+
+# HELP apisix_ai_completion_tokens Completion tokens returned
+# TYPE apisix_ai_completion_tokens counter
+apisix_ai_completion_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 8
+# HELP apisix_ai_prompt_tokens Prompt tokens returned
+# TYPE apisix_ai_prompt_tokens counter
+apisix_ai_prompt_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 31
+# HELP apisix_ai_total_tokens Total LLM tokens returned
+# TYPE apisix_ai_total_tokens counter
+apisix_ai_total_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 39
+# HELP apisix_etcd_modify_indexes Etcd modify index for APISIX keys
+# TYPE apisix_etcd_modify_indexes gauge
+apisix_etcd_modify_indexes{key="consumers"} 0
+apisix_etcd_modify_indexes{key="global_rules"} 0
+apisix_etcd_modify_indexes{key="max_modify_index"} 600
+apisix_etcd_modify_indexes{key="prev_index"} 599
+apisix_etcd_modify_indexes{key="protos"} 0
+apisix_etcd_modify_indexes{key="routes"} 600
+apisix_etcd_modify_indexes{key="services"} 0
+apisix_etcd_modify_indexes{key="ssls"} 0
+apisix_etcd_modify_indexes{key="stream_routes"} 0
+apisix_etcd_modify_indexes{key="upstreams"} 542
+apisix_etcd_modify_indexes{key="x_etcd_index"} 600
+# HELP apisix_etcd_reachable Config server etcd reachable from APISIX, 0 is unreachable
+# TYPE apisix_etcd_reachable gauge
+apisix_etcd_reachable 1
+# HELP apisix_http_requests_total The total number of client requests since APISIX started
+# TYPE apisix_http_requests_total gauge
+apisix_http_requests_total 144
+# HELP apisix_nginx_http_current_connections Number of HTTP connections
+# TYPE apisix_nginx_http_current_connections gauge
+apisix_nginx_http_current_connections{state="accepted"} 135
+apisix_nginx_http_current_connections{state="active"} 131
+apisix_nginx_http_current_connections{state="handled"} 135
+apisix_nginx_http_current_connections{state="reading"} 0
+apisix_nginx_http_current_connections{state="waiting"} 1
+apisix_nginx_http_current_connections{state="writing"} 130
+# HELP apisix_nginx_metric_errors_total Number of nginx-lua-prometheus errors
+# TYPE apisix_nginx_metric_errors_total counter
+apisix_nginx_metric_errors_total 0
+# HELP apisix_node_info Info of APISIX node
+# TYPE apisix_node_info gauge
+apisix_node_info{hostname="c3e8428d44d9"} 1
+# HELP apisix_shared_dict_capacity_bytes The capacity of each nginx shared DICT since APISIX start
+# TYPE apisix_shared_dict_capacity_bytes gauge
+apisix_shared_dict_capacity_bytes{name="balancer-ewma"} 10485760
+apisix_shared_dict_capacity_bytes{name="balancer-ewma-last-touched-at"} 10485760
+apisix_shared_dict_capacity_bytes{name="balancer-ewma-locks"} 10485760
+apisix_shared_dict_capacity_bytes{name="etcd-cluster-health-check"} 10485760
+apisix_shared_dict_capacity_bytes{name="internal-status"} 10485760
+apisix_shared_dict_capacity_bytes{name="lrucache-lock"} 10485760
+apisix_shared_dict_capacity_bytes{name="plugin-ai-rate-limiting"} 10485760
+apisix_shared_dict_capacity_bytes{name="plugin-ai-rate-limiting-reset-header"} 10485760
+apisix_shared_dict_capacity_bytes{name="prometheus-metrics"} 10485760
+apisix_shared_dict_capacity_bytes{name="upstream-healthcheck"} 10485760
+apisix_shared_dict_capacity_bytes{name="worker-events"} 10485760
+# HELP apisix_shared_dict_free_space_bytes The free space of each nginx shared DICT since APISIX start
+# TYPE apisix_shared_dict_free_space_bytes gauge
+apisix_shared_dict_free_space_bytes{name="balancer-ewma"} 10412032
+apisix_shared_dict_free_space_bytes{name="balancer-ewma-last-touched-at"} 10412032
+apisix_shared_dict_free_space_bytes{name="balancer-ewma-locks"} 10412032
+apisix_shared_dict_free_space_bytes{name="etcd-cluster-health-check"} 10412032
+apisix_shared_dict_free_space_bytes{name="internal-status"} 10412032
+apisix_shared_dict_free_space_bytes{name="lrucache-lock"} 10412032
+apisix_shared_dict_free_space_bytes{name="plugin-ai-rate-limiting"} 10412032
+apisix_shared_dict_free_space_bytes{name="plugin-ai-rate-limiting-reset-header"} 10412032
+apisix_shared_dict_free_space_bytes{name="prometheus-metrics"} 10391552
+apisix_shared_dict_free_space_bytes{name="upstream-healthcheck"} 10412032
+apisix_shared_dict_free_space_bytes{name="worker-events"} 10412032
+
+(base) root@11110000:/data/workspaces/zhujunmiao/apisix/example# curl -X POST "http://127.0.0.1:30016/chat/v1/chat/completions"   -H "Content-Type: application/json"   -H "Authorization: Bearer gpustack_910b75220f3749a4_02defc61fa8e96f651f292a2d70014fa"   -d '{"model": "Qwen2.5-32B-Instruct", "messages": [{"role": "user", "content": "你好！"}]}'
+{"id":"chatcmpl-3aa061001e9b45dea909697cea4d8683","object":"chat.completion","created":1748574841,"model":"Qwen2.5-32B-Instruct","choices":[{"index":0,"message":{"role":"assistant","reasoning_content":null,"content":"你好！有什么可以帮助你的吗？","tool_calls":[]},"logprobs":null,"finish_reason":"stop","stop_reason":null}],"usage":{"prompt_tokens":31,"total_tokens":39,"completion_tokens":8,"prompt_tokens_details":null},"prompt_logprobs":null}
+
+(base) root@11110000:/data/workspaces/zhujunmiao/apisix/example# curl -X POST "http://127.0.0.1:30016/chat/v1/chat/completions"   -H "Content-Type: application/json"   http://127.0.0.1:9094/apisix/prometheus/metrics
+
+# HELP apisix_ai_completion_tokens Completion tokens returned
+# TYPE apisix_ai_completion_tokens counter
+apisix_ai_completion_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 16
+# HELP apisix_ai_prompt_tokens Prompt tokens returned
+# TYPE apisix_ai_prompt_tokens counter
+apisix_ai_prompt_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 62
+# HELP apisix_ai_total_tokens Total LLM tokens returned
+# TYPE apisix_ai_total_tokens counter
+apisix_ai_total_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 78
+# HELP apisix_etcd_modify_indexes Etcd modify index for APISIX keys
+# TYPE apisix_etcd_modify_indexes gauge
+apisix_etcd_modify_indexes{key="consumers"} 0
+apisix_etcd_modify_indexes{key="global_rules"} 0
+apisix_etcd_modify_indexes{key="max_modify_index"} 600
+apisix_etcd_modify_indexes{key="prev_index"} 599
+apisix_etcd_modify_indexes{key="protos"} 0
+apisix_etcd_modify_indexes{key="routes"} 600
+apisix_etcd_modify_indexes{key="services"} 0
+apisix_etcd_modify_indexes{key="ssls"} 0
+apisix_etcd_modify_indexes{key="stream_routes"} 0
+apisix_etcd_modify_indexes{key="upstreams"} 542
+apisix_etcd_modify_indexes{key="x_etcd_index"} 600
+# HELP apisix_etcd_reachable Config server etcd reachable from APISIX, 0 is unreachable
+# TYPE apisix_etcd_reachable gauge
+apisix_etcd_reachable 1
+# HELP apisix_http_requests_total The total number of client requests since APISIX started
+# TYPE apisix_http_requests_total gauge
+apisix_http_requests_total 303
+# HELP apisix_nginx_http_current_connections Number of HTTP connections
+# TYPE apisix_nginx_http_current_connections gauge
+apisix_nginx_http_current_connections{state="accepted"} 137
+apisix_nginx_http_current_connections{state="active"} 131
+apisix_nginx_http_current_connections{state="handled"} 137
+apisix_nginx_http_current_connections{state="reading"} 0
+apisix_nginx_http_current_connections{state="waiting"} 1
+apisix_nginx_http_current_connections{state="writing"} 130
+# HELP apisix_nginx_metric_errors_total Number of nginx-lua-prometheus errors
+# TYPE apisix_nginx_metric_errors_total counter
+apisix_nginx_metric_errors_total 0
+# HELP apisix_node_info Info of APISIX node
+# TYPE apisix_node_info gauge
+apisix_node_info{hostname="c3e8428d44d9"} 1
+# HELP apisix_shared_dict_capacity_bytes The capacity of each nginx shared DICT since APISIX start
+# TYPE apisix_shared_dict_capacity_bytes gauge
+apisix_shared_dict_capacity_bytes{name="balancer-ewma"} 10485760
+apisix_shared_dict_capacity_bytes{name="balancer-ewma-last-touched-at"} 10485760
+apisix_shared_dict_capacity_bytes{name="balancer-ewma-locks"} 10485760
+apisix_shared_dict_capacity_bytes{name="etcd-cluster-health-check"} 10485760
+apisix_shared_dict_capacity_bytes{name="internal-status"} 10485760
+apisix_shared_dict_capacity_bytes{name="lrucache-lock"} 10485760
+apisix_shared_dict_capacity_bytes{name="plugin-ai-rate-limiting"} 10485760
+apisix_shared_dict_capacity_bytes{name="plugin-ai-rate-limiting-reset-header"} 10485760
+apisix_shared_dict_capacity_bytes{name="prometheus-metrics"} 10485760
+apisix_shared_dict_capacity_bytes{name="upstream-healthcheck"} 10485760
+apisix_shared_dict_capacity_bytes{name="worker-events"} 10485760
+# HELP apisix_shared_dict_free_space_bytes The free space of each nginx shared DICT since APISIX start
+# TYPE apisix_shared_dict_free_space_bytes gauge
+apisix_shared_dict_free_space_bytes{name="balancer-ewma"} 10412032
+apisix_shared_dict_free_space_bytes{name="balancer-ewma-last-touched-at"} 10412032
+apisix_shared_dict_free_space_bytes{name="balancer-ewma-locks"} 10412032
+apisix_shared_dict_free_space_bytes{name="etcd-cluster-health-check"} 10412032
+apisix_shared_dict_free_space_bytes{name="internal-status"} 10412032
+apisix_shared_dict_free_space_bytes{name="lrucache-lock"} 10412032
+apisix_shared_dict_free_space_bytes{name="plugin-ai-rate-limiting"} 10412032
+apisix_shared_dict_free_space_bytes{name="plugin-ai-rate-limiting-reset-header"} 10412032
+apisix_shared_dict_free_space_bytes{name="prometheus-metrics"} 10391552
+apisix_shared_dict_free_space_bytes{name="upstream-healthcheck"} 10412032
+apisix_shared_dict_free_space_bytes{name="worker-events"} 10412032
+```
+
+### 分析
+
+```shell
+apisix_ai_completion_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 8
+# HELP apisix_ai_prompt_tokens Prompt tokens returned
+# TYPE apisix_ai_prompt_tokens counter
+apisix_ai_prompt_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 31
+# HELP apisix_ai_total_tokens Total LLM tokens returned
+# TYPE apisix_ai_total_tokens counter
+apisix_ai_total_tokens{model="Qwen2.5-32B-Instruct",route="unknown"} 39
+```
+
+现在的问题是
