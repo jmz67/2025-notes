@@ -1095,6 +1095,7 @@ for json_file in json_files:
 
 
 ## Prompt Template
+---
 Prompt template help to translate user input and parameters into instructions for a language model. This can be used to guide a model's response, helping it understand the context and generate relevant and coherent language-based output.
 
 Prompt Templates take as input a dictionary, where each key represents a variable in the prompt template to fill in.
@@ -1509,6 +1510,7 @@ A basic memory framwork might merely relay the lastest messages with every inter
 Different applications require varying demands on memory querying. LangChain’s memory toolkit will help you to create simplistic memory infrastructures while empowering you to architect bespoke systems when necessary.
 
 ### 02.3.1 ConversationBufferMemory
+---
 There are various types of memory within LangChain, and one of the most popular is ConversationBufferMemory. This allows you to store multiple chat messages with no restriction on chat history size.
 
 Start by importing ConversationBufferMemory, and you can then add context with the save_context function. The `load_memory_variables` function returns a Python dictionary containing the Human and AI messages:
@@ -1690,6 +1692,7 @@ rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chai
 ```
 
 #### Stateful Management of chat history
+---
 We have added application logic for incorporating chat history, but we are still manually plumbing it through our application. In production, the QA application we usually persist the chat history into a database, and be able to read and update it appropriately.
 
 [LangGraph](https://langchain-ai.github.io/langgraph/) implements a built-in [persistence layer](https://langchain-ai.github.io/langgraph/concepts/persistence/), making it ideal for chat applications that support multiple conversational turns.
