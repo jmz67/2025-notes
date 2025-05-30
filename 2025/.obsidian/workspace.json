@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其他/58 计划/llm-plugin-deamon/13 综合实战：秒杀系统的设计和实现.md",
+                "file": "其他/011 LLMApp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "13 综合实战：秒杀系统的设计和实现"
+              "title": "011 LLMApp"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其他/58 计划/llm-plugin-deamon/13 综合实战：秒杀系统的设计和实现.md",
+                "file": "其他/011 LLMApp.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "13 综合实战：秒杀系统的设计和实现 的大纲"
+              "title": "011 LLMApp 的大纲"
             }
           }
         ],
@@ -171,6 +171,8 @@
   },
   "active": "962839bc20d2a843",
   "lastOpenFiles": [
+    "其他/01 LLM.md",
+    "其他/58 计划/llm-plugin-deamon/13 综合实战：秒杀系统的设计和实现.md",
     "其他/src/pitures/无标题文档-流程图.jpg",
     "其他/src/pitures/上传切分嵌入文档-流程图.jpg",
     "其他/src/pitures/Pasted image 20241212110652.webp",
@@ -181,15 +183,12 @@
     "其他/src/pitures/Pasted image 20241201190851.webp",
     "其他/src/pitures/Pasted image 20241126102558.webp",
     "其他/src/pitures/Pasted image 20241126101647.webp",
-    "其他/src/pitures/Pasted image 20241126101321.webp",
     "其他/src/pitures",
     "其他/src/books/JavaScript The Definitive G_ (Z-Library).pdf",
     "其他/src/books",
     "其他/src",
     "其他/011 LLMApp.md",
-    "其他/01 LLM.md",
     "其他/58 计划/llm-plugin-deamon/6-服务注册和发现.md",
-    "其他/58 计划/llm-plugin-deamon/13 综合实战：秒杀系统的设计和实现.md",
     "工作/RagFlow ARM 部署.md",
     "未命名.md",
     "工作/Dify 源码改造/如何使用 nginx 代理 dify 前端.md",
