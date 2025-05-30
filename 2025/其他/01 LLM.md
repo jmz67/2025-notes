@@ -167,8 +167,9 @@ print('Save quant weight success!')
 
 
 # Pytorch
-
+---
 ## Dataset&DataLoader
+---
 [Datasets & DataLoaders — PyTorch Tutorials 2.5.0+cu124 documentation](https://pytorch.org/tutorials/beginner/basics/data_tutorial.html)
 
 处理数据样本的代码可能会变得混乱且难以维护，在理想情况下，我们希望我们的数据集代码和模型训练的代码是解耦（decoupled）的，以此获得更好的可读性和模块化。Pytorch 提供了两个 data primitives：`torch.utils.data.DataLoader` 和 `torch.utils.data.Dataset` ，它们允许我们使用预加载的数据集和我们自己的数据。Dataset 存储了样本以及它的标签，DataLoader 在 Dataset 周围包装了一个可迭代的对象，以便访问样本。
