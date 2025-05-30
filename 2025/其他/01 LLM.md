@@ -191,13 +191,13 @@ PyTorch domain libraries provide a number of pre-loaded datasets (such as Fashio
 
 ### 1.5 利用大型数据集
 
-
+![[Pasted image 20241109215234.png]]
 
 ### 1.6 A closer look at the GPT architecture
 
 在 GPT 模型的下一词预训练任务中，系统通过查看之前出现的单词来学习预测句子中的下一个单词。这种方法帮助模型理解单词和短语在语言中通常如何组合在一起，形成可以应用于各种其他任务的基础。
 
-
+![[Pasted image 20241109214712.png]]
 
 下一词预测训练是一种自监督学习形式，即一种自标记形式。这意味着我们不需要显式地为训练数据收集数据，而是可以利用数据本身的结构：我们可以使用句子或者文档的下一个单词作为模型应该预测的标签。由于这种下一个词预测任务允许我们即时地创建标签，因此可以利用大量没有标记的文本数据集来训练 LLMs。
 
@@ -228,13 +228,9 @@ def softmax_naive(x):
 ```
 
 现在我们扩充计算，计算所有输入的注意力权重和上下文向量。
-
-
-
+![[Pasted image 20241107103714.png]]
 我们将遵循和之前相同的三个步骤，不同的是我们将计算的是所有的上下文向量而不是单个的。
-
-
-
+![[Pasted image 20241107103937.png]]
 在自注意力中，我们首先计算注意力得分，然后将其归一化以获得总和为 1 的注意力权重，这些注意力权重用于计算上下文向量，作为输入的加权和。
 
 ```python
@@ -301,17 +297,15 @@ tensor([[0.4421, 0.5931, 0.5790],
 
 在本节中我们将实现被广泛用于原始Transformer架构、GPT模型和其他大多数流行的LLM中使用的自注意力机制。这种自注意力机制又称之为**缩放点积注意力**（**scaled dot-product attention**）。
 
-
+![[Pasted image 20241107110227.png]]
 **带有可训练权重的自注意力机制建立在前面的概念之上：我们希望计算上下文向量作为特定输入元素的输入向量的加权和。**
 
 和上节显著的差异是在本节中，我们将引入在模型训练期间更新的权重矩阵。这些可训练的权重矩阵对于模型（特别是模型内部的注意力模块）能够学习生成良好的上下文向量来说至关重要。
 
 #### 3.4.1 逐步计算注意力权重
-
 我们将逐步实现自注意力机制，通过引入三个可训练的权重矩阵，$W_q$，$W_k$ 和 $W_v$ ，着三个矩阵用于将嵌入的输入词元 $x^{(i)}$ 投影到查询，如下图所示：
 
-
-
+![[Pasted image 20241108202642.png]]
 请注意，在类似 GPT 的模型中，输入和输出维度通常是相同的，但是在这里我们选择不同的输入 d_in = 3 和 d_out = 2 维度。
 
 接下来，我们将初始化这三个权重矩阵：
@@ -837,7 +831,7 @@ Example entry:
 
 指令微调，也叫监督指令微调，涉及到在数据集上训练模型，其中显式的提供输入输出对，如我们从 JSON 文件中提取的那些。有多种方法可以格式化这些数据实体。下图展示了两种不同的示例格式，often referred to as prompt styles，used in the training of notable LLMs such as Alpaca and Phi-3. Alpaca was one of the early LLMs to publicly detail its instruction finetuning process. Phi-3, developed by Microsoft, is included to demonstrate the diversity in prompt styles.
 
-
+![[Pasted image 20241109222405.png]]
 
 本章的其余部分使用 Alpaca 提示风格。
 
@@ -1012,7 +1006,6 @@ The following updated collate function generates the target token IDs, as illust
 
 
 ## 训练四阶段的解读
----
 [InstructGPT的四阶段：预训练、有监督微调、奖励建模、强化学习涉及到的公式解读-CSDN博客](https://blog.csdn.net/weixin_46460463/article/details/142892398?spm=1001.2014.3001.5502)
 ### 预训练
 
@@ -1029,6 +1022,7 @@ h_{l}& =\text{transformer block}(h_{l-1})\forall i\in[1,n] \\
 P(u)& =\mathrm{softmax}(h_nW_e^T) 
 \end{aligned}$$
 where $U=(u_{-k},...,u_{-1})$ is the context vector of tokens, $n$ is the number of layers, $W_e$ is the token embedding matrix, and $W_p$ is the position embedding matrix.
+
 
 
 
