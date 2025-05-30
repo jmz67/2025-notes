@@ -434,6 +434,27 @@ curl -X POST "http://127.0.0.1:30016/chat/v1/chat/completions" \
   -d '{"model": "Qwen2.5-32B-Instruct", "messages": [{"role": "user", "content": "你好！"}]}'
 ```
 
+```shell
+curl http://127.0.0.1:9094/apisix/prometheus/metrics
+```
 
+但是没有发现那些指标，因为我们还没有绑定 token 到那个上面去
+
+```shell
+curl http://127.0.0.1:30015/apisix/admin/routes/10002 \
+  -H "X-API-KEY: edd1c9f034335f136f87ad84b625c8f1" \
+  -X PUT \
+  -d '{
+    "uri": "/chat/*",
+    "plugins": {
+      "proxy-rewrite": {
+        "regex_uri": ["^/chat/(.*)", "/$1"]
+      },
+      "token_metrics": {}
+    },
+    "upstream_id": "10002"
+}'
+
+```
 
 
